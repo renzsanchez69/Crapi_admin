@@ -418,3 +418,65 @@ INFO - 2019-03-29 00:59:20 --> Final output sent to browser
 DEBUG - 2019-03-29 00:59:20 --> Total execution time: 0.6992
 INFO - 2019-03-29 00:59:27 --> Final output sent to browser
 DEBUG - 2019-03-29 00:59:27 --> Total execution time: 0.6692
+INFO - 2019-03-29 01:10:55 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2019-03-29 01:10:55 --> Model Class Initialized
+INFO - 2019-03-29 01:10:55 --> Model Class Initialized
+INFO - 2019-03-29 01:10:56 --> Final output sent to browser
+DEBUG - 2019-03-29 01:10:56 --> Total execution time: 0.7039
+INFO - 2019-03-29 01:11:50 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2019-03-29 01:11:50 --> Model Class Initialized
+INFO - 2019-03-29 01:11:50 --> Model Class Initialized
+INFO - 2019-03-29 01:11:50 --> Final output sent to browser
+DEBUG - 2019-03-29 01:11:50 --> Total execution time: 0.6903
+INFO - 2019-03-29 01:11:53 --> Model Class Initialized
+INFO - 2019-03-29 01:11:53 --> Model Class Initialized
+INFO - 2019-03-29 01:11:53 --> Final output sent to browser
+DEBUG - 2019-03-29 01:11:53 --> Total execution time: 0.8939
+INFO - 2019-03-29 01:12:56 --> Final output sent to browser
+DEBUG - 2019-03-29 01:12:56 --> Total execution time: 0.6819
+INFO - 2019-03-29 01:13:01 --> Model Class Initialized
+INFO - 2019-03-29 01:13:01 --> Model Class Initialized
+INFO - 2019-03-29 01:13:01 --> Final output sent to browser
+DEBUG - 2019-03-29 01:13:01 --> Total execution time: 0.6917
+INFO - 2019-03-29 01:13:29 --> Helper loaded: language_helper
+INFO - 2019-03-29 01:13:29 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-03-29 01:13:29 --> Final output sent to browser
+DEBUG - 2019-03-29 01:13:29 --> Total execution time: 0.4624
+INFO - 2019-03-29 01:14:56 --> Final output sent to browser
+DEBUG - 2019-03-29 01:14:56 --> Total execution time: 0.6634
+INFO - 2019-03-29 01:14:56 --> Helper loaded: language_helper
+INFO - 2019-03-29 01:14:56 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-03-29 01:14:56 --> Final output sent to browser
+DEBUG - 2019-03-29 01:14:56 --> Total execution time: 0.4355
+INFO - 2019-03-29 01:15:03 --> Final output sent to browser
+DEBUG - 2019-03-29 01:15:03 --> Total execution time: 0.6676
+INFO - 2019-03-29 01:15:03 --> Helper loaded: language_helper
+INFO - 2019-03-29 01:15:03 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-03-29 01:15:03 --> Final output sent to browser
+DEBUG - 2019-03-29 01:15:03 --> Total execution time: 0.4428
+INFO - 2019-03-29 01:15:07 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2019-03-29 01:15:07 --> Model Class Initialized
+INFO - 2019-03-29 01:15:07 --> Model Class Initialized
+INFO - 2019-03-29 01:15:08 --> Final output sent to browser
+DEBUG - 2019-03-29 01:15:08 --> Total execution time: 0.6702
+INFO - 2019-03-29 01:15:09 --> Helper loaded: language_helper
+INFO - 2019-03-29 01:15:09 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-03-29 01:15:09 --> Final output sent to browser
+DEBUG - 2019-03-29 01:15:09 --> Total execution time: 0.4474
+INFO - 2019-03-29 01:15:27 --> Language file loaded: language/english/form_validation_lang.php
+INFO - 2019-03-29 01:15:27 --> Model Class Initialized
+INFO - 2019-03-29 01:15:27 --> Model Class Initialized
+INFO - 2019-03-29 01:15:28 --> Final output sent to browser
+DEBUG - 2019-03-29 01:15:28 --> Total execution time: 0.7301
+INFO - 2019-03-29 01:15:29 --> Helper loaded: language_helper
+INFO - 2019-03-29 01:15:29 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-03-29 01:15:29 --> Final output sent to browser
+DEBUG - 2019-03-29 01:15:29 --> Total execution time: 0.4932
+INFO - 2019-03-29 01:15:30 --> Model Class Initialized
+INFO - 2019-03-29 01:15:30 --> Model Class Initialized
+INFO - 2019-03-29 01:15:30 --> Final output sent to browser
+DEBUG - 2019-03-29 01:15:30 --> Total execution time: 0.7143
+INFO - 2019-03-29 01:15:30 --> Helper loaded: language_helper
+INFO - 2019-03-29 01:15:30 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-03-29 01:15:30 --> Final output sent to browser
+DEBUG - 2019-03-29 01:15:30 --> Total execution time: 0.4857
