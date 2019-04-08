@@ -1,6 +1,6 @@
 <?php 
 
-class Owner_model extends MY_Model {
+class Employee_model extends MY_Model {
 
 	private $virtualFields = array(
 		'fullname'
@@ -13,31 +13,31 @@ class Owner_model extends MY_Model {
 	{
 		// only activated user can login
 		$where = array('username' => $username, 'status' => USER_ACTIVE);
-		$owner = $this->get_by($where);
+		$employee = $this->get_by($where);
 		
-		if ( !empty($owner) && password_verify($password, $owner->password) )
+		if ( !empty($employee) && password_verify($password, $employee->password) )
 		{
-			// success - return owner object without password field
-			unset($owner->password);
-			return $owner;
+			// success - return employee object without password field
+			unset($employee->password);
+			return $employee;
 		}
 
 		// failed
 		return NULL;
 	}
 
-	// public function validate_password($ownerid, $password) {
-	// 	// only activated owner can login
-	// 	$where = array('id' => $ownerid, 'status  ' => 1);
-	// 	$owner = $this->get_by($where);
+	public function validate_password($employeeid, $password) {
+		// only activated employee can login
+		$where = array('id' => $employeeid, 'status  ' => 1);
+		$employee = $this->get_by($where);
 		
-	// 	if ( !empty($owner) && password_verify($password, $owner->password) ) {
-	// 		return true;
-	// 	}
-	// 	return false;
-	// }
+		if ( !empty($employee) && password_verify($password, $employee->password) ) {
+			return true;
+		}
+		return false;
+	}
 
-	public function add_owner($data)
+	public function add_employee($data)
 	{
 		if (empty($data)) {
 			return false;
@@ -46,7 +46,7 @@ class Owner_model extends MY_Model {
 		return $this->insert($data);
 	}
 
-	public function get_owner($id)
+	public function get_employee($id)
 	{
 		if (empty($id)) {
 			return false;
@@ -55,14 +55,14 @@ class Owner_model extends MY_Model {
 		return $this->get($id);
 	}
 
-	public function fetch_owners($fields = array(), $params = array()) {
+	public function fetch_employees($fields = array(), $params = array()) {
 		if (!empty($fields)) {
 			$this->db->select($fields);
 		} else {
 			$this->db->select('*');
 		}
 
-		$this->db->from('owners');
+		$this->db->from('employees');
 
 		if (!empty($params)) {
 			$this->db->where($params);
@@ -72,14 +72,14 @@ class Owner_model extends MY_Model {
 		return $result->result_array();
 	}
 
-	public function fetch_owners_raw($fields = array(), $params = array()) {
+	public function fetch_employees_raw($fields = array(), $params = array()) {
 		$queryStr = '';
 		$select = '*';
 		if (!empty($fields)) {
 			$select = implode(', ', $fields);
 		}
 		$select .= ', CONCAT(`firstname`, " ", `lastname`) AS fullname';
-		$queryStr = 'SELECT '.$select.' FROM owners';
+		$queryStr = 'SELECT '.$select.' FROM employees';
 
 		if (!empty($params)) {
 			$conditions = array();
@@ -119,13 +119,13 @@ class Owner_model extends MY_Model {
 		return $result->result_array();
 	}
 
-	public function update_info($owner_id, $data)
+	public function update_info($employee_id, $data)
 	{
-		return $this->update($owner_id, $data);
+		return $this->update($employee_id, $data);
 	}
 
-	public function change_password($owner_id, $password) {
+	public function change_password($employee_id, $password) {
 		$hashed = password_hash($password, PASSWORD_DEFAULT);
 		return $this->update_field($user_id, 'password', $hashed);
 	}
-}
+} 

@@ -10,11 +10,60 @@ class Employees extends Admin_Controller {
 		$this->load->database();
 		$this->load->library('form_builder');
 		$this->load->library('pagination');
-		// $this->load->model('Property_model', 'Property');
+		$this->load->model('Employee_model', 'Employee');
 	}
 	
 	public function index()
 	{
+		$urlQuery = $this->input->get();
+		$this->mTitle = "Employees";
+
+		// - get fields
+		$fields = array(
+			'employees.*'
+		);
+
+		$params = array(
+			// 'status' => USER_ACTIVE
+		);
+
+		if (!empty($urlQuery['name'])) {
+			$params['LIKE']['fullname'] = $urlQuery['name'];
+		}
+		if (!empty($urlQuery['email'])) {
+			$params['LIKE']['email'] = $urlQuery['email'];
+		}
+		if (!empty($urlQuery['contact_number'])) {
+			$params['LIKE']['contact_number'] = $urlQuery['contact_number'];
+		}
+		if (!empty($urlQuery['address'])) {
+			$params['LIKE']['address'] = $urlQuery['address'];
+		}
+		if (!empty($urlQuery['status'])) {
+			$params['status'] = $urlQuery['status'];
+		}
+		if (!empty($urlQuery['gender'])) {
+			$params['gender'] = $urlQuery['gender'];
+		}
+
+		$employees = $this->Employee->fetch_employees_raw($fields, $params);
+
+		if (!empty($employees)) {
+			foreach ($employees as $key => $employee) {
+				$fName = !empty($employee['firstname']) ? ucfirst($employee['firstname']) : '';
+				$lName = !empty($employee['lastname']) ? ucfirst($employee['lastname']) : '';
+				$employees[$key]['fullname'] = $fName.' '.$lName;
+			}
+		}
+
+		$setData = array(
+			'employees' => $employees,
+			'urlQuery' => $urlQuery
+		);
+
+
+		$this->mViewData = $setData;
+		$this->render('employees/index');
 
 		$viewData = array(
 		);

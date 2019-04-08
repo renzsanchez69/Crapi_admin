@@ -11,7 +11,7 @@
 }
 .container {
   border: 2px solid #888888;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   box-shadow: 2px 4px #888888;
   margin: auto;
   position: relative;
@@ -32,10 +32,10 @@
   margin-top: 5%;
   font-weight: bold;
   font-size: 1em;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
   border: none;
   padding: 10px 20px;
-  background-color: green;
+  /*background-color: green;*/
 }
 </style>
 <div class="box">
@@ -49,7 +49,7 @@
 		<?php echo $form->messages(); ?>
 	    <input type="text" placeholder="Enter username..." name="username" required="">
 	    <input type="password" placeholder="Enter password..." name="password" required="">
-	    <button class="submit" name="login_btn">LOGIN</button> 
+	    <button class="submit btn-success" name="login_btn">LOGIN</button> 
 	</form>
 </div>
 

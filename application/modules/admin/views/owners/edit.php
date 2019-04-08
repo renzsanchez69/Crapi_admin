@@ -2,30 +2,31 @@
 <?php echo $formInfo->messages(); ?>
 <div class="row">
 	<div class="col-6">
+		<h3>Update Information</h3><hr>
 		<?php echo $formInfo->open(); ?>
 			<div class="row">
-				<div class="col-10">
+				<div class="col-12">
 					<div class="form-group">
 						<label for="email" class="control-label">Email Address</label>
-						<input class="form-control" name="email" type="text" value="<?php echo isset($userInfo->email) ? $userInfo->email : ''; ?>" id="email">
+						<input class="form-control" name="email" type="text" value="<?php echo isset($ownerInfo->email) ? $ownerInfo->email : ''; ?>" id="email">
 					</div>
 
 					<div class="form-group">
 						<label for="username" class="control-label">Username</label>
-						<input class="form-control" name="username" type="text" value="<?php echo isset($userInfo->username) ? $userInfo->username : ''; ?>" id="username">
+						<input class="form-control" name="username" type="text" value="<?php echo isset($ownerInfo->username) ? $ownerInfo->username : ''; ?>" id="username">
 					</div>
 					<div class="row">
 						<div class="col">
 							<div class="form-group">
 								<label for="firstname" class="control-label">First Name</label>
-								<input class="form-control" name="firstname" type="text" value="<?php echo isset($userInfo->firstname) ? $userInfo->firstname : ''; ?>" id="firstname">
+								<input class="form-control" name="firstname" type="text" value="<?php echo isset($ownerInfo->firstname) ? $ownerInfo->firstname : ''; ?>" id="firstname">
 							</div>
 						</div>
 
 						<div class="col">
 							<div class="form-group">
 								<label for="lastname" class="control-label">Last Name</label>
-								<input class="form-control" name="lastname" type="text" value="<?php echo isset($userInfo->lastname) ? $userInfo->lastname : ''; ?>" id="lastname">
+								<input class="form-control" name="lastname" type="text" value="<?php echo isset($ownerInfo->lastname) ? $ownerInfo->lastname : ''; ?>" id="lastname">
 							</div>
 						</div>
 					</div>
@@ -36,7 +37,7 @@
 								<label for="gender" class="control-label">Gender</label>
 								<select class="custom-select" id="gender" name="gender">
 									<?php foreach ($genderSelect as $key => $value): ?>
-										<?php if (isset($userInfo->gender) && $userInfo->gender == $key): ?>
+										<?php if (isset($ownerInfo->gender) && $ownerInfo->gender == $key): ?>
 											<option value="<?php echo $key; ?>" selected="selected"><?php echo $value; ?></option>
 										<?php else: ?>
 											<option value="<?php echo $key; ?>"><?php echo $value; ?></option>
@@ -49,25 +50,24 @@
 						<div class="col">
 							<div class="form-group">
 								<label for="contact_number" class="control-label">Contact Number</label>
-								<input class="form-control" name="contact_number" type="text" value="<?php echo isset($userInfo->contact_number) ? $userInfo->contact_number : ''; ?>" id="contact_number">
+								<input class="form-control" name="contact_number" type="text" value="<?php echo isset($ownerInfo->contact_number) ? $ownerInfo->contact_number : ''; ?>" id="contact_number">
 							</div>
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label for="address" class="control-label">Address</label>
-						<textarea class="form-control" rows="4" name="address" cols="50" id="address"><?php echo isset($userInfo->address) ? $userInfo->address : ''; ?></textarea>
+						<textarea class="form-control" rows="4" name="address" cols="50" id="address"><?php echo isset($ownerInfo->address) ? $ownerInfo->address : ''; ?></textarea>
 					</div>
 				</div>
 			</div>
 			<hr>
-			<button type="submit" class="btn btn-primary" id="updBtn">Save</button>
+			<button type="submit" class="btn btn-success btn-block" id="updBtn">Save</button>
 		<?php echo $formInfo->close(); ?>
 	</div>
-	<!-- <div class="col-6">
+	<div class="col-6">
 		<h3>Change password</h3><hr>
 		<?php echo $formPass->open(); ?>
-			<div class="col-8">
 				<div class="row">
 					<div class="col-12">
 						<div class="form-group">
@@ -82,20 +82,19 @@
 						</div>
 					</div>
 				</div>
-			</div>
 			<hr>
-			<button type="submit" class="btn btn-success">Save</button>
+			<button type="submit" class="btn btn-success btn-block">Update Password</button>
 		<?php echo $formPass->close(); ?>
-	</div> -->
+	</div>
 </div>
 
 <script type="text/javascript">
-	$('#updBtn').on('click', function(e){
+	$('[type="submit"]').on('click', function(e){
 		e.preventDefault();
 
 		var response = confirm('Update information?');
 		if (response) {
-			$('form').submit();
+			$(this).closest('form').submit();
 		};
 	});
 </script>

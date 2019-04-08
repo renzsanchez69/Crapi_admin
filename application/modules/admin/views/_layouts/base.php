@@ -13,7 +13,7 @@
 	-- https://getbootstrap.com/docs/4.1/examples/dashboard/# -->
 
 	<link href='<?php echo base_url('assets/css/bootstrap.min.css'); ?>' rel='stylesheet'>
-	<link href='<?php echo base_url('assets/css/fontawesome.min.css'); ?>' rel='stylesheet'>
+	<link href='<?php echo base_url('assets/css/fontawesome-all.min.css'); ?>' rel='stylesheet'>
 	<link href='<?php echo base_url('assets/css/admin/dashboard.css'); ?>' rel='stylesheet'>
 	<link href='<?php echo base_url('assets/css/admin/custom.css'); ?>' rel='stylesheet'>
 

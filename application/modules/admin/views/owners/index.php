@@ -1,6 +1,9 @@
 <?php $this->layout('layouts::default'); ?>
+
+<center><h1>Owners List</h1></center>
+
 <div class="card">
-	<div class="card-body bg-dark text-white">
+	<div class="card-body">
 		<form method="GET" action="<?php echo base_url(); ?>admin/owners" accept-charset="UTF-8" class=" mb-2 mt-2">
 			<div class="form-group row">
 				<label class="col-sm-2 col-form-label-sm">Name</label>
@@ -55,49 +58,46 @@
 		</form>
 	</div>
 </div>
-<!-- users table -->
+<!-- owners table -->
 <table class="table table-bordered table-sm mt-2">
     <thead>
         <tr>
-            <th class="bg-dark text-white">Name</th>
-            <th class="bg-dark text-white">Gender</th>
-            <th class="bg-dark text-white">Email</th>
-            <th class="bg-dark text-white">Address</th>
-            <th class="bg-dark text-white">Contact Number</th>
-            <th class="bg-dark text-white">Status</th>
-            <th class="row-actions bg-dark text-white"></th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Contact Number</th>
+            <th>Status</th>
         </tr>
     </thead>
     <tbody>
-    	<!-- user data looping -->
-    	<?php foreach ($users as $user): ?>
+    	<!-- owner data looping -->
+    	<?php foreach ($owners as $owner): ?>
 
-    		<tr id="idx_user_<?php echo $user['id']; ?>">
-				<td><?php echo !empty($user['fullname']) ? $user['fullname'] : '--'; ?></td>
+    		<tr id="idx_owner_<?php echo $owner['id']; ?>">
+				<td><a href="<?php echo base_url(); ?>admin/owners/edit/<?php echo $owner['id']; ?>" class=""><i class="fa fa-pencil-alt"></i> <?php echo !empty($owner['id']) ? $owner['id'] : '--'; ?></a></td>
+				<td><?php echo !empty($owner['fullname']) ? $owner['fullname'] : '--'; ?></td>
 				<td>
-					<?php if (!empty($user['gender']) && $user['gender'] == GENDER_FEMALE): ?>
+					<?php if (!empty($owner['gender']) && $owner['gender'] == GENDER_FEMALE): ?>
 						<span class="fa fa-venus"></span> 
-					<?php elseif (!empty($user['gender']) && $user['gender'] == GENDER_MALE): ?>
+					<?php elseif (!empty($owner['gender']) && $owner['gender'] == GENDER_MALE): ?>
 						<span class="fa fa-mars"></span> 
 					<?php endif ?>
-					<?php echo !empty($user['gender']) ? ucfirst($user['gender']) : '--'; ?>
+					<?php echo !empty($owner['gender']) ? ucfirst($owner['gender']) : '--'; ?>
 				</td>
 				<td>
-					<?php echo !empty($user['email']) ? $user['email'] : '--'; ?>
+					<?php echo !empty($owner['email']) ? $owner['email'] : '--'; ?>
 				</td>
-				<td><?php echo !empty($user['address']) ? $user['address'] : '--'; ?></td>
-				<td><?php echo !empty($user['contact_number']) ? $user['contact_number'] : '--'; ?></td>
+				<td><?php echo !empty($owner['address']) ? $owner['address'] : '--'; ?></td>
+				<td><?php echo !empty($owner['contact_number']) ? $owner['contact_number'] : '--'; ?></td>
 				<td>
-					<?php if (isset($user['status']) && $user['status'] == USER_ACTIVE): ?>
+					<?php if (isset($owner['status']) && $owner['status'] == USER_ACTIVE): ?>
 						<span class="badge badge-success">Active</span>
-					<?php elseif (isset($user['status']) && $user['status'] == USER_STOP): ?>
+					<?php elseif (isset($owner['status']) && $owner['status'] == USER_STOP): ?>
 						<span class="badge badge-danger">Deactivated</span>
 					<?php endif ?>
 
-				</td>
-				<td>
-					<!-- <a href="<?php echo base_url(); ?>admin/users/edit/<?php echo $user['id']; ?>" class="btn btn-info btn-sm btn-block mb-1"><i class="fa fa-pencil-alt"></i> Edit</a>
-					<button class="btn btn-primary btn-block btn-sm deleteUserBtn" data-id="<?php echo $user['id']; ?>"><i class="fa fa-trash"></i> Delete</button> -->
 				</td>
 			</tr>
     	<?php endforeach ?>
@@ -106,7 +106,7 @@
 
 <script type="text/javascript">
 	var anti_spam = false;
-	$('.deleteUserBtn').on('click', function(){
+	$('.deleteOwnerBtn').on('click', function(){
 		// - prevent spamming 
 		if (anti_spam) {
 			return;
@@ -117,24 +117,24 @@
 			return;
 		}
 
-		var	userId = $(this).data('id');
+		var	ownerId = $(this).data('id');
 		anti_spam = true;
 
 		$.ajax({
 			method: "POST",
-			url: "users/delete_user",
-			data: { id: userId}
+			url: "owners/delete_owner",
+			data: { id: ownerId}
 		})
 		.done(function(data){
 			var dataObj = JSON.parse(data);
 			console.log(data);
-			console.log('.idx_user_'+userId);
+			console.log('.idx_owner_'+ownerId);
 			console.log(dataObj);
 
 			if (dataObj.result == 'OK') {
-				$('#idx_user_'+userId).remove();
+				$('#idx_owner_'+ownerId).remove();
 			} else {
-				alert("Failed to delete user!");
+				alert("Failed to delete owner!");
 			}
 			
 		})

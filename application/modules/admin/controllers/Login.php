@@ -30,7 +30,7 @@ class Login extends MY_Controller {
 			if ( empty($user) )
 			{
 				// login failed
-				$this->system_message->set_error('Invalid Login');
+				$this->system_message->set_error('<b>Failed to login your account</b>.<br> Please check your username and password.');
 				refresh();
 			}
 			else

@@ -15,7 +15,7 @@ class Owners extends Admin_Controller {
 	public function index()
 	{
 		$urlQuery = $this->input->get();
-		$this->mTitle = "Users";
+		$this->mTitle = "Owners";
 
 		// - get fields
 		$fields = array(
@@ -45,37 +45,37 @@ class Owners extends Admin_Controller {
 			$params['gender'] = $urlQuery['gender'];
 		}
 
-		$owners = $this->Owner->fetch_users_raw($fields, $params);
+		$owners = $this->Owner->fetch_owners_raw($fields, $params);
 
 		if (!empty($owners)) {
-			foreach ($owners as $key => $user) {
-				$fName = !empty($user['firstname']) ? ucfirst($user['firstname']) : '';
-				$lName = !empty($user['lastname']) ? ucfirst($user['lastname']) : '';
-				$users[$key]['fullname'] = $fName.' '.$lName;
+			foreach ($owners as $key => $owner) {
+				$fName = !empty($owner['firstname']) ? ucfirst($owner['firstname']) : '';
+				$lName = !empty($owner['lastname']) ? ucfirst($owner['lastname']) : '';
+				$owners[$key]['fullname'] = $fName.' '.$lName;
 			}
 		}
 
 		$setData = array(
-			'users' => $owners,
+			'owners' => $owners,
 			'urlQuery' => $urlQuery
 		);
 
 
 		$this->mViewData = $setData;
-		$this->render('users/index');
+		$this->render('owners/index');
 	}
 
 	public function edit($id)
 	{
 		$this->mTitle = "Edit";
-		$this->push_breadcrumb('Users', base_url('admin/users'));
+		
 		$formInfo = $this->form_builder->create_form();
-		$formPass = $this->form_builder->create_form('admin/user/change_pass/'.$id);
+		$formPass = $this->form_builder->create_form('admin/owners/change_pass/'.$id);
 
-		$user = $this->user->get_user($id);
+		$owner = $this->Owner->get_owner($id);
 		$genderSelection = unserialize(GENDER_SELECTION);
 		$setData = array(
-			'userInfo' => $user,
+			'ownerInfo' => $owner,
 			'genderSelect' => $genderSelection,
 			'formInfo' => $formInfo,
 			'formPass' => $formPass
@@ -95,7 +95,7 @@ class Owners extends Admin_Controller {
 			$validation = $this->checkRequiredFields($postData, $requiredFields);
 
 			// - check username availabity
-			$unameAvail = $this->user->fetch_users(array('id'), array('username' => $postData['username']));
+			$unameAvail = $this->Owner->fetch_owners(array('id'), array('username' => $postData['username']));
 			if (!empty($unameAvail) && (isset($unameAvail['id']) && $unameAvail['id'] != $id)) {
 				$this->system_message->set_error('Username already taken.');
 				refresh();
@@ -106,7 +106,7 @@ class Owners extends Admin_Controller {
 				refresh();
 			}
 
-			$res = $this->user->update_info($id, $postData);
+			$res = $this->Owner->update_info($id, $postData);
 			if ($res) {
 				$this->system_message->set_success('Successfully updated!');
 			} else {
@@ -116,7 +116,7 @@ class Owners extends Admin_Controller {
 		}
 
 		$this->mViewData = $setData;
-		$this->render('users/edit');
+		$this->render('owners/edit');
 	}
 
 	public function change_pass($id)
@@ -132,27 +132,28 @@ class Owners extends Admin_Controller {
 
 			if (isset($validation['hasError']) && $validation['hasError'] == true) {
 				$this->system_message->set_error(implode('<br>', $validation['message']));
-				redirect('admin/user/edit/'.$id, 'refresh');
+				redirect('admin/owners/edit/'.$id, 'refresh');
 			}
 
 			if ($postData['password'] != $postData['password_confirmation']) {
 				$this->system_message->set_error('Password does not match the confirm password.');
-				redirect('admin/user/edit/'.$id, 'refresh');
+				redirect('admin/owners/edit/'.$id, 'refresh');
 			}
 
 			$hashed = password_hash($postData['password'], PASSWORD_DEFAULT);
 
-			$res = $this->user->update_info($id, array('password' => $hashed));
+			$res = $this->Owner->update_info($id, array('password' => $hashed));
 			if ($res) {
 				$this->system_message->set_success('Successfully updated!');
 			} else {
 				$this->system_message->set_error('Failed to update!');
 			}
-			redirect('admin/user/edit/'.$id, 'refresh');
+			redirect('admin/owners/edit/'.$id, 'refresh');
 		}
+		redirect('admin/owners/edit/'.$id, 'refresh');
 	}
 
-	public function delete_user()
+	public function delete_owner()
 	{
 		// - allow ajax request only
 		if (!$this->input->is_ajax_request()) {
@@ -166,7 +167,7 @@ class Owners extends Admin_Controller {
 			exit;
 		}
 
-		$res = $this->user->update_info($postData['id'], array('status' => USER_STOP));
+		$res = $this->Owner->update_info($postData['id'], array('status' => USER_STOP));
 
 		if ($res) {
 			echo json_encode(array('result' => 'OK'));

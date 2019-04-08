@@ -61,3 +61,8 @@
 
   src: url('https://cdn.useloom.com/assets/fonts/inter/Inter-UI-BlackItalic.woff2') format('woff2');
 }
+
+
+.alert > p {
+  margin: 0;
+}
