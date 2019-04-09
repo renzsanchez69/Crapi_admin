@@ -78,3 +78,7 @@ $route['ajax/submit_rating'] 		= "attraction/submit_rating";
 $route['register']					= "account/sign_up";
 $route['logout']					= "account/logout";
 $route['profile']					= "account/profile";
+
+// API CraPi
+$route['users']						= "home/users";
+$route['orders']					= "orders/order_list";
