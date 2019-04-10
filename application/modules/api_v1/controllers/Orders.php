@@ -33,6 +33,7 @@ class Orders extends API_Controller {
 	public function order_search()
 	{
 		//$_POST["search"] -> post request for search
+		//$_POST["token"] -> post request for search
 		$myArr = [
 	        "data"=>[
 	        	['id' => 1,'food_name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
@@ -42,6 +43,7 @@ class Orders extends API_Controller {
 	    ];
 		$this->to_response($myArr);
 	}
+	
 	public function order_delete()
 	{
 		//$_POST["oid"] -> post request for delete

@@ -80,5 +80,16 @@ $route['logout']					= "account/logout";
 $route['profile']					= "account/profile";
 
 // API CraPi
+
+// users api
 $route['users']						= "home/users";
+
+// orders api
 $route['orders']					= "orders/order_list";
+
+// customers api
+$route['customers']					= "customers/users";
+
+// customers api
+$route['products']					= "products/product_list";
+$route['products']					= "products/product_search";
