@@ -9,14 +9,20 @@ class Customer_model extends MY_Model {
 	/**
 	 * Authentication
 	 */
-	public function login($username, $password)
+	public function login($email, $password)
 	{
 		// only activated user can login
-		$where = array('username' => $username, 'status' => USER_ACTIVE);
+		$where = array('email' => $email, 'status' => USER_ACTIVE);
 		$customer = $this->get_by($where);
 		
 		if ( !empty($customer) && password_verify($password, $customer->password) )
 		{
+			// - create login_token
+			$login_token = bin2hex(mcrypt_create_iv(22, MCRYPT_DEV_URANDOM));
+			$data = ['login_token' => $login_token];
+			$this->update_info($customer->id, $data);
+			$customer->login_token = $login_token;
+			
 			// success - return customer object without password field
 			unset($customer->password);
 			return $customer;

@@ -9,10 +9,10 @@ class Employee_model extends MY_Model {
 	/**
 	 * Authentication
 	 */
-	public function login($username, $password)
+	public function login($email, $password)
 	{
 		// only activated user can login
-		$where = array('username' => $username, 'status' => USER_ACTIVE);
+		$where = array('email' => $email, 'status' => USER_ACTIVE);
 		$employee = $this->get_by($where);
 		
 		if ( !empty($employee) && password_verify($password, $employee->password) )

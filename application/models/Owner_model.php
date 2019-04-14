@@ -9,10 +9,10 @@ class Owner_model extends MY_Model {
 	/**
 	 * Authentication
 	 */
-	public function login($username, $password)
+	public function login($email, $password)
 	{
 		// only activated user can login
-		$where = array('username' => $username, 'status' => USER_ACTIVE);
+		$where = array('email' => $email, 'status' => USER_ACTIVE);
 		$owner = $this->get_by($where);
 		
 		if ( !empty($owner) && password_verify($password, $owner->password) )

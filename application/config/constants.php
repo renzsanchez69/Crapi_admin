@@ -107,8 +107,9 @@ define('GENDER_MALE', 'male');
 define('GENDER_FEMALE', 'female');
 define('GENDER_SELECTION', serialize(array('' => '---', 'male' => 'Male', 'female' => 'Female')));
 
-define('ROLE_USER', 'user');
-define('ROLE_SELLER', 'seller');
+define('ROLE_EMPLOYEE', 'employee');
+define('ROLE_OWNER', 'owner');
+define('ROLE_CUSTOMER', 'customer');
 define('ROLE_ADMIN', 'admin');
 
 // - user status 
