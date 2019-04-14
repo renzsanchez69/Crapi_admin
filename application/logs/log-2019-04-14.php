@@ -5646,3 +5646,529 @@ INFO - 2019-04-14 18:07:06 --> Model Class Initialized
 INFO - 2019-04-14 18:07:06 --> Model Class Initialized
 INFO - 2019-04-14 18:07:06 --> Final output sent to browser
 DEBUG - 2019-04-14 18:07:06 --> Total execution time: 0.8268
+INFO - 2019-04-14 12:13:52 --> Config Class Initialized
+INFO - 2019-04-14 12:13:52 --> Hooks Class Initialized
+DEBUG - 2019-04-14 12:13:52 --> UTF-8 Support Enabled
+INFO - 2019-04-14 12:13:52 --> Utf8 Class Initialized
+INFO - 2019-04-14 12:13:52 --> URI Class Initialized
+INFO - 2019-04-14 12:13:52 --> Router Class Initialized
+INFO - 2019-04-14 12:13:52 --> Output Class Initialized
+INFO - 2019-04-14 12:13:52 --> Security Class Initialized
+DEBUG - 2019-04-14 12:13:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-04-14 12:13:52 --> Input Class Initialized
+INFO - 2019-04-14 12:13:52 --> Language Class Initialized
+INFO - 2019-04-14 12:13:53 --> Language Class Initialized
+INFO - 2019-04-14 12:13:53 --> Config Class Initialized
+INFO - 2019-04-14 12:13:53 --> Loader Class Initialized
+DEBUG - 2019-04-14 12:13:53 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-04-14 12:13:53 --> Helper loaded: url_helper
+INFO - 2019-04-14 12:13:53 --> Helper loaded: inflector_helper
+INFO - 2019-04-14 12:13:53 --> Helper loaded: string_helper
+INFO - 2019-04-14 12:13:53 --> Helper loaded: array_helper
+INFO - 2019-04-14 12:13:53 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-04-14 12:13:53 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-04-14 12:13:53 --> Database Driver Class Initialized
+INFO - 2019-04-14 12:13:53 --> Controller Class Initialized
+INFO - 2019-04-14 18:13:53 --> Helper loaded: language_helper
+INFO - 2019-04-14 18:13:53 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-14 18:13:53 --> Model Class Initialized
+INFO - 2019-04-14 18:13:53 --> Model Class Initialized
+INFO - 2019-04-14 18:13:53 --> Model Class Initialized
+INFO - 2019-04-14 18:13:53 --> Model Class Initialized
+INFO - 2019-04-14 18:13:53 --> Final output sent to browser
+DEBUG - 2019-04-14 18:13:53 --> Total execution time: 0.6221
+INFO - 2019-04-14 12:15:03 --> Config Class Initialized
+INFO - 2019-04-14 12:15:03 --> Hooks Class Initialized
+DEBUG - 2019-04-14 12:15:03 --> UTF-8 Support Enabled
+INFO - 2019-04-14 12:15:03 --> Utf8 Class Initialized
+INFO - 2019-04-14 12:15:03 --> URI Class Initialized
+INFO - 2019-04-14 12:15:03 --> Router Class Initialized
+INFO - 2019-04-14 12:15:03 --> Output Class Initialized
+INFO - 2019-04-14 12:15:03 --> Security Class Initialized
+DEBUG - 2019-04-14 12:15:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-04-14 12:15:03 --> Input Class Initialized
+INFO - 2019-04-14 12:15:03 --> Language Class Initialized
+INFO - 2019-04-14 12:15:03 --> Language Class Initialized
+INFO - 2019-04-14 12:15:03 --> Config Class Initialized
+INFO - 2019-04-14 12:15:03 --> Loader Class Initialized
+DEBUG - 2019-04-14 12:15:03 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-04-14 12:15:03 --> Helper loaded: url_helper
+INFO - 2019-04-14 12:15:03 --> Helper loaded: inflector_helper
+INFO - 2019-04-14 12:15:03 --> Helper loaded: string_helper
+INFO - 2019-04-14 12:15:03 --> Helper loaded: array_helper
+INFO - 2019-04-14 12:15:03 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-04-14 12:15:03 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-04-14 12:15:03 --> Database Driver Class Initialized
+INFO - 2019-04-14 12:15:03 --> Controller Class Initialized
+INFO - 2019-04-14 18:15:03 --> Helper loaded: language_helper
+INFO - 2019-04-14 18:15:03 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-14 18:15:03 --> Model Class Initialized
+INFO - 2019-04-14 18:15:03 --> Model Class Initialized
+INFO - 2019-04-14 18:15:03 --> Model Class Initialized
+INFO - 2019-04-14 18:15:03 --> Model Class Initialized
+INFO - 2019-04-14 18:15:03 --> Final output sent to browser
+DEBUG - 2019-04-14 18:15:03 --> Total execution time: 0.4648
+INFO - 2019-04-14 12:15:59 --> Config Class Initialized
+INFO - 2019-04-14 12:15:59 --> Hooks Class Initialized
+DEBUG - 2019-04-14 12:15:59 --> UTF-8 Support Enabled
+INFO - 2019-04-14 12:15:59 --> Utf8 Class Initialized
+INFO - 2019-04-14 12:15:59 --> URI Class Initialized
+INFO - 2019-04-14 12:15:59 --> Router Class Initialized
+INFO - 2019-04-14 12:15:59 --> Output Class Initialized
+INFO - 2019-04-14 12:15:59 --> Security Class Initialized
+DEBUG - 2019-04-14 12:15:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-04-14 12:15:59 --> Input Class Initialized
+INFO - 2019-04-14 12:15:59 --> Language Class Initialized
+INFO - 2019-04-14 12:15:59 --> Language Class Initialized
+INFO - 2019-04-14 12:15:59 --> Config Class Initialized
+INFO - 2019-04-14 12:15:59 --> Loader Class Initialized
+DEBUG - 2019-04-14 12:15:59 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-04-14 12:15:59 --> Helper loaded: url_helper
+INFO - 2019-04-14 12:15:59 --> Helper loaded: inflector_helper
+INFO - 2019-04-14 12:15:59 --> Helper loaded: string_helper
+INFO - 2019-04-14 12:15:59 --> Helper loaded: array_helper
+INFO - 2019-04-14 12:15:59 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-04-14 12:15:59 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-04-14 12:15:59 --> Database Driver Class Initialized
+INFO - 2019-04-14 12:15:59 --> Controller Class Initialized
+INFO - 2019-04-14 18:15:59 --> Helper loaded: language_helper
+INFO - 2019-04-14 18:15:59 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-14 18:15:59 --> Model Class Initialized
+INFO - 2019-04-14 18:15:59 --> Model Class Initialized
+INFO - 2019-04-14 18:15:59 --> Model Class Initialized
+INFO - 2019-04-14 18:15:59 --> Model Class Initialized
+INFO - 2019-04-14 18:15:59 --> Final output sent to browser
+DEBUG - 2019-04-14 18:15:59 --> Total execution time: 0.7377
+INFO - 2019-04-14 13:21:08 --> Config Class Initialized
+INFO - 2019-04-14 13:21:09 --> Hooks Class Initialized
+INFO - 2019-04-14 13:21:09 --> Config Class Initialized
+INFO - 2019-04-14 13:21:09 --> Config Class Initialized
+INFO - 2019-04-14 13:21:09 --> Hooks Class Initialized
+INFO - 2019-04-14 13:21:09 --> Hooks Class Initialized
+DEBUG - 2019-04-14 13:21:09 --> UTF-8 Support Enabled
+DEBUG - 2019-04-14 13:21:09 --> UTF-8 Support Enabled
+DEBUG - 2019-04-14 13:21:09 --> UTF-8 Support Enabled
+INFO - 2019-04-14 13:21:09 --> Utf8 Class Initialized
+INFO - 2019-04-14 13:21:09 --> Utf8 Class Initialized
+INFO - 2019-04-14 13:21:09 --> Utf8 Class Initialized
+INFO - 2019-04-14 13:21:09 --> URI Class Initialized
+INFO - 2019-04-14 13:21:09 --> URI Class Initialized
+INFO - 2019-04-14 13:21:09 --> URI Class Initialized
+INFO - 2019-04-14 13:21:09 --> Router Class Initialized
+INFO - 2019-04-14 13:21:09 --> Router Class Initialized
+INFO - 2019-04-14 13:21:09 --> Router Class Initialized
+INFO - 2019-04-14 13:21:10 --> Output Class Initialized
+INFO - 2019-04-14 13:21:10 --> Output Class Initialized
+INFO - 2019-04-14 13:21:10 --> Output Class Initialized
+INFO - 2019-04-14 13:21:10 --> Security Class Initialized
+INFO - 2019-04-14 13:21:10 --> Security Class Initialized
+INFO - 2019-04-14 13:21:10 --> Security Class Initialized
+DEBUG - 2019-04-14 13:21:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2019-04-14 13:21:10 --> Global POST, GET and COOKIE data sanitized
+DEBUG - 2019-04-14 13:21:10 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-04-14 13:21:10 --> Input Class Initialized
+INFO - 2019-04-14 13:21:10 --> Input Class Initialized
+INFO - 2019-04-14 13:21:10 --> Input Class Initialized
+INFO - 2019-04-14 13:21:10 --> Language Class Initialized
+INFO - 2019-04-14 13:21:10 --> Language Class Initialized
+INFO - 2019-04-14 13:21:10 --> Language Class Initialized
+INFO - 2019-04-14 13:21:10 --> Language Class Initialized
+INFO - 2019-04-14 13:21:10 --> Language Class Initialized
+INFO - 2019-04-14 13:21:10 --> Language Class Initialized
+INFO - 2019-04-14 13:21:10 --> Config Class Initialized
+INFO - 2019-04-14 13:21:10 --> Config Class Initialized
+INFO - 2019-04-14 13:21:10 --> Config Class Initialized
+INFO - 2019-04-14 13:21:10 --> Loader Class Initialized
+INFO - 2019-04-14 13:21:10 --> Loader Class Initialized
+INFO - 2019-04-14 13:21:10 --> Loader Class Initialized
+DEBUG - 2019-04-14 13:21:10 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+DEBUG - 2019-04-14 13:21:10 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+DEBUG - 2019-04-14 13:21:10 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-04-14 13:21:10 --> Helper loaded: url_helper
+INFO - 2019-04-14 13:21:10 --> Helper loaded: url_helper
+INFO - 2019-04-14 13:21:10 --> Helper loaded: url_helper
+INFO - 2019-04-14 13:21:10 --> Helper loaded: inflector_helper
+INFO - 2019-04-14 13:21:10 --> Helper loaded: inflector_helper
+INFO - 2019-04-14 13:21:10 --> Helper loaded: inflector_helper
+INFO - 2019-04-14 13:21:11 --> Helper loaded: string_helper
+INFO - 2019-04-14 13:21:11 --> Helper loaded: string_helper
+INFO - 2019-04-14 13:21:11 --> Helper loaded: string_helper
+INFO - 2019-04-14 13:21:11 --> Helper loaded: array_helper
+INFO - 2019-04-14 13:21:11 --> Helper loaded: array_helper
+INFO - 2019-04-14 13:21:11 --> Helper loaded: array_helper
+INFO - 2019-04-14 13:21:11 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-04-14 13:21:11 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-04-14 13:21:11 --> Database Driver Class Initialized
+INFO - 2019-04-14 13:21:11 --> Controller Class Initialized
+INFO - 2019-04-14 19:21:12 --> Helper loaded: language_helper
+INFO - 2019-04-14 19:21:12 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-14 19:21:12 --> Model Class Initialized
+INFO - 2019-04-14 19:21:12 --> Model Class Initialized
+INFO - 2019-04-14 19:21:12 --> Model Class Initialized
+INFO - 2019-04-14 19:21:12 --> Model Class Initialized
+INFO - 2019-04-14 19:21:12 --> Final output sent to browser
+DEBUG - 2019-04-14 19:21:12 --> Total execution time: 3.7314
+INFO - 2019-04-14 13:21:12 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-04-14 13:21:12 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-04-14 13:21:12 --> Database Driver Class Initialized
+INFO - 2019-04-14 13:21:12 --> Controller Class Initialized
+INFO - 2019-04-14 19:21:12 --> Helper loaded: language_helper
+INFO - 2019-04-14 19:21:12 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-14 19:21:12 --> Model Class Initialized
+INFO - 2019-04-14 19:21:12 --> Model Class Initialized
+INFO - 2019-04-14 19:21:12 --> Model Class Initialized
+INFO - 2019-04-14 19:21:12 --> Model Class Initialized
+INFO - 2019-04-14 19:21:12 --> Final output sent to browser
+DEBUG - 2019-04-14 19:21:12 --> Total execution time: 4.0663
+INFO - 2019-04-14 13:21:12 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-04-14 13:21:12 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-04-14 13:21:12 --> Database Driver Class Initialized
+INFO - 2019-04-14 13:21:12 --> Controller Class Initialized
+INFO - 2019-04-14 19:21:12 --> Helper loaded: language_helper
+INFO - 2019-04-14 19:21:12 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-14 19:21:12 --> Model Class Initialized
+INFO - 2019-04-14 19:21:13 --> Model Class Initialized
+INFO - 2019-04-14 19:21:13 --> Model Class Initialized
+INFO - 2019-04-14 19:21:13 --> Model Class Initialized
+INFO - 2019-04-14 19:21:13 --> Final output sent to browser
+DEBUG - 2019-04-14 19:21:13 --> Total execution time: 4.3990
+INFO - 2019-04-14 13:22:58 --> Config Class Initialized
+INFO - 2019-04-14 13:22:59 --> Hooks Class Initialized
+DEBUG - 2019-04-14 13:22:59 --> UTF-8 Support Enabled
+INFO - 2019-04-14 13:22:59 --> Utf8 Class Initialized
+INFO - 2019-04-14 13:22:59 --> URI Class Initialized
+INFO - 2019-04-14 13:22:59 --> Router Class Initialized
+INFO - 2019-04-14 13:22:59 --> Output Class Initialized
+INFO - 2019-04-14 13:22:59 --> Security Class Initialized
+DEBUG - 2019-04-14 13:22:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-04-14 13:22:59 --> Input Class Initialized
+INFO - 2019-04-14 13:22:59 --> Language Class Initialized
+INFO - 2019-04-14 13:22:59 --> Language Class Initialized
+INFO - 2019-04-14 13:22:59 --> Config Class Initialized
+INFO - 2019-04-14 13:22:59 --> Loader Class Initialized
+DEBUG - 2019-04-14 13:22:59 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-04-14 13:22:59 --> Helper loaded: url_helper
+INFO - 2019-04-14 13:22:59 --> Helper loaded: inflector_helper
+INFO - 2019-04-14 13:22:59 --> Helper loaded: string_helper
+INFO - 2019-04-14 13:22:59 --> Helper loaded: array_helper
+INFO - 2019-04-14 13:22:59 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-04-14 13:22:59 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-04-14 13:22:59 --> Database Driver Class Initialized
+INFO - 2019-04-14 13:22:59 --> Controller Class Initialized
+INFO - 2019-04-14 19:22:59 --> Helper loaded: language_helper
+INFO - 2019-04-14 19:22:59 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-14 19:22:59 --> Model Class Initialized
+INFO - 2019-04-14 19:22:59 --> Model Class Initialized
+INFO - 2019-04-14 19:22:59 --> Model Class Initialized
+INFO - 2019-04-14 19:22:59 --> Model Class Initialized
+INFO - 2019-04-14 19:22:59 --> Final output sent to browser
+DEBUG - 2019-04-14 19:22:59 --> Total execution time: 0.9007
+INFO - 2019-04-14 13:24:03 --> Config Class Initialized
+INFO - 2019-04-14 13:24:03 --> Hooks Class Initialized
+DEBUG - 2019-04-14 13:24:03 --> UTF-8 Support Enabled
+INFO - 2019-04-14 13:24:03 --> Utf8 Class Initialized
+INFO - 2019-04-14 13:24:03 --> URI Class Initialized
+INFO - 2019-04-14 13:24:03 --> Router Class Initialized
+INFO - 2019-04-14 13:24:03 --> Output Class Initialized
+INFO - 2019-04-14 13:24:03 --> Security Class Initialized
+DEBUG - 2019-04-14 13:24:03 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-04-14 13:24:03 --> Input Class Initialized
+INFO - 2019-04-14 13:24:03 --> Language Class Initialized
+INFO - 2019-04-14 13:24:03 --> Language Class Initialized
+INFO - 2019-04-14 13:24:03 --> Config Class Initialized
+INFO - 2019-04-14 13:24:03 --> Loader Class Initialized
+DEBUG - 2019-04-14 13:24:03 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-04-14 13:24:03 --> Helper loaded: url_helper
+INFO - 2019-04-14 13:24:03 --> Helper loaded: inflector_helper
+INFO - 2019-04-14 13:24:03 --> Helper loaded: string_helper
+INFO - 2019-04-14 13:24:03 --> Helper loaded: array_helper
+INFO - 2019-04-14 13:24:04 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-04-14 13:24:04 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-04-14 13:24:04 --> Database Driver Class Initialized
+INFO - 2019-04-14 13:24:04 --> Controller Class Initialized
+INFO - 2019-04-14 19:24:04 --> Helper loaded: language_helper
+INFO - 2019-04-14 19:24:04 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-14 19:24:04 --> Model Class Initialized
+INFO - 2019-04-14 19:24:04 --> Model Class Initialized
+INFO - 2019-04-14 19:24:04 --> Model Class Initialized
+INFO - 2019-04-14 19:24:04 --> Model Class Initialized
+INFO - 2019-04-14 19:24:04 --> Final output sent to browser
+DEBUG - 2019-04-14 19:24:04 --> Total execution time: 0.8072
+INFO - 2019-04-14 13:26:23 --> Config Class Initialized
+INFO - 2019-04-14 13:26:23 --> Hooks Class Initialized
+DEBUG - 2019-04-14 13:26:23 --> UTF-8 Support Enabled
+INFO - 2019-04-14 13:26:23 --> Utf8 Class Initialized
+INFO - 2019-04-14 13:26:23 --> URI Class Initialized
+INFO - 2019-04-14 13:26:23 --> Router Class Initialized
+INFO - 2019-04-14 13:26:23 --> Output Class Initialized
+INFO - 2019-04-14 13:26:23 --> Security Class Initialized
+DEBUG - 2019-04-14 13:26:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-04-14 13:26:23 --> Input Class Initialized
+INFO - 2019-04-14 13:26:23 --> Language Class Initialized
+INFO - 2019-04-14 13:26:24 --> Language Class Initialized
+INFO - 2019-04-14 13:26:24 --> Config Class Initialized
+INFO - 2019-04-14 13:26:24 --> Loader Class Initialized
+DEBUG - 2019-04-14 13:26:24 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-04-14 13:26:24 --> Helper loaded: url_helper
+INFO - 2019-04-14 13:26:24 --> Helper loaded: inflector_helper
+INFO - 2019-04-14 13:26:24 --> Helper loaded: string_helper
+INFO - 2019-04-14 13:26:24 --> Helper loaded: array_helper
+INFO - 2019-04-14 13:26:24 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-04-14 13:26:24 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-04-14 13:26:24 --> Database Driver Class Initialized
+INFO - 2019-04-14 13:26:24 --> Controller Class Initialized
+INFO - 2019-04-14 19:26:24 --> Helper loaded: language_helper
+INFO - 2019-04-14 19:26:24 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-14 19:26:24 --> Model Class Initialized
+INFO - 2019-04-14 19:26:24 --> Model Class Initialized
+INFO - 2019-04-14 19:26:24 --> Model Class Initialized
+INFO - 2019-04-14 19:26:24 --> Model Class Initialized
+INFO - 2019-04-14 19:26:24 --> Final output sent to browser
+DEBUG - 2019-04-14 19:26:24 --> Total execution time: 0.7553
+INFO - 2019-04-14 13:27:05 --> Config Class Initialized
+INFO - 2019-04-14 13:27:05 --> Hooks Class Initialized
+DEBUG - 2019-04-14 13:27:05 --> UTF-8 Support Enabled
+INFO - 2019-04-14 13:27:05 --> Utf8 Class Initialized
+INFO - 2019-04-14 13:27:05 --> URI Class Initialized
+INFO - 2019-04-14 13:27:06 --> Router Class Initialized
+INFO - 2019-04-14 13:27:06 --> Output Class Initialized
+INFO - 2019-04-14 13:27:06 --> Security Class Initialized
+DEBUG - 2019-04-14 13:27:06 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-04-14 13:27:06 --> Input Class Initialized
+INFO - 2019-04-14 13:27:06 --> Language Class Initialized
+INFO - 2019-04-14 13:27:06 --> Language Class Initialized
+INFO - 2019-04-14 13:27:06 --> Config Class Initialized
+INFO - 2019-04-14 13:27:06 --> Loader Class Initialized
+DEBUG - 2019-04-14 13:27:06 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-04-14 13:27:06 --> Helper loaded: url_helper
+INFO - 2019-04-14 13:27:06 --> Helper loaded: inflector_helper
+INFO - 2019-04-14 13:27:06 --> Helper loaded: string_helper
+INFO - 2019-04-14 13:27:06 --> Helper loaded: array_helper
+INFO - 2019-04-14 13:27:06 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-04-14 13:27:06 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-04-14 13:27:06 --> Database Driver Class Initialized
+INFO - 2019-04-14 13:27:06 --> Controller Class Initialized
+INFO - 2019-04-14 19:27:06 --> Helper loaded: language_helper
+INFO - 2019-04-14 19:27:06 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-14 19:27:06 --> Model Class Initialized
+INFO - 2019-04-14 19:27:06 --> Model Class Initialized
+INFO - 2019-04-14 19:27:06 --> Model Class Initialized
+INFO - 2019-04-14 19:27:06 --> Model Class Initialized
+ERROR - 2019-04-14 19:27:07 --> Severity: Notice --> Undefined index: role C:\xampp\htdocs\crapi_admin\application\modules\api_v1\controllers\Account.php 73
+INFO - 2019-04-14 19:27:07 --> Final output sent to browser
+DEBUG - 2019-04-14 19:27:07 --> Total execution time: 1.8464
+INFO - 2019-04-14 13:30:04 --> Config Class Initialized
+INFO - 2019-04-14 13:30:04 --> Hooks Class Initialized
+DEBUG - 2019-04-14 13:30:04 --> UTF-8 Support Enabled
+INFO - 2019-04-14 13:30:04 --> Utf8 Class Initialized
+INFO - 2019-04-14 13:30:04 --> URI Class Initialized
+INFO - 2019-04-14 13:30:04 --> Router Class Initialized
+INFO - 2019-04-14 13:30:04 --> Output Class Initialized
+INFO - 2019-04-14 13:30:04 --> Security Class Initialized
+DEBUG - 2019-04-14 13:30:04 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-04-14 13:30:04 --> Input Class Initialized
+INFO - 2019-04-14 13:30:04 --> Language Class Initialized
+INFO - 2019-04-14 13:30:04 --> Language Class Initialized
+INFO - 2019-04-14 13:30:04 --> Config Class Initialized
+INFO - 2019-04-14 13:30:04 --> Loader Class Initialized
+DEBUG - 2019-04-14 13:30:04 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-04-14 13:30:04 --> Helper loaded: url_helper
+INFO - 2019-04-14 13:30:04 --> Helper loaded: inflector_helper
+INFO - 2019-04-14 13:30:04 --> Helper loaded: string_helper
+INFO - 2019-04-14 13:30:04 --> Helper loaded: array_helper
+INFO - 2019-04-14 13:30:04 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-04-14 13:30:04 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-04-14 13:30:04 --> Database Driver Class Initialized
+INFO - 2019-04-14 13:30:04 --> Controller Class Initialized
+INFO - 2019-04-14 19:30:04 --> Helper loaded: language_helper
+INFO - 2019-04-14 19:30:04 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-14 19:30:04 --> Model Class Initialized
+INFO - 2019-04-14 19:30:04 --> Model Class Initialized
+INFO - 2019-04-14 19:30:04 --> Model Class Initialized
+INFO - 2019-04-14 19:30:04 --> Model Class Initialized
+ERROR - 2019-04-14 19:30:04 --> Query error: Duplicate entry '' for key 'customers_username_unique' - Invalid query: INSERT INTO `customers` (`email`, `password`, `firstname`, `lastname`, `address`, `contact_number`, `login_token`, `created_at`, `updated_at`) VALUES ('customer5@gmail.com,', 'admin123', 'Customer', 'Five', 'test address', '09876543219', 'f866ceb3b69699f36e599f6eb4d32e665da7f3e2ac2b', '2019-04-14 19:30:04', '2019-04-14 19:30:04')
+INFO - 2019-04-14 19:30:05 --> Language file loaded: language/english/db_lang.php
+INFO - 2019-04-14 13:34:18 --> Config Class Initialized
+INFO - 2019-04-14 13:34:18 --> Hooks Class Initialized
+DEBUG - 2019-04-14 13:34:18 --> UTF-8 Support Enabled
+INFO - 2019-04-14 13:34:18 --> Utf8 Class Initialized
+INFO - 2019-04-14 13:34:18 --> URI Class Initialized
+INFO - 2019-04-14 13:34:18 --> Router Class Initialized
+INFO - 2019-04-14 13:34:18 --> Output Class Initialized
+INFO - 2019-04-14 13:34:18 --> Security Class Initialized
+DEBUG - 2019-04-14 13:34:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-04-14 13:34:18 --> Input Class Initialized
+INFO - 2019-04-14 13:34:18 --> Language Class Initialized
+INFO - 2019-04-14 13:34:18 --> Language Class Initialized
+INFO - 2019-04-14 13:34:18 --> Config Class Initialized
+INFO - 2019-04-14 13:34:18 --> Loader Class Initialized
+DEBUG - 2019-04-14 13:34:18 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-04-14 13:34:18 --> Helper loaded: url_helper
+INFO - 2019-04-14 13:34:18 --> Helper loaded: inflector_helper
+INFO - 2019-04-14 13:34:18 --> Helper loaded: string_helper
+INFO - 2019-04-14 13:34:18 --> Helper loaded: array_helper
+INFO - 2019-04-14 13:34:18 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-04-14 13:34:18 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-04-14 13:34:18 --> Database Driver Class Initialized
+INFO - 2019-04-14 13:34:18 --> Controller Class Initialized
+INFO - 2019-04-14 19:34:18 --> Helper loaded: language_helper
+INFO - 2019-04-14 19:34:18 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-14 19:34:18 --> Model Class Initialized
+INFO - 2019-04-14 19:34:18 --> Model Class Initialized
+INFO - 2019-04-14 19:34:18 --> Model Class Initialized
+INFO - 2019-04-14 19:34:18 --> Model Class Initialized
+INFO - 2019-04-14 19:34:19 --> Final output sent to browser
+DEBUG - 2019-04-14 19:34:19 --> Total execution time: 1.0143
+INFO - 2019-04-14 13:34:42 --> Config Class Initialized
+INFO - 2019-04-14 13:34:42 --> Hooks Class Initialized
+DEBUG - 2019-04-14 13:34:42 --> UTF-8 Support Enabled
+INFO - 2019-04-14 13:34:42 --> Utf8 Class Initialized
+INFO - 2019-04-14 13:34:42 --> URI Class Initialized
+INFO - 2019-04-14 13:34:42 --> Router Class Initialized
+INFO - 2019-04-14 13:34:42 --> Output Class Initialized
+INFO - 2019-04-14 13:34:42 --> Security Class Initialized
+DEBUG - 2019-04-14 13:34:42 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-04-14 13:34:42 --> Input Class Initialized
+INFO - 2019-04-14 13:34:42 --> Language Class Initialized
+INFO - 2019-04-14 13:34:42 --> Language Class Initialized
+INFO - 2019-04-14 13:34:42 --> Config Class Initialized
+INFO - 2019-04-14 13:34:42 --> Loader Class Initialized
+DEBUG - 2019-04-14 13:34:42 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-04-14 13:34:42 --> Helper loaded: url_helper
+INFO - 2019-04-14 13:34:42 --> Helper loaded: inflector_helper
+INFO - 2019-04-14 13:34:42 --> Helper loaded: string_helper
+INFO - 2019-04-14 13:34:42 --> Helper loaded: array_helper
+INFO - 2019-04-14 13:34:42 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-04-14 13:34:42 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-04-14 13:34:42 --> Database Driver Class Initialized
+INFO - 2019-04-14 13:34:42 --> Controller Class Initialized
+INFO - 2019-04-14 19:34:42 --> Helper loaded: language_helper
+INFO - 2019-04-14 19:34:42 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-14 19:34:42 --> Model Class Initialized
+INFO - 2019-04-14 19:34:42 --> Model Class Initialized
+INFO - 2019-04-14 19:34:42 --> Model Class Initialized
+INFO - 2019-04-14 19:34:42 --> Model Class Initialized
+INFO - 2019-04-14 19:34:42 --> Final output sent to browser
+DEBUG - 2019-04-14 19:34:42 --> Total execution time: 0.8087
+INFO - 2019-04-14 13:34:47 --> Config Class Initialized
+INFO - 2019-04-14 13:34:47 --> Hooks Class Initialized
+DEBUG - 2019-04-14 13:34:47 --> UTF-8 Support Enabled
+INFO - 2019-04-14 13:34:47 --> Utf8 Class Initialized
+INFO - 2019-04-14 13:34:47 --> URI Class Initialized
+INFO - 2019-04-14 13:34:47 --> Router Class Initialized
+INFO - 2019-04-14 13:34:47 --> Output Class Initialized
+INFO - 2019-04-14 13:34:47 --> Security Class Initialized
+DEBUG - 2019-04-14 13:34:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-04-14 13:34:47 --> Input Class Initialized
+INFO - 2019-04-14 13:34:47 --> Language Class Initialized
+INFO - 2019-04-14 13:34:47 --> Language Class Initialized
+INFO - 2019-04-14 13:34:47 --> Config Class Initialized
+INFO - 2019-04-14 13:34:47 --> Loader Class Initialized
+DEBUG - 2019-04-14 13:34:47 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-04-14 13:34:47 --> Helper loaded: url_helper
+INFO - 2019-04-14 13:34:47 --> Helper loaded: inflector_helper
+INFO - 2019-04-14 13:34:47 --> Helper loaded: string_helper
+INFO - 2019-04-14 13:34:47 --> Helper loaded: array_helper
+INFO - 2019-04-14 13:34:47 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-04-14 13:34:47 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-04-14 13:34:47 --> Database Driver Class Initialized
+INFO - 2019-04-14 13:34:47 --> Controller Class Initialized
+INFO - 2019-04-14 19:34:47 --> Helper loaded: language_helper
+INFO - 2019-04-14 19:34:47 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-14 19:34:48 --> Model Class Initialized
+INFO - 2019-04-14 19:34:48 --> Model Class Initialized
+INFO - 2019-04-14 19:34:48 --> Model Class Initialized
+INFO - 2019-04-14 19:34:48 --> Model Class Initialized
+INFO - 2019-04-14 19:34:48 --> Final output sent to browser
+DEBUG - 2019-04-14 19:34:48 --> Total execution time: 0.8629
+INFO - 2019-04-14 13:48:07 --> Config Class Initialized
+INFO - 2019-04-14 13:48:07 --> Hooks Class Initialized
+DEBUG - 2019-04-14 13:48:07 --> UTF-8 Support Enabled
+INFO - 2019-04-14 13:48:07 --> Utf8 Class Initialized
+INFO - 2019-04-14 13:48:07 --> URI Class Initialized
+INFO - 2019-04-14 13:48:07 --> Router Class Initialized
+INFO - 2019-04-14 13:48:07 --> Output Class Initialized
+INFO - 2019-04-14 13:48:07 --> Security Class Initialized
+DEBUG - 2019-04-14 13:48:07 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-04-14 13:48:07 --> Input Class Initialized
+INFO - 2019-04-14 13:48:07 --> Language Class Initialized
+INFO - 2019-04-14 13:48:07 --> Language Class Initialized
+INFO - 2019-04-14 13:48:08 --> Config Class Initialized
+INFO - 2019-04-14 13:48:08 --> Loader Class Initialized
+DEBUG - 2019-04-14 13:48:08 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-04-14 13:48:08 --> Helper loaded: url_helper
+INFO - 2019-04-14 13:48:08 --> Helper loaded: inflector_helper
+INFO - 2019-04-14 13:48:08 --> Helper loaded: string_helper
+INFO - 2019-04-14 13:48:08 --> Helper loaded: array_helper
+INFO - 2019-04-14 13:48:08 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-04-14 13:48:08 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-04-14 13:48:08 --> Database Driver Class Initialized
+INFO - 2019-04-14 13:48:08 --> Controller Class Initialized
+INFO - 2019-04-14 19:48:08 --> Helper loaded: language_helper
+INFO - 2019-04-14 19:48:08 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-14 19:48:08 --> Model Class Initialized
+INFO - 2019-04-14 19:48:08 --> Model Class Initialized
+INFO - 2019-04-14 19:48:08 --> Model Class Initialized
+INFO - 2019-04-14 19:48:08 --> Model Class Initialized
+ERROR - 2019-04-14 19:48:08 --> Severity: Error --> Call to undefined method Owner_model::fetch_owner() C:\xampp\htdocs\crapi_admin\application\modules\api_v1\controllers\Account.php 55
+INFO - 2019-04-14 13:49:32 --> Config Class Initialized
+INFO - 2019-04-14 13:49:33 --> Hooks Class Initialized
+DEBUG - 2019-04-14 13:49:33 --> UTF-8 Support Enabled
+INFO - 2019-04-14 13:49:33 --> Utf8 Class Initialized
+INFO - 2019-04-14 13:49:33 --> URI Class Initialized
+INFO - 2019-04-14 13:49:33 --> Router Class Initialized
+INFO - 2019-04-14 13:49:33 --> Output Class Initialized
+INFO - 2019-04-14 13:49:33 --> Security Class Initialized
+DEBUG - 2019-04-14 13:49:33 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-04-14 13:49:33 --> Input Class Initialized
+INFO - 2019-04-14 13:49:33 --> Language Class Initialized
+INFO - 2019-04-14 13:49:33 --> Language Class Initialized
+INFO - 2019-04-14 13:49:33 --> Config Class Initialized
+INFO - 2019-04-14 13:49:33 --> Loader Class Initialized
+DEBUG - 2019-04-14 13:49:33 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-04-14 13:49:33 --> Helper loaded: url_helper
+INFO - 2019-04-14 13:49:33 --> Helper loaded: inflector_helper
+INFO - 2019-04-14 13:49:33 --> Helper loaded: string_helper
+INFO - 2019-04-14 13:49:33 --> Helper loaded: array_helper
+INFO - 2019-04-14 13:49:33 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-04-14 13:49:33 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-04-14 13:49:33 --> Database Driver Class Initialized
+INFO - 2019-04-14 13:49:33 --> Controller Class Initialized
+INFO - 2019-04-14 19:49:33 --> Helper loaded: language_helper
+INFO - 2019-04-14 19:49:33 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-14 19:49:33 --> Model Class Initialized
+INFO - 2019-04-14 19:49:33 --> Model Class Initialized
+INFO - 2019-04-14 19:49:33 --> Model Class Initialized
+INFO - 2019-04-14 19:49:33 --> Model Class Initialized
+ERROR - 2019-04-14 19:49:33 --> Severity: Error --> Call to undefined method Owner_model::fetch_owner() C:\xampp\htdocs\crapi_admin\application\modules\api_v1\controllers\Account.php 55
+INFO - 2019-04-14 13:50:16 --> Config Class Initialized
+INFO - 2019-04-14 13:50:16 --> Hooks Class Initialized
+DEBUG - 2019-04-14 13:50:16 --> UTF-8 Support Enabled
+INFO - 2019-04-14 13:50:16 --> Utf8 Class Initialized
+INFO - 2019-04-14 13:50:16 --> URI Class Initialized
+INFO - 2019-04-14 13:50:16 --> Router Class Initialized
+INFO - 2019-04-14 13:50:16 --> Output Class Initialized
+INFO - 2019-04-14 13:50:16 --> Security Class Initialized
+DEBUG - 2019-04-14 13:50:16 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-04-14 13:50:16 --> Input Class Initialized
+INFO - 2019-04-14 13:50:16 --> Language Class Initialized
+INFO - 2019-04-14 13:50:16 --> Language Class Initialized
+INFO - 2019-04-14 13:50:16 --> Config Class Initialized
+INFO - 2019-04-14 13:50:16 --> Loader Class Initialized
+DEBUG - 2019-04-14 13:50:16 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-04-14 13:50:16 --> Helper loaded: url_helper
+INFO - 2019-04-14 13:50:16 --> Helper loaded: inflector_helper
+INFO - 2019-04-14 13:50:17 --> Helper loaded: string_helper
+INFO - 2019-04-14 13:50:17 --> Helper loaded: array_helper
+INFO - 2019-04-14 13:50:17 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-04-14 13:50:17 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-04-14 13:50:17 --> Database Driver Class Initialized
+INFO - 2019-04-14 13:50:17 --> Controller Class Initialized
+INFO - 2019-04-14 19:50:17 --> Helper loaded: language_helper
+INFO - 2019-04-14 19:50:17 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-14 19:50:17 --> Model Class Initialized
+INFO - 2019-04-14 19:50:17 --> Model Class Initialized
+INFO - 2019-04-14 19:50:17 --> Model Class Initialized
+INFO - 2019-04-14 19:50:17 --> Model Class Initialized
+INFO - 2019-04-14 19:50:17 --> Final output sent to browser
+DEBUG - 2019-04-14 19:50:17 --> Total execution time: 0.4782

@@ -19,19 +19,25 @@ class Login extends API_Controller {
 	// [GET] /users
 	public function login()
 	{
-		$params = $this->input->post();
-		$params = $this->input->get();
-
 		$data = array(
 			'result' => REQUEST_RESULT_NG,
-			'description' => 'Login Failed.'
+			'error' => 'Login Failed.'
 		);
 
+		if ($this->input->method() != 'post') {
+			$this->to_error_method_not_allowed();
+		}
+		
+		$params = $this->input->post();
+
+
 		if (empty($params['email'])) {
-			$data['description'] = 'Email is required.';
+			$data['error'] = 'Email is required.';
+			$this->to_response($data);
 		}
 		if (empty($params['password'])) {
-			$data['description'] = 'Password is required.';
+			$data['error'] = 'Password is required.';
+			$this->to_response($data);
 		}
 
 		$ownerData = $this->Owner->login($params['email'], $params['password']);

@@ -241,7 +241,10 @@ class API_Controller extends MY_Controller {
 	 */
 	protected function to_error($msg = 'An error occurs', $code = 200, $additional_data = array())
 	{
-		$data = array('error' => $msg);
+		$data = array(
+			'result' => REQUEST_RESULT_NG,
+			'error' => $msg
+		);
 
 		// (optional) append additional data
 		if (!empty($additional_data))
