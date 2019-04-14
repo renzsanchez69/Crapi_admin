@@ -20,8 +20,6 @@ class Login extends API_Controller {
 	public function login()
 	{
 		$params = $this->input->post();
-		$params = $this->input->get();
-
 		$data = array(
 			'result' => REQUEST_RESULT_NG,
 			'description' => 'Login Failed.'
