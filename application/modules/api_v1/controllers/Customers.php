@@ -34,15 +34,48 @@ class Customers extends API_Controller {
 
 		$myArr = [
             "id"=> $data->id,
-            "password"=> md5(uniqid($usr, true)),
+            "token"=> md5(uniqid($usr, true)),
+            "role"=> 1, // 1=admin,etc this is sample
             "message"=>'Your logged successfully!',
             "result"=> 'OK'
 		];
 		$this->to_response($myArr);
 	}
 
-	public function order_list($id)
+	public function order_list()
 	{
-		var_dump($id);
+		//$_POST["search"] -> post request for search
+		//$_POST["token"] -> post request for search
+		$myArr = [
+	        "data"=>[
+		        	['id' => 1,
+		        	'resto_name' => 'Kaloys Food shop',
+		        	'name' => 'Bam-e',
+		        	'full_name' => 'Wangdels',
+					'address' => 'Cebu City',
+					'email_address' => 'delabahan@gmail.com',
+					'contact_no' => '093200000',
+					'order_hash' => '5v5OCssdhhs',
+		        	'qty' => 60,
+		        	'price' => 50,
+		        	'description' => 'Adobo',
+		        	'created_date' => date('Y-m-d h:i:s')
+		        ],
+		        	['id' => 2,
+		        	'resto_name' => 'Wangs Food shop',
+		        	'full_name' => 'Kaloys',
+					'address' => 'Cebu City',
+					'email_address' => 'delabahan@gmail.com',
+					'contact_no' => '093200000',
+					'order_hash' => '5v5OCsoQBjpSoUF',
+		        	'name' => 'Litson  Sinugba',
+		        	'qty' => 60,'price' => 50,
+		        	'description' => 'Adobo Sinugba',
+		        	'created_date' => date('Y-m-d h:i:s')
+		        ]
+	        ],
+	        "result"=> 'OK'
+	    ];
+		$this->to_response($myArr);
 	}
 }

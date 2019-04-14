@@ -22,8 +22,8 @@ class Orders extends API_Controller {
 		//$_POST["usr_id"] -> post request  for list
 		$myArr = [
 	        "data"=>[
-	        	['id' => 1,'food_name' => 'Adobo','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
-	        	['id' => 2,'food_name' => 'Adobo  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
+	        	['id' => 1,'name' => 'Adobo','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
+	        	['id' => 2,'name' => 'Adobo  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
 	        ],
 	        "result"=> 'OK'
 	    ];
@@ -36,8 +36,8 @@ class Orders extends API_Controller {
 		//$_POST["token"] -> post request for search
 		$myArr = [
 	        "data"=>[
-	        	['id' => 1,'food_name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
-	        	['id' => 2,'food_name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
+	        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
+	        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
 	        ],
 	        "result"=> 'OK'
 	    ];
@@ -49,8 +49,8 @@ class Orders extends API_Controller {
 		//$_POST["oid"] -> post request for delete
 		$myArr = [
 	        "data"=>[
-	        	['id' => 1,'food_name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
-	        	['id' => 2,'food_name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
+	        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
+	        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
 	        ],
 	        "result"=> 'OK'
 	    ];

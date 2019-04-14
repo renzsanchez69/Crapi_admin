@@ -89,6 +89,7 @@ $route['orders']					= "orders/order_list";
 
 // customers api
 $route['customers']					= "customers/users";
+$route['customers_order_list']		= "customers/order_list";
 
 // customers api
 $route['products']					= "products/product_list";
