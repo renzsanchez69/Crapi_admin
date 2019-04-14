@@ -1,7 +1,10 @@
 <?php $this->layout('layouts::default'); ?>
+
+<center><h1>Employees List</h1></center>
+<br>
 <div class="card">
-	<div class="card-body bg-dark text-white">
-		<form method="GET" action="<?php echo base_url(); ?>admin/owners" accept-charset="UTF-8" class=" mb-2 mt-2">
+	<div class="card-body">
+		<form method="GET" action="<?php echo base_url(); ?>admin/employees" accept-charset="UTF-8" class=" mb-2 mt-2">
 			<div class="form-group row">
 				<label class="col-sm-2 col-form-label-sm">Name</label>
 				<div class="col-sm-4">
@@ -59,13 +62,14 @@
 <table class="table table-bordered table-sm mt-2">
     <thead>
         <tr>
-            <th class="bg-dark text-white">Name</th>
-            <th class="bg-dark text-white">Gender</th>
-            <th class="bg-dark text-white">Email</th>
-            <th class="bg-dark text-white">Address</th>
-            <th class="bg-dark text-white">Contact Number</th>
-            <th class="bg-dark text-white">Status</th>
-            <th class="row-actions bg-dark text-white"></th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Contact Number</th>
+            <th>Status</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -73,6 +77,7 @@
     	<?php foreach ($employees as $employee): ?>
 
     		<tr id="idx_employee_<?php echo $employee['id']; ?>">
+    			<td><a href="<?php echo base_url(); ?>admin/employees/edit/<?php echo $employee['id']; ?>" class=""><i class="fa fa-pencil-alt"></i> <?php echo !empty($employee['id']) ? $employee['id'] : '--'; ?></a></td>
 				<td><?php echo !empty($employee['fullname']) ? $employee['fullname'] : '--'; ?></td>
 				<td>
 					<?php if (!empty($employee['gender']) && $employee['gender'] == GENDER_FEMALE): ?>

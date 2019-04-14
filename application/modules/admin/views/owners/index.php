@@ -1,7 +1,7 @@
 <?php $this->layout('layouts::default'); ?>
 
 <center><h1>Owners List</h1></center>
-
+<br>
 <div class="card">
 	<div class="card-body">
 		<form method="GET" action="<?php echo base_url(); ?>admin/owners" accept-charset="UTF-8" class=" mb-2 mt-2">

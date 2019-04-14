@@ -13,29 +13,29 @@ class Customer_model extends MY_Model {
 	{
 		// only activated user can login
 		$where = array('username' => $username, 'status' => USER_ACTIVE);
-		$owner = $this->get_by($where);
+		$customer = $this->get_by($where);
 		
-		if ( !empty($owner) && password_verify($password, $owner->password) )
+		if ( !empty($customer) && password_verify($password, $customer->password) )
 		{
-			// success - return owner object without password field
-			unset($owner->password);
-			return $owner;
+			// success - return customer object without password field
+			unset($customer->password);
+			return $customer;
 		}
 
 		// failed
 		return NULL;
 	}
 
-	// public function validate_password($ownerid, $password) {
-	// 	// only activated owner can login
-	// 	$where = array('id' => $ownerid, 'status  ' => 1);
-	// 	$owner = $this->get_by($where);
+	public function validate_password($customerid, $password) {
+		// only activated customer can login
+		$where = array('id' => $customerid, 'status  ' => 1);
+		$customer = $this->get_by($where);
 		
-	// 	if ( !empty($owner) && password_verify($password, $owner->password) ) {
-	// 		return true;
-	// 	}
-	// 	return false;
-	// }
+		if ( !empty($customer) && password_verify($password, $customer->password) ) {
+			return true;
+		}
+		return false;
+	}
 
 	public function add_customer($data)
 	{
@@ -119,12 +119,12 @@ class Customer_model extends MY_Model {
 		return $result->result_array();
 	}
 
-	public function update_info($owner_id, $data)
+	public function update_info($customer_id, $data)
 	{
-		return $this->update($owner_id, $data);
+		return $this->update($customer_id, $data);
 	}
 
-	public function change_password($owner_id, $password) {
+	public function change_password($customer_id, $password) {
 		$hashed = password_hash($password, PASSWORD_DEFAULT);
 		return $this->update_field($user_id, 'password', $hashed);
 	}

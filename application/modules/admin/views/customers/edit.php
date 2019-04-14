@@ -8,25 +8,25 @@
 				<div class="col-12">
 					<div class="form-group">
 						<label for="email" class="control-label">Email Address</label>
-						<input class="form-control" name="email" type="text" value="<?php echo isset($employeeInfo->email) ? $employeeInfo->email : ''; ?>" id="email">
+						<input class="form-control" name="email" type="text" value="<?php echo isset($customerInfo->email) ? $customerInfo->email : ''; ?>" id="email">
 					</div>
 
 					<div class="form-group">
 						<label for="username" class="control-label">Username</label>
-						<input class="form-control" name="username" type="text" value="<?php echo isset($employeeInfo->username) ? $employeeInfo->username : ''; ?>" id="username">
+						<input class="form-control" name="username" type="text" value="<?php echo isset($customerInfo->username) ? $customerInfo->username : ''; ?>" id="username">
 					</div>
 					<div class="row">
 						<div class="col">
 							<div class="form-group">
 								<label for="firstname" class="control-label">First Name</label>
-								<input class="form-control" name="firstname" type="text" value="<?php echo isset($employeeInfo->firstname) ? $employeeInfo->firstname : ''; ?>" id="firstname">
+								<input class="form-control" name="firstname" type="text" value="<?php echo isset($customerInfo->firstname) ? $customerInfo->firstname : ''; ?>" id="firstname">
 							</div>
 						</div>
 
 						<div class="col">
 							<div class="form-group">
 								<label for="lastname" class="control-label">Last Name</label>
-								<input class="form-control" name="lastname" type="text" value="<?php echo isset($employeeInfo->lastname) ? $employeeInfo->lastname : ''; ?>" id="lastname">
+								<input class="form-control" name="lastname" type="text" value="<?php echo isset($customerInfo->lastname) ? $customerInfo->lastname : ''; ?>" id="lastname">
 							</div>
 						</div>
 					</div>
@@ -37,7 +37,7 @@
 								<label for="gender" class="control-label">Gender</label>
 								<select class="custom-select" id="gender" name="gender">
 									<?php foreach ($genderSelect as $key => $value): ?>
-										<?php if (isset($employeeInfo->gender) && $employeeInfo->gender == $key): ?>
+										<?php if (isset($customerInfo->gender) && $customerInfo->gender == $key): ?>
 											<option value="<?php echo $key; ?>" selected="selected"><?php echo $value; ?></option>
 										<?php else: ?>
 											<option value="<?php echo $key; ?>"><?php echo $value; ?></option>
@@ -50,14 +50,14 @@
 						<div class="col">
 							<div class="form-group">
 								<label for="contact_number" class="control-label">Contact Number</label>
-								<input class="form-control" name="contact_number" type="text" value="<?php echo isset($employeeInfo->contact_number) ? $employeeInfo->contact_number : ''; ?>" id="contact_number">
+								<input class="form-control" name="contact_number" type="text" value="<?php echo isset($customerInfo->contact_number) ? $customerInfo->contact_number : ''; ?>" id="contact_number">
 							</div>
 						</div>
 					</div>
 
 					<div class="form-group">
 						<label for="address" class="control-label">Address</label>
-						<textarea class="form-control" rows="4" name="address" cols="50" id="address"><?php echo isset($employeeInfo->address) ? $employeeInfo->address : ''; ?></textarea>
+						<textarea class="form-control" rows="4" name="address" cols="50" id="address"><?php echo isset($customerInfo->address) ? $customerInfo->address : ''; ?></textarea>
 					</div>
 				</div>
 			</div>

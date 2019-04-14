@@ -72,28 +72,132 @@ class Employees extends Admin_Controller {
 		$this->render('employees/index');
 	}
 
-	public function edit($pid){
-		$this->mTitle = 'Edit';
-		$this->push_breadcrumb('Properties', base_url('admin/properties'));
+public function edit($id)
+	{
+		$this->mTitle = "Edit";
+		
+		$formInfo = $this->form_builder->create_form();
+		$formPass = $this->form_builder->create_form('admin/employees/change_pass/'.$id);
 
-		$property = $this->Property->get_property($pid);
-
-		$property->youtube_video = $this->convertYoutube($property->youtube_link);
-
-		$viewData = array(
-			'property' => $property
+		$employee = $this->Employee->get_employee($id);
+		$genderSelection = unserialize(GENDER_SELECTION);
+		$setData = array(
+			'employeeInfo' => $employee,
+			'genderSelect' => $genderSelection,
+			'formInfo' => $formInfo,
+			'formPass' => $formPass
 		);
 
-		$this->mViewData = $viewData;
+		if ($this->input->method() == 'post') {
+			$postData = $this->input->post();
+			$requiredFields = array(
+				'email',
+				'username',
+				'firstname',
+				'lastname',
+				'gender',
+				'contact_number'
+			);
 
+			$validation = $this->checkRequiredFields($postData, $requiredFields);
+
+			// - check username availabity
+			$unameAvail = $this->Employee->fetch_employees(array('id'), array('username' => $postData['username']));
+			if (!empty($unameAvail) && (isset($unameAvail['id']) && $unameAvail['id'] != $id)) {
+				$this->system_message->set_error('Username already taken.');
+				refresh();
+			}
+
+			if (isset($validation['hasError']) && $validation['hasError'] == true) {
+				$this->system_message->set_error(implode('<br>', $validation['message']));
+				refresh();
+			}
+
+			$res = $this->Employee->update_info($id, $postData);
+			if ($res) {
+				$this->system_message->set_success('Successfully updated!');
+			} else {
+				$this->system_message->set_error('Failed to update!');
+			}
+			refresh();
+		}
+
+		$this->mViewData = $setData;
 		$this->render('employees/edit');
 	}
 
-	private function convertYoutube($string) {
-		return preg_replace(
-			"/\s*[a-zA-Z\/\/:\.]*youtu(be.com\/watch\?v=|.be\/)([a-zA-Z0-9\-_]+)([a-zA-Z0-9\/\*\-\_\?\&\;\%\=\.]*)/i",
-			"<iframe class=\"embed-responsive-item\" width=\"200\" height=\"120\" src=\"//www.youtube.com/embed/$2\" frameborder=\"0\" allow=\"autoplay; encrypted-media\"></iframe>",
-			$string
+	public function change_pass($id)
+	{
+		if ($this->input->method() == 'post') {
+			$postData = $this->input->post();
+			$requiredFields = array(
+				'password',
+				'password_confirmation'
+			);
+
+			$validation = $this->checkRequiredFields($postData, $requiredFields);
+
+			if (isset($validation['hasError']) && $validation['hasError'] == true) {
+				$this->system_message->set_error(implode('<br>', $validation['message']));
+				redirect('admin/employees/edit/'.$id, 'refresh');
+			}
+
+			if ($postData['password'] != $postData['password_confirmation']) {
+				$this->system_message->set_error('Password does not match the confirm password.');
+				redirect('admin/employees/edit/'.$id, 'refresh');
+			}
+
+			$hashed = password_hash($postData['password'], PASSWORD_DEFAULT);
+
+			$res = $this->Employee->update_info($id, array('password' => $hashed));
+			if ($res) {
+				$this->system_message->set_success('Successfully updated!');
+			} else {
+				$this->system_message->set_error('Failed to update!');
+			}
+			redirect('admin/employees/edit/'.$id, 'refresh');
+		}
+		redirect('admin/employees/edit/'.$id, 'refresh');
+	}
+
+	public function delete_employee()
+	{
+		// - allow ajax request only
+		if (!$this->input->is_ajax_request()) {
+			echo json_encode(array('result' => 'NG'));
+			exit;
+		}
+		$postData = $this->input->post();
+
+		if (empty($postData['id'])) {
+			echo json_encode(array('result' => 'NG'));
+			exit;
+		}
+
+		$res = $this->Employee->update_info($postData['id'], array('status' => USER_STOP));
+
+		if ($res) {
+			echo json_encode(array('result' => 'OK'));
+			exit;
+		}
+		
+		echo json_encode(array('result' => 'NG'));
+		exit;
+	}
+
+	private function checkRequiredFields($data, $requiredFields){
+		$message = array();
+		$hasError = false;
+		foreach ($requiredFields as $value) {
+			if (empty($data[$value])) {
+				$message[] = $value." is required.";
+				$hasError = true;
+			}
+		}
+
+		return array(
+			'message' => $message,
+			'hasError' => $hasError
 		);
 	}
 }
