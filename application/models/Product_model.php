@@ -62,7 +62,7 @@ class Product_model extends MY_Model {
 			$this->db->select('*');
 		}
 
-		$this->db->from('product');
+		$this->db->from('products');
 
 		if (!empty($params)) {
 			$this->db->where($params);

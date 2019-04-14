@@ -83,12 +83,15 @@ $route['profile']					= "account/profile";
 
 // users api
 $route['users']						= "home/users";
+$route['login-users']				= "login/login";
 
 // orders api
 $route['orders']					= "orders/order_list";
 
 // customers api
 $route['customers']					= "customers/users";
+$route['customers_order_list']		= "customers/order_list";
+$route['customers_search']			= "customers/search";
 
 // customers api
 $route['products']					= "products/product_list";

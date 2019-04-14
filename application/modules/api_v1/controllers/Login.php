@@ -30,7 +30,6 @@ class Login extends API_Controller {
 		
 		$params = $this->input->post();
 
-
 		if (empty($params['email'])) {
 			$data['error'] = 'Email is required.';
 			$this->to_response($data);
