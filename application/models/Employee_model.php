@@ -114,6 +114,7 @@ class Employee_model extends MY_Model {
 				$queryStr .= ' HAVING '.$having;
 			}
 		}
+		$queryStr .= ' ORDER BY employees.id DESC';
 
 		$result = $this->db->query($queryStr);
 		return $result->result_array();

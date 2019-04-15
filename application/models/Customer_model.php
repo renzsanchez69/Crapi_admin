@@ -121,6 +121,8 @@ class Customer_model extends MY_Model {
 			}
 		}
 
+		$queryStr .= ' ORDER BY customers.id DESC';
+
 		$result = $this->db->query($queryStr);
 		return $result->result_array();
 	}
