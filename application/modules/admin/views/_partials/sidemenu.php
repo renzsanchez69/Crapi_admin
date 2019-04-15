@@ -36,6 +36,11 @@
 					Order History
 				</a>
 			</li>
+			<li class="nav-item">
+				<a class="nav-link text-light <?php echo $ctrler == 'orders' ? 'active' : ''; ?>" href="<?php echo base_url('admin/orders') ?>">
+					Employee Logs
+				</a>
+			</li>
 		</ul>
 	</div>
 </nav>
