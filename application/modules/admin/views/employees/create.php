@@ -3,10 +3,21 @@
 <?php echo $formInfo->messages(); ?>
 
 <div class="col-6">
-	<h3>Create New Owner</h3><hr>
+	<h3>Create New Employee</h3><hr>
 	<?php echo $formInfo->open(); ?>
 		<div class="row">
 			<div class="col-12">
+				<div class="form-group">
+					<label for="owner_name" class="control-label">Owner Name</label>
+					<input class="form-control" type="text" id="owner_name" required>
+					<input class="form-control" name="owner_id" type="text" id="owner_id" required>
+					<button type="button" class="btn btn-info mt-1" data-toggle="modal" data-target="#ownerList">
+	 					Select Owner
+					</button>
+				</div>
+				
+
+
 				<div class="form-group">
 					<label for="email" class="control-label">Email Address</label>
 					<input class="form-control" name="email" type="text" id="email" required>
