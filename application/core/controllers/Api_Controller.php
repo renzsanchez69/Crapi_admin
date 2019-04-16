@@ -22,8 +22,34 @@ class API_Controller extends MY_Controller {
 	// Verify access token (e.g. API Key, JSON Web Token)
 	protected function verify_token()
 	{
+		$this->load->model('Owner_model', 'Owner');
+		$this->load->model('Customer_model', 'Customer');
+		$this->load->model('Employee_model', 'Employee');
+		$params = $this->input->post();
 		// TODO: implement API Key or JWT handling
 		$this->mUser = NULL;
+		$userData = '';
+		if (!empty($params['login_token']) && !empty($params['role']) ) {
+			switch ($params['role']) {
+				case ROLE_OWNER:
+					$userData = $this->Owner->fetch_owners([], ['login_token' => $params['login_token']]);
+					break;
+
+				case ROLE_CUSTOMER:
+					$userData = $this->Customer->fetch_customers([], ['login_token' => $params['login_token']]);
+					break;
+
+				case ROLE_EMPLOYEE:
+					$userData = $this->Employee->fetch_employees([], ['login_token' => $params['login_token']]);
+					break;
+			}
+
+			if (isset($userData) && !empty($userData)) {
+				$this->mUser = $userData;
+			} else {
+				$this->to_error_unauthorized();
+			}
+		} 
 	}
 	
 	// Verify request method

@@ -87,6 +87,7 @@ $route['login-users']				= "login/login";
 
 // orders api
 $route['orders']					= "orders/order_list";
+$route['add-orders']				= "orders/add_orders";
 
 // customers api
 $route['customers']					= "customers/users";
