@@ -28,6 +28,31 @@ class Products extends API_Controller {
 		$this->to_response($myArr);
 	}
 
+	public function menu_list()
+	{
+		$urlQuery = $this->input->post();
+
+		// - get fields
+		$fields = array(
+			'menus.*'
+		);
+		$params = array(
+
+		);
+
+		if (!empty($urlQuery['resto_id'])) {
+			$params['resto_id'] = $urlQuery['resto_id'];
+		}
+
+		$data = $this->product->fetch_product_raw($fields, $params);
+		
+		$myArr = [
+            "data"=>$data,
+            "result"=> 'OK'
+		];
+		$this->to_response($myArr);
+	}
+
 	public function product_search()
 	{
 		//$_POST["search"] -> post request for search

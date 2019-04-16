@@ -95,6 +95,7 @@ $route['customers_search']			= "customers/search";
 
 // products api
 $route['products']					= "products/product_list";
+$route['menus_list']				= "products/menu_list";
 $route['products']					= "products/product_search";
 
 // products api

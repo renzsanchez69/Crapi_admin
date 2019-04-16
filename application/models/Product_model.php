@@ -72,6 +72,58 @@ class Product_model extends MY_Model {
 		return $result->result_array();
 	}
 
+	public function fetch_product_raw($fields = array(), $params = array()) {
+		$queryStr = '';
+		$select = '*';
+		if (!empty($fields)) {
+			$select = implode(', ', $fields);
+		}
+		$select .= ',`products`.`name`,`products`.`details`,`products`.`price`';
+		$queryStr = 'SELECT '.$select.' FROM menus';
+
+		$queryStr .= " INNER JOIN products ON products.menu_id = menus.id  ";
+
+		if (!empty($params)) {
+			$conditions = array();
+			$having = array();
+			foreach ($params as $key => $value) {
+				if (in_array($key, $this->virtualFields)) {
+					$having[] = $key.' = "'.$value.'"';
+					continue;
+				}
+				if ($key == 'LIKE') {
+					if (!empty($params['LIKE'])) {
+						foreach ($params['LIKE'] as $fkey => $fvalue) {
+							if (in_array($fkey, $this->virtualFields)) {
+								$having[] = $fkey.' LIKE "%'.$fvalue.'%"';
+								continue;
+							}
+							$conditions[] = $fkey.' LIKE "%'.$fvalue.'%"';
+						}
+					}					
+				} else {
+					$conditions[] = $key.' = "'.$value.'"';
+				}
+			}
+
+			if (!empty($conditions)) {
+				$conditions = implode(' AND ', $conditions);
+				$queryStr .= ' WHERE '.$conditions;
+			}
+
+			if (!empty($having)) {
+				$having = implode(' AND ', $having);
+				$queryStr .= ' HAVING '.$having;
+			}
+		}
+
+		$queryStr .= " ORDER BY menus.id DESC ";
+
+		$result = $this->db->query($queryStr);
+
+		return $result->result_array();
+	}
+
 	public function update_info($owner_id, $data)
 	{
 		return $this->update($owner_id, $data);
