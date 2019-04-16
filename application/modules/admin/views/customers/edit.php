@@ -11,10 +11,10 @@
 						<input class="form-control" name="email" type="text" value="<?php echo isset($customerInfo->email) ? $customerInfo->email : ''; ?>" id="email">
 					</div>
 
-					<div class="form-group">
+					<!-- <div class="form-group">
 						<label for="username" class="control-label">Username</label>
 						<input class="form-control" name="username" type="text" value="<?php echo isset($customerInfo->username) ? $customerInfo->username : ''; ?>" id="username">
-					</div>
+					</div> -->
 					<div class="row">
 						<div class="col">
 							<div class="form-group">

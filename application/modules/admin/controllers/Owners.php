@@ -65,6 +65,59 @@ class Owners extends Admin_Controller {
 		$this->render('owners/index');
 	}
 
+	public function create()
+	{
+		$this->mTitle = "Create New Owner";
+		
+		$formInfo = $this->form_builder->create_form();
+
+		$genderSelection = unserialize(GENDER_SELECTION);
+		$setData = array(
+			'genderSelect' => $genderSelection,
+			'formInfo' => $formInfo
+		);
+
+		if ($this->input->method() == 'post') {
+			$postData = $this->input->post();
+			$requiredFields = array(
+				'email',
+				'firstname',
+				'lastname',
+				'contact_number',
+				'password'
+			);
+
+			$validation = $this->checkRequiredFields($postData, $requiredFields);
+
+			// - check email availabity
+			$unameAvail = $this->Owner->fetch_owners(array('id'), array('email' => $postData['email']));
+			if (!empty($unameAvail) && (isset($unameAvail['id']) && $unameAvail['id'] != $id)) {
+				$this->system_message->set_error('Email already in use.');
+				refresh();
+			}
+
+			if (isset($validation['hasError']) && $validation['hasError'] == true) {
+				$this->system_message->set_error(implode('<br>', $validation['message']));
+				refresh();
+			}
+
+			$postData['password'] = password_hash($postData['password'], PASSWORD_DEFAULT);
+
+			$res = $this->Owner->add_owner($postData);
+
+			if ($res) {
+				$this->system_message->set_success('Successfully added!');
+				redirect('admin/owners/edit/'.$res, 'refresh');
+			} else {
+				$this->system_message->set_error('Failed to add new owner!');
+				refresh();
+			}
+		}
+
+		$this->mViewData = $setData;
+		$this->render('owners/create');
+	}
+
 	public function edit($id)
 	{
 		$this->mTitle = "Edit";
@@ -85,7 +138,7 @@ class Owners extends Admin_Controller {
 			$postData = $this->input->post();
 			$requiredFields = array(
 				'email',
-				'username',
+				// 'username',
 				'firstname',
 				'lastname',
 				'gender',
@@ -94,10 +147,10 @@ class Owners extends Admin_Controller {
 
 			$validation = $this->checkRequiredFields($postData, $requiredFields);
 
-			// - check username availabity
-			$unameAvail = $this->Owner->fetch_owners(array('id'), array('username' => $postData['username']));
+			// - check email availabity
+			$unameAvail = $this->Owner->fetch_owners(array('id'), array('email' => $postData['email']));
 			if (!empty($unameAvail) && (isset($unameAvail['id']) && $unameAvail['id'] != $id)) {
-				$this->system_message->set_error('Username already taken.');
+				$this->system_message->set_error('Email already in use.');
 				refresh();
 			}
 
