@@ -161,18 +161,18 @@
 
 		var markers = [];
 
-		map.addListener('click', function (e) {
-			geocoder.geocode({'location': e.latLng}, function(results, status) {
-				if (status === 'OK') {
-					if (results[0]) {
-						marker.setPosition(e.latLng);
-						$('[name=address]').val(results[0].formatted_address)
-						$('[name=latitude]').val(e.latLng.lat())
-						$('[name=longitude]').val(e.latLng.lng())
-					}
-				}
-			})
-		})
+		// map.addListener('click', function (e) {
+		// 	geocoder.geocode({'location': e.latLng}, function(results, status) {
+		// 		if (status === 'OK') {
+		// 			if (results[0]) {
+		// 				marker.setPosition(e.latLng);
+		// 				$('[name=address]').val(results[0].formatted_address)
+		// 				$('[name=latitude]').val(e.latLng.lat())
+		// 				$('[name=longitude]').val(e.latLng.lng())
+		// 			}
+		// 		}
+		// 	})
+		// })
 	}
 
 	$('[name=address]').keydown(function (e) {

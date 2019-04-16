@@ -85,7 +85,7 @@ class Customers extends Admin_Controller {
 			$postData = $this->input->post();
 			$requiredFields = array(
 				'email',
-				'username',
+				// 'username',
 				'firstname',
 				'lastname',
 				'gender',
@@ -94,10 +94,10 @@ class Customers extends Admin_Controller {
 
 			$validation = $this->checkRequiredFields($postData, $requiredFields);
 
-			// - check username availabity
-			$unameAvail = $this->Customer->fetch_customers(array('id'), array('username' => $postData['username']));
+			// - check email availabity
+			$unameAvail = $this->Customer->fetch_customers(array('id'), array('email' => $postData['email']));
 			if (!empty($unameAvail) && (isset($unameAvail['id']) && $unameAvail['id'] != $id)) {
-				$this->system_message->set_error('Username already taken.');
+				$this->system_message->set_error('Email already in use.');
 				refresh();
 			}
 
