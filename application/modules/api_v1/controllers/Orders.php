@@ -9,6 +9,7 @@ class Orders extends API_Controller {
 		$this->load->database();
 		$this->load->library('form_builder');
 		$this->load->model('Order_model', 'Order');
+		$this->load->model('Order_Details_model', 'OrderDetails');
 	}
 
 	public function index()
@@ -49,7 +50,17 @@ class Orders extends API_Controller {
 	
 	public function order_delete()
 	{
-		//$_POST["oid"] -> post request for delete
+		$postData = $this->input->post();
+		if(empty( $this->mUser) && !isset( $this->mUser)){
+		    $myArr = [
+		        "data"=>[
+		        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
+		        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
+		        ],
+		        "result"=> 'NG'
+		    ];
+		}
+
 		$myArr = [
 	        "data"=>[
 	        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
@@ -57,25 +68,87 @@ class Orders extends API_Controller {
 	        ],
 	        "result"=> 'OK'
 	    ];
+		 $this->Order->delete_order_by($postData["order_id"]);
 		$this->to_response($myArr);
 	}
 	
 	public function add_orders()
 	{
 		$postData = $this->input->post();
-		var_dump($postData);
-		die();
-		$res = $this->Order->add_order($postData);
-		if($res){
-			$myArr = [
+		if(empty( $this->mUser) && !isset( $this->mUser)){
+		    $myArr = [
 		        "data"=>[
 		        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
 		        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
 		        ],
-		        "result"=> 'OK'
+		        "result"=> 'NG'
 		    ];
+		}
+		$data['customer_id'] = $this->mUser[0]['id'];
+		$data['order_number'] = $this->mUser[0]['id'].time();
+
+		$res_order = $this->Order->add_order($data);
+		if(!empty($res_order)){
+			$order_details['order_id'] = $res_order;
+			$order_details['product_id'] = $postData["product_id"];
+			$order_details['qty'] = $postData["qty"];
+			$order_details['price'] = $postData["price"];
+			$order_details['sub_total'] = $postData["qty"] * $postData["price"];
+			$res = $this->OrderDetails->add_order_details($order_details);
+			if($res){
+				$myArr = [
+			        "data"=>[
+			        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
+			        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
+			        ],
+			        "result"=> 'OK'
+			    ];
+			} else {
+				$myArr = [
+			        "data"=>[
+			        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
+			        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
+			        ],
+			        "result"=> 'NG'
+			    ];
+			}
+
 		} else {
-			$myArr = [
+		    $myArr = [
+		        "data"=>[
+		        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
+		        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
+		        ],
+		        "result"=> 'NG'
+		    ];
+		}
+		$this->to_response($myArr);
+	}
+
+	public function order_by_customer()
+	{
+		$postData = $this->input->post();
+		if(empty($this->mUser) && !isset( $this->mUser)){
+		    $myArr = [
+		        "data"=>[
+		        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
+		        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
+		        ],
+		        "result"=> 'NG'
+		    ];
+		}
+
+		$res_order = $this->Order->fetch_orders_by([],['customer_id'=>$this->mUser[0]['id']],[]);
+		if(!empty($res_order)){
+
+				$myArr = [
+			        "data"=> $res_order,
+			        "result"=> 'OK'
+			    ];
+
+
+		} else {
+		    $myArr = [
 		        "data"=>[
 		        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
 		        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
