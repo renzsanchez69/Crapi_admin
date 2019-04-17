@@ -11,6 +11,7 @@ class Employees extends Admin_Controller {
 		$this->load->library('form_builder');
 		$this->load->library('pagination');
 		$this->load->model('Employee_model', 'Employee');
+		$this->load->model('Owner_model', 'Owner');
 	}
 	
 	public function index()
@@ -183,6 +184,68 @@ public function edit($id)
 		
 		echo json_encode(array('result' => 'NG'));
 		exit;
+	}
+
+	public function create()
+	{
+		$this->mTitle = "Create New Employee";
+		
+		$formInfo = $this->form_builder->create_form();
+		$ownersList = $this->Owner->fetch_owners(['id', 'firstname', 'lastname']);
+
+		$genderSelection = unserialize(GENDER_SELECTION);
+		$setData = array(
+			'genderSelect' => $genderSelection,
+			'formInfo' => $formInfo,
+			'ownersList' => $ownersList
+		);
+
+		if ($this->input->method() == 'post') {
+			if (empty($postData['owner_id'])) {
+				$this->system_message->set_error('Please select owner.');
+				refresh();
+			}
+
+			
+			$postData = $this->input->post();
+			$requiredFields = array(
+				'owner_id',
+				'email',
+				'firstname',
+				'lastname',
+				'contact_number',
+				'password'
+			);
+
+			$validation = $this->checkRequiredFields($postData, $requiredFields);
+
+			// - check email availabity
+			$unameAvail = $this->Employee->fetch_employees(array('id'), array('email' => $postData['email']));
+			if (!empty($unameAvail) && (isset($unameAvail['id']) && $unameAvail['id'] != $id)) {
+				$this->system_message->set_error('Email already in use.');
+				refresh();
+			}
+
+			if (isset($validation['hasError']) && $validation['hasError'] == true) {
+				$this->system_message->set_error(implode('<br>', $validation['message']));
+				refresh();
+			}
+
+			$postData['password'] = password_hash($postData['password'], PASSWORD_DEFAULT);
+
+			$res = $this->Employee->add_employee($postData);
+
+			if ($res) {
+				$this->system_message->set_success('Successfully added!');
+				redirect('admin/employees/edit/'.$res, 'refresh');
+			} else {
+				$this->system_message->set_error('Failed to add new employee!');
+				refresh();
+			}
+		}
+
+		$this->mViewData = $setData;
+		$this->render('employees/create');
 	}
 
 	private function checkRequiredFields($data, $requiredFields){

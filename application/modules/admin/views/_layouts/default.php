@@ -6,6 +6,7 @@
 <?php $this->insert('partials::sidemenu'); ?>
 
 
+<?php $this->insert('partials::modals'); ?>
 <div class="container-fluid">
       <div class="row">
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">

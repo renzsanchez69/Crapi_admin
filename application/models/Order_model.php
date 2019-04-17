@@ -11,8 +11,9 @@ class Order_model extends MY_Model {
 		if (empty($data)) {
 			return false;
 		}
+		$this->insert($data);
 
-		return $this->insert($data);
+		return  $this->db->insert_id();
 	}
 
 	public function get_order($id)
@@ -44,6 +45,33 @@ class Order_model extends MY_Model {
 		}
 
 		$this->db->join('customers as customers', 'customers.id = orders.customer_id', 'INNER');
+		
+		$result = $this->db->get();
+		return $result->result_array();
+	}
+
+	public function fetch_orders_by($fields = array(), $params = array(), $conditions = array()) {
+		if (!empty($fields)) {
+			$this->db->select($fields);
+		} else {
+			$this->db->select('orders.*');
+		}
+
+		$this->db->select('order_details.qty,order_details.price,order_details.sub_total');
+		$this->db->select('products.name');
+
+		$this->db->from('orders');
+
+		if (!empty($params)) {
+			$this->db->where($params);
+		}
+
+		if (!empty($conditions['having'])) {
+			$this->db->having($conditions['having']);
+		}
+
+		$this->db->join('order_details', 'order_details.order_id = orders.id', 'LEFT');
+		$this->db->join('products', 'products.id = order_details.product_id', 'LEFT');
 		
 		$result = $this->db->get();
 		return $result->result_array();
@@ -110,5 +138,13 @@ class Order_model extends MY_Model {
 		$this->db->where('id', $id);
 
 		$this->db->delete('orders');
+	}
+
+	public function delete_order_by($id){
+		$this->db->where('id', $id);
+		$this->db->delete('orders');
+		
+		$this->db->where('order_id', $id);
+		$this->db->delete('order_details');
 	}
 }

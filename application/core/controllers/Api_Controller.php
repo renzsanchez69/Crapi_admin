@@ -49,7 +49,7 @@ class API_Controller extends MY_Controller {
 			} else {
 				$this->to_error_unauthorized();
 			}
-		} 
+		}
 	}
 	
 	// Verify request method
