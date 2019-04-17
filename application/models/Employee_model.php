@@ -52,7 +52,19 @@ class Employee_model extends MY_Model {
 			return false;
 		}
 
-		return $this->get($id);
+		$this->db->select('employees.*');
+		$this->db->select('owners.firstname AS owner_firstname');
+		$this->db->select('owners.lastname AS owner_lastname');
+		$this->db->from('employees');
+		$this->db->join('owners as owners', 'owners.id = employees.owner_id', 'INNER');
+		$this->db->where('employees.id', $id);
+
+		$result = $this->db->get();
+		$data = $result->result_object();
+		if ($data) {
+			return $data[0];
+		}
+		return [];
 	}
 
 	public function fetch_employees($fields = array(), $params = array()) {

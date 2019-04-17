@@ -91,6 +91,8 @@ public function edit($id)
 
 		if ($this->input->method() == 'post') {
 			$postData = $this->input->post();
+			// var_dump($postData);
+			// die();
 			$requiredFields = array(
 				'email',
 				// 'username',
@@ -201,13 +203,13 @@ public function edit($id)
 		);
 
 		if ($this->input->method() == 'post') {
+			$postData = $this->input->post();
+
 			if (empty($postData['owner_id'])) {
 				$this->system_message->set_error('Please select owner.');
 				refresh();
 			}
-
 			
-			$postData = $this->input->post();
 			$requiredFields = array(
 				'owner_id',
 				'email',

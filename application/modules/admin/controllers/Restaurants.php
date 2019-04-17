@@ -10,6 +10,7 @@ class Restaurants extends Admin_Controller {
 		$this->load->database();
 		$this->load->library('form_builder');
 		$this->load->model('Restaurant_model', 'Restaurant');
+		$this->load->model('Owner_model', 'Owner');
 	}
 
 	public function index()
@@ -49,6 +50,54 @@ class Restaurants extends Admin_Controller {
 
 		$this->mViewData = $setData;
 		$this->render('restaurants/index');
+	}
+
+	public function create()
+	{
+		$this->mTitle = "Create New Restaurant";
+		
+		$formInfo = $this->form_builder->create_form();
+		$ownersList = $this->Owner->fetch_owners(['id', 'firstname', 'lastname']);
+
+		$setData = array(
+			'formInfo' => $formInfo,
+			'ownersList' => $ownersList
+		);
+
+		if ($this->input->method() == 'post') {
+			$postData = $this->input->post();
+
+			if (empty($postData['owner_id'])) {
+				$this->system_message->set_error('Please select owner.');
+				refresh();
+			}
+			
+			$requiredFields = array(
+				'owner_id',
+				'resto_name',
+				'address'
+			);
+
+			$validation = $this->checkRequiredFields($postData, $requiredFields);
+
+			if (isset($validation['hasError']) && $validation['hasError'] == true) {
+				$this->system_message->set_error(implode('<br>', $validation['message']));
+				refresh();
+			}
+
+			$res = $this->Restaurant->add_restaurant($postData);
+
+			if ($res) {
+				$this->system_message->set_success('Successfully added!');
+				redirect('admin/restaurants/edit/'.$res, 'refresh');
+			} else {
+				$this->system_message->set_error('Failed to add new employee!');
+				refresh();
+			}
+		}
+
+		$this->mViewData = $setData;
+		$this->render('restaurants/create');
 	}
 
 	public function edit($id)
