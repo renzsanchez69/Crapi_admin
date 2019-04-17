@@ -24,6 +24,16 @@ class Order_Details_model extends MY_Model {
 		return $this->get($id);
 	}
 
+	public function get_order_details_by($product_id)
+	{
+		$this->db->select('order_details.*');
+		$this->db->from('order_details');
+		$this->db->where('product_id',$product_id);
+
+		$result = $this->db->get();
+		return $result->result_array();
+	}
+
 	public function fetch_order_details($fields = array(), $params = array(), $conditions = array()) {
 		if (!empty($fields)) {
 			$this->db->select($fields);

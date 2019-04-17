@@ -75,38 +75,55 @@ class Orders extends API_Controller {
 		        "result"=> 'NG'
 		    ];
 		}
-		$data['customer_id'] = $this->mUser[0]['id'];
-		$data['order_number'] = $this->mUser[0]['id'].time();
-
-		$res_order = $this->Order->add_order($data);
-		if(!empty($res_order)){
-			$order_details['order_id'] = $res_order;
-			$order_details['product_id'] = $postData["product_id"];
-			$order_details['qty'] = $postData["qty"];
-			$order_details['price'] = $postData["price"];
-			$order_details['sub_total'] = $postData["qty"] * $postData["price"];
-			$res = $this->OrderDetails->add_order_details($order_details);
+		$checkIfExist = $this->OrderDetails->get_order_details_by($postData["product_id"]);
+		if(!empty($checkIfExist) && isset($checkIfExist)){
+			$order_details['qty'] = $checkIfExist[0]["qty"] + $postData["qty"];
+			$new_sub_total = $postData["qty"] * $postData["price"];
+			$order_details['sub_total'] = $checkIfExist[0]["sub_total"] + $new_sub_total;
+			$res = $this->OrderDetails->update_info($checkIfExist[0]["id"],$order_details);
 			if($res){
-				$myArr = [
-			        "data"=>[
-			        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
-			        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
-			        ],
-			        "result"=> 'OK'
-			    ];
+					$myArr = [
+				        "data"=>[],
+				        "result"=> 'OK'
+				    ];
+				} else {
+					$myArr = [
+				        "data"=>[],
+				        "result"=> 'NG'
+				    ];
+				}
+		} else {
+			$data['customer_id'] = $this->mUser[0]['id'];
+			$data['order_number'] = $this->mUser[0]['id'].time();
+
+			$res_order = $this->Order->add_order($data);
+			if(!empty($res_order)){
+				$order_details['order_id'] = $res_order;
+				$order_details['product_id'] = $postData["product_id"];
+				$order_details['qty'] = $postData["qty"];
+				$order_details['price'] = $postData["price"];
+				$order_details['sub_total'] = $postData["qty"] * $postData["price"];
+				$res = $this->OrderDetails->add_order_details($order_details);
+				if($res){
+					$myArr = [
+				        "data"=>[],
+				        "result"=> 'OK'
+				    ];
+				} else {
+					$myArr = [
+				        "data"=>[],
+				        "result"=> 'NG'
+				    ];
+				}
+
 			} else {
-				$myArr = [
+			    $myArr = [
 			        "data"=>[],
 			        "result"=> 'NG'
 			    ];
 			}
-
-		} else {
-		    $myArr = [
-		        "data"=>[],
-		        "result"=> 'NG'
-		    ];
 		}
+
 		$this->to_response($myArr);
 	}
 
