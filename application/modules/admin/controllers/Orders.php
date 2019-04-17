@@ -10,6 +10,7 @@ class Orders extends Admin_Controller {
 		$this->load->database();
 		$this->load->library('form_builder');
 		$this->load->model('Order_model', 'Order');
+		$this->load->model('Order_Details_model', 'OrderDetails');
 	}
 
 	public function index()
@@ -60,40 +61,24 @@ class Orders extends Admin_Controller {
 			'orders.*',
 			'customers.address',
 			'customers.longitude',
-			'customers.latitude'
+			'customers.latitude',
+			'restaurants.resto_name',
+			'restaurants.longitude AS resto_longitude',
+			'restaurants.latitude AS resto_latitude',
+			'restaurants.address AS resto_address'
 		);
-
 		$order = $this->Order->fetch_orders($fields, ['orders.id' => $id]);
+
+		$returnData = array(
+			'order_details.*',
+			'products.name',
+		);
+		$orderDetails = $this->OrderDetails->fetch_order_details($returnData, ['order_details.order_id' => $id]);
 
 		$setData = array(
 			'orderInfo' => !empty($order) ? $order[0] : [],
-			// 'formInfo' => $formInfo
+			'orderDetails' => !empty($orderDetails) ? $orderDetails : []
 		);
-
-		// if ($this->input->method() == 'post') {
-		// 	$postData = $this->input->post();
-		// 	$requiredFields = array(
-		// 		'resto_name',
-		// 		'address'
-		// 	);
-
-		// 	$validation = $this->checkRequiredFields($postData, $requiredFields);
-
-		// 	if (isset($validation['hasError']) && $validation['hasError'] == true) {
-		// 		$this->system_message->set_error(implode('<br>', $validation['message']));
-		// 		refresh();
-		// 	}
-
-		// 	$res = $this->Order->update_info($id, $postData);
-
-		// 	if ($res) {
-		// 		$this->system_message->set_success('Successfully updated!');
-		// 	} else {
-		// 		$this->system_message->set_error('Failed to update!');
-		// 	}
-
-		// 	refresh();
-		// }
 
 		$this->mViewData = $setData;
 		$this->render('orders/view');
