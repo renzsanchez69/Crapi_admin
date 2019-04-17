@@ -28,61 +28,57 @@
 	<div class="col-7">
 		
 		<div class="row">
-        <div class="col-12">
-            <div class="table-responsive">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <!-- <th scope="col"> </th> -->
-                            <th scope="col">Product</th>
-                            <th scope="col">Available</th>
-                            <th scope="col" class="text-center">Quantity</th>
-                            <th scope="col" class="text-right">Price</th>
-                            <th> </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                    	<?php $arr = [1,2,3]; ?>
-                    	<?php foreach ($arr as $value): ?>
-                    		<tr>
-	                            <!-- <td><img src="https://dummyimage.com/50x50/55595c/fff"> </td> -->
-	                            <td>Product Name Dada</td>
-	                            <td>In stock</td>
-	                            <td><center><input class="form-control" type="text" value="1" style="width: 40px;"></center></td>
-	                            <td class="text-right">₱ 124,90</td>
-	                            <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
-                       		 </tr>
-                    	<?php endforeach ?>
-                  
-                        <tr>
-                            <!-- <td></td> -->
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Sub-Total</td>
-                            <td class="text-right">₱ 255,90 </td>
-                        </tr>
-                        <tr>
-                            <!-- <td></td> -->
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td>Shipping</td>
-                            <td class="text-right">₱ 6,90 </td>
-                        </tr>
-                        <tr>
-                            <!-- <td></td> -->
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td><strong>Total</strong></td>
-                            <td class="text-right"><strong>₱ 346,90 </strong></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
+		<div class="col-12">
+			<div class="table-responsive">
+				<table class="table table-striped">
+					<thead>
+						<tr>
+							<!-- <th scope="col"> </th> -->
+							<th scope="col">Product</th>
+							<th scope="col">Available</th>
+							<th scope="col" class="text-center">Quantity</th>
+							<th scope="col" class="text-right">Price</th>
+							<!-- <th> </th> -->
+						</tr>
+					</thead>
+					<tbody>
+						<?php $arr = [1,2,3]; ?>
+						<?php foreach ($arr as $value): ?>
+							<tr>
+								<!-- <td><img src="https://dummyimage.com/50x50/55595c/fff"> </td> -->
+								<td>Product Name Dada</td>
+								<td>In stock</td>
+								<td><center><input class="form-control" type="text" value="1" style="width: 40px;"></center></td>
+								<td class="text-right">₱ 124,90</td>
+								<!-- <td class="text-right">
+									<button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> 
+								</td> -->
+							 </tr>
+						<?php endforeach ?>
+				  
+						<tr>
+							<td></td>
+							<td></td>
+							<td>Sub-Total</td>
+							<td class="text-right">₱ 255,90 </td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>Shipping</td>
+							<td class="text-right">₱ 6,90 </td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td><strong>Total</strong></td>
+							<td class="text-right"><strong>₱ 346,90 </strong></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
 	</div>
 </div>
 

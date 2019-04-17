@@ -9,8 +9,8 @@
 			<div class="col-12">
 				<div class="form-group">
 					<label for="owner_name" class="control-label">Owner Name</label>
-					<input class="form-control" type="text" id="owner_name" required>
-					<input class="form-control" name="owner_id" type="text" id="owner_id" required>
+					<input class="form-control" type="text" id="mdl_owner_name" required readonly>
+					<input class="form-control" name="owner_id" type="hidden" id="mdl_owner_id">
 					<button type="button" class="btn btn-info mt-1" data-toggle="modal" data-target="#ownerList">
 	 					Select Owner
 					</button>

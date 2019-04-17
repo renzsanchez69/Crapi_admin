@@ -2,6 +2,11 @@
 
 <center><h1>Restaurants List</h1></center>
 <br>
+<div class="row mb-2">
+	<div class="col">
+		<a href="<?php echo base_url(); ?>admin/restaurants/create" class="btn btn-info pull-left"><i class="fa fa-plus"></i> Add Restaurants</a>
+	</div>
+</div>
 <div class="card">
 	<div class="card-body">
 		<form method="GET" action="<?php echo base_url(); ?>admin/restaurants" accept-charset="UTF-8" class=" mb-2 mt-2">

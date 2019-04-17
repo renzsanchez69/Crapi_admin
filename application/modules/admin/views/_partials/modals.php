@@ -23,7 +23,15 @@
 								<tr>
 									<td><?php echo isset($owner['id']) ? $owner['id'] : '--'; ?></td>
 									<td><?php echo isset($owner['firstname']) ? $owner['firstname'].' '.$owner['lastname'] : '--'; ?></td>
-									<td></td>
+									<td>
+										<center>
+											<button class="btn btn-sm btn-success btnAssignOwner" 
+												data-ownerid="<?php echo isset($owner['id']) ? $owner['id'] : 0; ?>"
+												data-ownername="<?php echo isset($owner['firstname']) ? $owner['firstname'].' '.$owner['lastname'] : '--'; ?>">
+												ASSIGN
+											</button>
+										</center>
+									</td>
 								</tr>
 							<?php endforeach ?>
 							
@@ -44,3 +52,15 @@
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+	$('.btnAssignOwner').on('click', function(){
+		var ownerid = $(this).data('ownerid');
+		var	ownername = $(this).data('ownername');
+
+		$('#mdl_owner_name').val(ownername);
+		$('#mdl_owner_id').val(ownerid);
+		
+		$('#ownerList').modal('toggle');
+	});
+</script>
