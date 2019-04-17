@@ -35,15 +35,15 @@ class Order_Details_model extends MY_Model {
 	}
 
 	public function fetch_order_details($fields = array(), $params = array(), $conditions = array()) {
+		
 		if (!empty($fields)) {
 			$this->db->select($fields);
 		} else {
 			$this->db->select('order_details.*');
 		}
 
-		$this->db->select('CONCAT(`customers`.`firstname`, " ", `customers`.`lastname`) AS customer_fullname');
-
 		$this->db->from('order_details');
+		$this->db->join('products as products', 'products.id = order_details.product_id', 'INNER');
 
 		if (!empty($params)) {
 			$this->db->where($params);
@@ -53,7 +53,6 @@ class Order_Details_model extends MY_Model {
 			$this->db->having($conditions['having']);
 		}
 
-		$this->db->join('customers as customers', 'customers.id = orders.customer_id', 'INNER');
 		
 		$result = $this->db->get();
 		return $result->result_array();

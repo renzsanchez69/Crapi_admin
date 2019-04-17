@@ -45,6 +45,7 @@ class Order_model extends MY_Model {
 		}
 
 		$this->db->join('customers as customers', 'customers.id = orders.customer_id', 'INNER');
+		$this->db->join('restaurants as restaurants', 'restaurants.id = orders.resto_id', 'INNER');
 		
 		$result = $this->db->get();
 		return $result->result_array();

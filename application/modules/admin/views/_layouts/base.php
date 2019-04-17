@@ -40,9 +40,9 @@
 		var	growlMessage = "<?php echo !empty($flashdata['growl']['message']) ? $flashdata['growl']['message'] : ''; ?>";
 
 		$(function () {
-			$('.datetimepicker').datetimepicker({
-				format: 'YYYY-MM-DD'
-			});
+			// $('.datetimepicker').datetimepicker({
+			// 	format: 'YYYY-MM-DD'
+			// });
 			$('input[type="number"]').keydown(function (e) {
 				// Allow: backspace, delete, tab, escape, enter and .
 				if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||

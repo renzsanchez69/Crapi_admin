@@ -10,17 +10,24 @@
 			<dt class="col-sm-4">Customer Name</dt>
 			<dd class="col-sm-8"><?php echo isset($orderInfo['customer_fullname']) ? $orderInfo['customer_fullname'] : ''; ?></dd>
 
+			<dt class="col-sm-4">Customer Address</dt>
+			<dd class="col-sm-8">
+				<p><?php echo isset($orderInfo['address']) ? $orderInfo['address'] : ''; ?></p>
+			</dd>
+
 			<dt class="col-sm-4">Order Number</dt>
 			<dd class="col-sm-8">#<?php echo isset($orderInfo['order_number']) ? $orderInfo['order_number'] : ''; ?></dd>
 
-			<dt class="col-sm-4">Address</dt>
+			<dt class="col-sm-4">Resto Name</dt>
+			<dd class="col-sm-8"><?php echo isset($orderInfo['resto_name']) ? $orderInfo['resto_name'] : ''; ?></dd>
+
+			<dt class="col-sm-4">Resto Address</dt>
 			<dd class="col-sm-8">
-				<p><?php echo isset($orderInfo['address']) ? $orderInfo['address'] : ''; ?></p>
-				
+				<p><?php echo isset($orderInfo['resto_address']) ? $orderInfo['resto_address'] : ''; ?></p>
 			</dd>
 		</dl>
-		<input name="latitude" type="hidden" value="">
-		<input name="longitude" type="hidden" value="">
+		<input name="latitude" type="hidden" value="<?php echo isset($orderInfo['resto_latitude']) ? $orderInfo['resto_latitude'] : ''; ?>">
+		<input name="longitude" type="hidden" value="<?php echo isset($orderInfo['resto_longitude']) ? $orderInfo['resto_longitude'] : ''; ?>">
 		<div class="col-12" id="map" style="height: 300px; position: relative; overflow: hidden;"></div>
 
 	</div>
@@ -34,45 +41,36 @@
 					<thead>
 						<tr>
 							<!-- <th scope="col"> </th> -->
-							<th scope="col">Product</th>
-							<th scope="col">Available</th>
+							<th scope="col">Product ID</th>
+							<th scope="col">Product Name</th>
+							<th scope="col">Request Note</th>
 							<th scope="col" class="text-center">Quantity</th>
 							<th scope="col" class="text-right">Price</th>
+							<th scope="col" class="text-right">Sub-Total</th>
 							<!-- <th> </th> -->
 						</tr>
 					</thead>
 					<tbody>
-						<?php $arr = [1,2,3]; ?>
-						<?php foreach ($arr as $value): ?>
+						<?php $total = 0; ?>
+						<?php foreach ($orderDetails as $detail): ?>
 							<tr>
 								<!-- <td><img src="https://dummyimage.com/50x50/55595c/fff"> </td> -->
-								<td>Product Name Dada</td>
-								<td>In stock</td>
-								<td><center><input class="form-control" type="text" value="1" style="width: 40px;"></center></td>
-								<td class="text-right">₱ 124,90</td>
-								<!-- <td class="text-right">
-									<button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> 
-								</td> -->
+								<td><?php echo !empty($detail['id']) ? $detail['id'] : '--'; ?></td>
+								<td><?php echo !empty($detail['name']) ? $detail['name'] : '--'; ?></td>
+								<td><?php echo !empty($detail['description_request']) ? $detail['description_request'] : '--'; ?></td>
+								<td><center><?php echo !empty($detail['qty']) ? $detail['qty'] : '--'; ?></center></td>
+								<td class="text-right">₱ <?php echo !empty($detail['price']) ? $detail['price'] : '--'; ?></center></td>
+								<td class="text-right">₱ <?php echo !empty($detail['sub_total']) ? $detail['sub_total'] : '--'; ?></center></td>
 							 </tr>
+							 <?php $total = $total + (!empty($detail['sub_total']) ? $detail['sub_total'] : 0);?>
 						<?php endforeach ?>
-				  
 						<tr>
 							<td></td>
 							<td></td>
-							<td>Sub-Total</td>
-							<td class="text-right">₱ 255,90 </td>
-						</tr>
-						<tr>
-							<td></td>
-							<td></td>
-							<td>Shipping</td>
-							<td class="text-right">₱ 6,90 </td>
-						</tr>
-						<tr>
 							<td></td>
 							<td></td>
 							<td><strong>Total</strong></td>
-							<td class="text-right"><strong>₱ 346,90 </strong></td>
+							<td class="text-right"><strong>₱ <?php echo isset($total) ? number_format($total) : '0'; ?> </strong></td>
 						</tr>
 					</tbody>
 				</table>
