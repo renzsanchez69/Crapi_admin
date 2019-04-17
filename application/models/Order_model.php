@@ -57,7 +57,7 @@ class Order_model extends MY_Model {
 			$this->db->select('orders.*');
 		}
 
-		$this->db->select('order_details.qty,order_details.price,order_details.sub_total');
+		$this->db->select('order_details.qty,order_details.price,order_details.sub_total,order_details.status');
 		$this->db->select('products.name');
 
 		$this->db->from('orders');

@@ -80,6 +80,7 @@ class Orders extends API_Controller {
 			$order_details['qty'] = $checkIfExist[0]["qty"] + $postData["qty"];
 			$new_sub_total = $postData["qty"] * $postData["price"];
 			$order_details['sub_total'] = $checkIfExist[0]["sub_total"] + $new_sub_total;
+			$order_details['description_request'] = $postData["description"];
 			$res = $this->OrderDetails->update_info($checkIfExist[0]["id"],$order_details);
 			if($res){
 					$myArr = [
@@ -103,6 +104,7 @@ class Orders extends API_Controller {
 				$order_details['qty'] = $postData["qty"];
 				$order_details['price'] = $postData["price"];
 				$order_details['sub_total'] = $postData["qty"] * $postData["price"];
+				$order_details['description_request'] = $postData["description"];
 				$res = $this->OrderDetails->add_order_details($order_details);
 				if($res){
 					$myArr = [
@@ -137,7 +139,7 @@ class Orders extends API_Controller {
 		    ];
 		}
 
-		$res_order = $this->Order->fetch_orders_by([],['customer_id'=>$this->mUser[0]['id']],[]);
+		$res_order = $this->Order->fetch_orders_by([],['customer_id'=>$this->mUser[0]['id'],'status'=>'pending'],[]);
 		if(!empty($res_order)){
 
 				$myArr = [
