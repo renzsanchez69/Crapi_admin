@@ -78,7 +78,7 @@ class Product_model extends MY_Model {
 		if (!empty($fields)) {
 			$select = implode(', ', $fields);
 		}
-		$select .= ',`products`.`name`,`products`.`details`,`products`.`price`';
+		$select .= ',`products`.`id` AS product_id,`products`.`name`,`products`.`details`,`products`.`price`';
 		$queryStr = 'SELECT '.$select.' FROM menus';
 
 		$queryStr .= " INNER JOIN products ON products.menu_id = menus.id  ";

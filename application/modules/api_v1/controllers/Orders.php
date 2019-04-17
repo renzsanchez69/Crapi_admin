@@ -53,19 +53,13 @@ class Orders extends API_Controller {
 		$postData = $this->input->post();
 		if(empty( $this->mUser) && !isset( $this->mUser)){
 		    $myArr = [
-		        "data"=>[
-		        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
-		        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
-		        ],
+		        "data"=>[],
 		        "result"=> 'NG'
 		    ];
 		}
 
 		$myArr = [
-	        "data"=>[
-	        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
-	        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
-	        ],
+	        "data"=>[],
 	        "result"=> 'OK'
 	    ];
 		 $this->Order->delete_order_by($postData["order_id"]);
@@ -77,10 +71,7 @@ class Orders extends API_Controller {
 		$postData = $this->input->post();
 		if(empty( $this->mUser) && !isset( $this->mUser)){
 		    $myArr = [
-		        "data"=>[
-		        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
-		        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
-		        ],
+		        "data"=>[],
 		        "result"=> 'NG'
 		    ];
 		}
@@ -105,20 +96,14 @@ class Orders extends API_Controller {
 			    ];
 			} else {
 				$myArr = [
-			        "data"=>[
-			        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
-			        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
-			        ],
+			        "data"=>[],
 			        "result"=> 'NG'
 			    ];
 			}
 
 		} else {
 		    $myArr = [
-		        "data"=>[
-		        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
-		        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
-		        ],
+		        "data"=>[],
 		        "result"=> 'NG'
 		    ];
 		}
@@ -130,10 +115,7 @@ class Orders extends API_Controller {
 		$postData = $this->input->post();
 		if(empty($this->mUser) && !isset( $this->mUser)){
 		    $myArr = [
-		        "data"=>[
-		        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
-		        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
-		        ],
+		        "data"=>[],
 		        "result"=> 'NG'
 		    ];
 		}
@@ -149,10 +131,7 @@ class Orders extends API_Controller {
 
 		} else {
 		    $myArr = [
-		        "data"=>[
-		        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
-		        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
-		        ],
+		        "data"=>[],
 		        "result"=> 'NG'
 		    ];
 		}

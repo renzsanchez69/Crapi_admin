@@ -30,7 +30,13 @@ class Products extends API_Controller {
 
 	public function menu_list()
 	{
-		$urlQuery = $this->input->post();
+		$postData = $this->input->post();
+		if(empty($this->mUser) && !isset( $this->mUser)){
+		    $myArr = [
+		        "data"=>[],
+		        "result"=> 'NG'
+		    ];
+		}
 
 		// - get fields
 		$fields = array(
@@ -40,8 +46,8 @@ class Products extends API_Controller {
 
 		);
 
-		if (!empty($urlQuery['resto_id'])) {
-			$params['resto_id'] = $urlQuery['resto_id'];
+		if (!empty($postData['resto_id'])) {
+			$params['resto_id'] = $postData['resto_id'];
 		}
 
 		$data = $this->product->fetch_product_raw($fields, $params);
@@ -55,9 +61,27 @@ class Products extends API_Controller {
 
 	public function product_search()
 	{
-		//$_POST["search"] -> post request for search
-		//$_POST["token"] -> post request for search
-		$data = $this->product->fetch_product();
+		$postData = $this->input->post();
+		if(empty($this->mUser) && !isset( $this->mUser)){
+		    $myArr = [
+		        "data"=>[],
+		        "result"=> 'NG'
+		    ];
+		}
+		// - get fields
+		$fields = array(
+			'menus.*'
+		);
+		$params = array(
+
+		);
+
+		if (!empty($postData['search'])) {
+			$params['LIKE']['name'] = $postData['search'];
+		}
+
+		$data = $this->product->fetch_product_raw($fields, $params);
+		
 		$myArr = [
             "data"=>$data,
             "result"=> 'OK'
