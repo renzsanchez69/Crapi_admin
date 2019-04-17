@@ -24,11 +24,11 @@ class Order_Details_model extends MY_Model {
 		return $this->get($id);
 	}
 
-	public function get_order_details_by($product_id)
+	public function get_order_details_by($params)
 	{
 		$this->db->select('order_details.*');
 		$this->db->from('order_details');
-		$this->db->where('product_id',$product_id);
+		$this->db->where($params);
 
 		$result = $this->db->get();
 		return $result->result_array();
