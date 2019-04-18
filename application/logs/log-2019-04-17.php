@@ -213,3 +213,168 @@ INFO - 2019-04-17 00:03:53 --> Model Class Initialized
 INFO - 2019-04-17 00:03:53 --> Model Class Initialized
 INFO - 2019-04-17 00:03:53 --> Final output sent to browser
 DEBUG - 2019-04-17 00:03:53 --> Total execution time: 0.2867
+INFO - 2019-04-17 00:06:15 --> Helper loaded: language_helper
+INFO - 2019-04-17 00:06:15 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-17 00:06:15 --> Model Class Initialized
+INFO - 2019-04-17 00:06:15 --> Model Class Initialized
+INFO - 2019-04-17 00:06:15 --> Model Class Initialized
+INFO - 2019-04-17 00:06:15 --> Model Class Initialized
+INFO - 2019-04-17 00:06:15 --> Helper loaded: form_helper
+INFO - 2019-04-17 00:06:15 --> Form Validation Class Initialized
+DEBUG - 2019-04-17 00:06:15 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/form_validation.php
+INFO - 2019-04-17 00:06:15 --> Model Class Initialized
+INFO - 2019-04-17 00:06:15 --> Model Class Initialized
+INFO - 2019-04-17 00:06:15 --> Final output sent to browser
+DEBUG - 2019-04-17 00:06:15 --> Total execution time: 0.3118
+INFO - 2019-04-17 00:06:23 --> Helper loaded: language_helper
+INFO - 2019-04-17 00:06:23 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-17 00:06:23 --> Model Class Initialized
+INFO - 2019-04-17 00:06:23 --> Model Class Initialized
+INFO - 2019-04-17 00:06:23 --> Model Class Initialized
+INFO - 2019-04-17 00:06:23 --> Model Class Initialized
+INFO - 2019-04-17 00:06:23 --> Model Class Initialized
+INFO - 2019-04-17 00:06:23 --> Final output sent to browser
+DEBUG - 2019-04-17 00:06:23 --> Total execution time: 0.2861
+INFO - 2019-04-17 00:06:33 --> Helper loaded: language_helper
+INFO - 2019-04-17 00:06:33 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-17 00:06:33 --> Model Class Initialized
+INFO - 2019-04-17 00:06:33 --> Model Class Initialized
+INFO - 2019-04-17 00:06:33 --> Model Class Initialized
+INFO - 2019-04-17 00:06:33 --> Model Class Initialized
+INFO - 2019-04-17 00:06:33 --> Helper loaded: form_helper
+INFO - 2019-04-17 00:06:33 --> Form Validation Class Initialized
+DEBUG - 2019-04-17 00:06:33 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/form_validation.php
+INFO - 2019-04-17 00:06:33 --> Model Class Initialized
+INFO - 2019-04-17 00:06:33 --> Model Class Initialized
+INFO - 2019-04-17 00:06:33 --> Final output sent to browser
+DEBUG - 2019-04-17 00:06:33 --> Total execution time: 0.2913
+INFO - 2019-04-17 00:06:33 --> Helper loaded: language_helper
+INFO - 2019-04-17 00:06:33 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-17 00:06:33 --> Model Class Initialized
+INFO - 2019-04-17 00:06:33 --> Model Class Initialized
+INFO - 2019-04-17 00:06:33 --> Model Class Initialized
+INFO - 2019-04-17 00:06:33 --> Model Class Initialized
+INFO - 2019-04-17 00:06:33 --> Helper loaded: form_helper
+INFO - 2019-04-17 00:06:33 --> Form Validation Class Initialized
+DEBUG - 2019-04-17 00:06:33 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/form_validation.php
+INFO - 2019-04-17 00:06:33 --> Model Class Initialized
+INFO - 2019-04-17 00:06:33 --> Model Class Initialized
+INFO - 2019-04-17 00:06:33 --> Final output sent to browser
+DEBUG - 2019-04-17 00:06:33 --> Total execution time: 0.3004
+INFO - 2019-04-17 00:06:42 --> Helper loaded: language_helper
+INFO - 2019-04-17 00:06:42 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-17 00:06:42 --> Model Class Initialized
+INFO - 2019-04-17 00:06:42 --> Model Class Initialized
+INFO - 2019-04-17 00:06:42 --> Model Class Initialized
+INFO - 2019-04-17 00:06:42 --> Model Class Initialized
+INFO - 2019-04-17 00:06:42 --> Helper loaded: form_helper
+INFO - 2019-04-17 00:06:42 --> Form Validation Class Initialized
+DEBUG - 2019-04-17 00:06:42 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/form_validation.php
+INFO - 2019-04-17 00:06:42 --> Model Class Initialized
+INFO - 2019-04-17 00:06:42 --> Model Class Initialized
+INFO - 2019-04-17 00:06:42 --> Final output sent to browser
+DEBUG - 2019-04-17 00:06:42 --> Total execution time: 0.3045
+INFO - 2019-04-17 00:06:43 --> Helper loaded: language_helper
+INFO - 2019-04-17 00:06:43 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-17 00:06:43 --> Model Class Initialized
+INFO - 2019-04-17 00:06:43 --> Model Class Initialized
+INFO - 2019-04-17 00:06:43 --> Model Class Initialized
+INFO - 2019-04-17 00:06:43 --> Model Class Initialized
+INFO - 2019-04-17 00:06:43 --> Helper loaded: form_helper
+INFO - 2019-04-17 00:06:43 --> Form Validation Class Initialized
+DEBUG - 2019-04-17 00:06:43 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/form_validation.php
+INFO - 2019-04-17 00:06:43 --> Model Class Initialized
+INFO - 2019-04-17 00:06:43 --> Model Class Initialized
+INFO - 2019-04-17 00:06:43 --> Final output sent to browser
+DEBUG - 2019-04-17 00:06:43 --> Total execution time: 0.2992
+INFO - 2019-04-17 00:08:39 --> Helper loaded: language_helper
+INFO - 2019-04-17 00:08:39 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-17 00:08:39 --> Model Class Initialized
+INFO - 2019-04-17 00:08:39 --> Model Class Initialized
+INFO - 2019-04-17 00:08:39 --> Model Class Initialized
+INFO - 2019-04-17 00:08:39 --> Model Class Initialized
+INFO - 2019-04-17 00:08:39 --> Helper loaded: form_helper
+INFO - 2019-04-17 00:08:39 --> Form Validation Class Initialized
+DEBUG - 2019-04-17 00:08:39 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/form_validation.php
+INFO - 2019-04-17 00:08:39 --> Model Class Initialized
+INFO - 2019-04-17 00:08:39 --> Model Class Initialized
+INFO - 2019-04-17 00:08:39 --> Final output sent to browser
+DEBUG - 2019-04-17 00:08:39 --> Total execution time: 0.3301
+INFO - 2019-04-17 00:08:40 --> Helper loaded: language_helper
+INFO - 2019-04-17 00:08:40 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-17 00:08:40 --> Model Class Initialized
+INFO - 2019-04-17 00:08:40 --> Model Class Initialized
+INFO - 2019-04-17 00:08:40 --> Model Class Initialized
+INFO - 2019-04-17 00:08:40 --> Model Class Initialized
+INFO - 2019-04-17 00:08:40 --> Helper loaded: form_helper
+INFO - 2019-04-17 00:08:40 --> Form Validation Class Initialized
+DEBUG - 2019-04-17 00:08:40 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/form_validation.php
+INFO - 2019-04-17 00:08:40 --> Model Class Initialized
+INFO - 2019-04-17 00:08:40 --> Model Class Initialized
+INFO - 2019-04-17 00:08:40 --> Final output sent to browser
+DEBUG - 2019-04-17 00:08:40 --> Total execution time: 0.3150
+INFO - 2019-04-17 00:08:41 --> Helper loaded: language_helper
+INFO - 2019-04-17 00:08:41 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-17 00:08:41 --> Model Class Initialized
+INFO - 2019-04-17 00:08:41 --> Model Class Initialized
+INFO - 2019-04-17 00:08:41 --> Model Class Initialized
+INFO - 2019-04-17 00:08:41 --> Model Class Initialized
+INFO - 2019-04-17 00:08:41 --> Helper loaded: form_helper
+INFO - 2019-04-17 00:08:41 --> Form Validation Class Initialized
+DEBUG - 2019-04-17 00:08:42 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/form_validation.php
+INFO - 2019-04-17 00:08:42 --> Model Class Initialized
+INFO - 2019-04-17 00:08:42 --> Model Class Initialized
+INFO - 2019-04-17 00:08:42 --> Final output sent to browser
+DEBUG - 2019-04-17 00:08:42 --> Total execution time: 0.3426
+INFO - 2019-04-17 00:08:42 --> Helper loaded: language_helper
+INFO - 2019-04-17 00:08:42 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-17 00:08:42 --> Model Class Initialized
+INFO - 2019-04-17 00:08:42 --> Model Class Initialized
+INFO - 2019-04-17 00:08:42 --> Model Class Initialized
+INFO - 2019-04-17 00:08:42 --> Model Class Initialized
+INFO - 2019-04-17 00:08:42 --> Helper loaded: form_helper
+INFO - 2019-04-17 00:08:42 --> Form Validation Class Initialized
+DEBUG - 2019-04-17 00:08:42 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/form_validation.php
+INFO - 2019-04-17 00:08:42 --> Model Class Initialized
+INFO - 2019-04-17 00:08:42 --> Model Class Initialized
+INFO - 2019-04-17 00:08:42 --> Final output sent to browser
+DEBUG - 2019-04-17 00:08:42 --> Total execution time: 0.3330
+INFO - 2019-04-17 00:08:43 --> Helper loaded: language_helper
+INFO - 2019-04-17 00:08:43 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-17 00:08:43 --> Model Class Initialized
+INFO - 2019-04-17 00:08:43 --> Model Class Initialized
+INFO - 2019-04-17 00:08:43 --> Model Class Initialized
+INFO - 2019-04-17 00:08:43 --> Model Class Initialized
+INFO - 2019-04-17 00:08:43 --> Helper loaded: form_helper
+INFO - 2019-04-17 00:08:43 --> Form Validation Class Initialized
+DEBUG - 2019-04-17 00:08:43 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/form_validation.php
+INFO - 2019-04-17 00:08:43 --> Model Class Initialized
+INFO - 2019-04-17 00:08:43 --> Model Class Initialized
+INFO - 2019-04-17 00:08:43 --> Final output sent to browser
+DEBUG - 2019-04-17 00:08:43 --> Total execution time: 0.4171
+INFO - 2019-04-17 00:08:43 --> Helper loaded: language_helper
+INFO - 2019-04-17 00:08:43 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-17 00:08:43 --> Model Class Initialized
+INFO - 2019-04-17 00:08:43 --> Model Class Initialized
+INFO - 2019-04-17 00:08:43 --> Model Class Initialized
+INFO - 2019-04-17 00:08:43 --> Model Class Initialized
+INFO - 2019-04-17 00:08:43 --> Helper loaded: form_helper
+INFO - 2019-04-17 00:08:43 --> Form Validation Class Initialized
+DEBUG - 2019-04-17 00:08:43 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/form_validation.php
+INFO - 2019-04-17 00:08:43 --> Model Class Initialized
+INFO - 2019-04-17 00:08:43 --> Model Class Initialized
+INFO - 2019-04-17 00:08:43 --> Final output sent to browser
+DEBUG - 2019-04-17 00:08:43 --> Total execution time: 0.5149
+INFO - 2019-04-17 00:08:43 --> Helper loaded: language_helper
+INFO - 2019-04-17 00:08:43 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-04-17 00:08:43 --> Model Class Initialized
+INFO - 2019-04-17 00:08:43 --> Model Class Initialized
+INFO - 2019-04-17 00:08:43 --> Model Class Initialized
+INFO - 2019-04-17 00:08:43 --> Model Class Initialized
+INFO - 2019-04-17 00:08:44 --> Helper loaded: form_helper
+INFO - 2019-04-17 00:08:44 --> Form Validation Class Initialized
+DEBUG - 2019-04-17 00:08:44 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/form_validation.php
+INFO - 2019-04-17 00:08:44 --> Model Class Initialized
+INFO - 2019-04-17 00:08:44 --> Model Class Initialized
+INFO - 2019-04-17 00:08:44 --> Final output sent to browser
+DEBUG - 2019-04-17 00:08:44 --> Total execution time: 0.4013
