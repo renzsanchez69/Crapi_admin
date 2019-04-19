@@ -58,8 +58,9 @@ class Order_model extends MY_Model {
 			$this->db->select('orders.*');
 		}
 
-		$this->db->select('order_details.qty,order_details.price,order_details.sub_total,order_details.status,order_details.product_id');
+		$this->db->select('order_details.qty,order_details.price,order_details.sub_total,order_details.status,order_details.product_id,order_details.created_at AS order_date');
 		$this->db->select('products.name');
+		$this->db->select('CONCAT(`customers`.`firstname`, " ", `customers`.`lastname`) AS customer_fullname,customers.address,customers.contact_number,customers.email');
 
 		$this->db->from('orders');
 
@@ -73,6 +74,7 @@ class Order_model extends MY_Model {
 
 		$this->db->join('order_details', 'order_details.order_id = orders.id', 'LEFT');
 		$this->db->join('products', 'products.id = order_details.product_id', 'LEFT');
+		$this->db->join('customers as customers', 'customers.id = orders.customer_id', 'INNER');
 		
 		$result = $this->db->get();
 		return $result->result_array();

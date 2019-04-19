@@ -59,6 +59,8 @@ class Login extends API_Controller {
 				'result' => REQUEST_RESULT_OK,
 				'login_token' => $loginData->login_token,
 				'role' => $loginData->role,
+				'longitude' => ($loginData->role == ROLE_CUSTOMER) ? $loginData->longitude : '',
+				'latitude' => ($loginData->role == ROLE_CUSTOMER) ? $loginData->latitude : ''
 			);
 		}
 		$this->to_response($data);
