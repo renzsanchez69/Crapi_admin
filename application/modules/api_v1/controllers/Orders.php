@@ -33,20 +33,6 @@ class Orders extends API_Controller {
 	    ];
 		$this->to_response($myArr);
 	}
-
-	public function order_search()
-	{
-		//$_POST["search"] -> post request for search
-		//$_POST["token"] -> post request for search
-		$myArr = [
-	        "data"=>[
-	        	['id' => 1,'name' => 'Bam-e','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
-	        	['id' => 2,'name' => 'Litson  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
-	        ],
-	        "result"=> 'OK'
-	    ];
-		$this->to_response($myArr);
-	}
 	
 	public function order_delete()
 	{
@@ -213,6 +199,34 @@ class Orders extends API_Controller {
 		}
 
 		$res_order = $this->Order->fetch_orders_by([],['customer_id'=>$this->mUser[0]['id'],'resto_id'=>$postData['resto_id'],'order_status'=>'pending'],[]);
+		if(!empty($res_order)){
+
+				$myArr = [
+			        "data"=> $res_order,
+			        "result"=> 'OK'
+			    ];
+
+		} else {
+		    $myArr = [
+		        "data"=>[],
+		        "result"=> 'NG'
+		    ];
+		}
+		$this->to_response($myArr);
+	}
+
+	public function order_search()
+	{
+		$postData = $this->input->post();
+		if(empty($this->mUser) && !isset( $this->mUser)){
+		    $myArr = [
+		        "data"=>[],
+		        "result"=> 'NG'
+		    ];
+		    return $this->to_response($myArr);
+		}
+
+		$res_order = $this->Order->fetch_orders_search([],['customer_id'=>$this->mUser[0]['id'],'resto_id'=>$postData['resto_id'],'name'=>$postData['search'],'order_status'=>'pending'],[]);
 		if(!empty($res_order)){
 
 				$myArr = [
