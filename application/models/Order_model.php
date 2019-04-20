@@ -32,7 +32,8 @@ class Order_model extends MY_Model {
 			$this->db->select('orders.*');
 		}
 
-		$this->db->select('CONCAT(`customers`.`firstname`, " ", `customers`.`lastname`) AS customer_fullname');
+		$this->db->select('CONCAT(`customers`.`firstname`, " ", `customers`.`lastname`) AS customer_fullname,customers.email,customers.address AS customer_address,customers.contact_number');
+		$this->db->select('restaurants.resto_name AS restaurants_name');
 
 		$this->db->from('orders');
 

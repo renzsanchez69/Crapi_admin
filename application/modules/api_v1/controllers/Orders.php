@@ -23,14 +23,59 @@ class Orders extends API_Controller {
 
 	public function order_list()
 	{
-		//$_POST["usr_id"] -> post request  for list
-		$myArr = [
-	        "data"=>[
-	        	['id' => 1,'name' => 'Adobo','qty' => 60,'price' => 50,'description' => 'Adobo','created_date' => date('Y-m-d h:i:s')],
-	        	['id' => 2,'name' => 'Adobo  Sinugba','qty' => 60,'price' => 50,'description' => 'Adobo Sinugba','created_date' => date('Y-m-d h:i:s')]
-	        ],
-	        "result"=> 'OK'
-	    ];
+
+		$postData = $this->input->post();
+		if(empty($this->mUser) && !isset( $this->mUser)){
+		    $myArr = [
+		        "data"=>[],
+		        "result"=> 'NG'
+		    ];
+		    return $this->to_response($myArr);
+		}
+
+		$res_order = $this->Order->fetch_orders([],['customer_id'=>$this->mUser[0]['id'],'order_status'=>'success'],[]);
+		if(!empty($res_order)){
+
+				$myArr = [
+			        "data"=> $res_order,
+			        "result"=> 'OK'
+			    ];
+
+		} else {
+		    $myArr = [
+		        "data"=>[],
+		        "result"=> 'NG'
+		    ];
+		}
+		$this->to_response($myArr);
+	}
+
+	public function order_details_list()
+	{
+
+		$postData = $this->input->post();
+		if(empty($this->mUser) && !isset( $this->mUser)){
+		    $myArr = [
+		        "data"=>[],
+		        "result"=> 'NG'
+		    ];
+		    return $this->to_response($myArr);
+		}
+
+		$res_order = $this->OrderDetails->fetch_order_details([],['order_id'=>$postData['order_id'],'status'=>'success']);
+		if(!empty($res_order)){
+
+				$myArr = [
+			        "data"=> $res_order,
+			        "result"=> 'OK'
+			    ];
+
+		} else {
+		    $myArr = [
+		        "data"=>[],
+		        "result"=> 'NG'
+		    ];
+		}
 		$this->to_response($myArr);
 	}
 	

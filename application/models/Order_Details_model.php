@@ -41,6 +41,7 @@ class Order_Details_model extends MY_Model {
 		} else {
 			$this->db->select('order_details.*');
 		}
+			$this->db->select('products.name');
 
 		$this->db->from('order_details');
 		$this->db->join('products as products', 'products.id = order_details.product_id', 'INNER');
