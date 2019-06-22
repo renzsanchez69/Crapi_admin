@@ -52,8 +52,13 @@ class Login extends API_Controller {
 		} elseif(!empty($employeeData)) {
 			$loginData = $employeeData;
 			$loginData->role = ROLE_EMPLOYEE;
-		} 
+		}
 
+		// - generate login_token 
+
+		// - update user login
+
+		// - return result
 		if (isset($loginData)) {
 			$data = array(
 				'result' => REQUEST_RESULT_OK,
