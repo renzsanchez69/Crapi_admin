@@ -62,6 +62,7 @@ class Login extends API_Controller {
 		if (isset($loginData)) {
 			$data = array(
 				'result' => REQUEST_RESULT_OK,
+				'user_id' => $loginData->id,
 				'login_token' => $loginData->login_token,
 				'role' => $loginData->role,
 				'longitude' => ($loginData->role == ROLE_CUSTOMER) ? $loginData->longitude : '',

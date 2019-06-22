@@ -3845,3 +3845,1321 @@ INFO - 2019-06-22 21:07:54 --> Model Class Initialized
 INFO - 2019-06-22 21:07:54 --> Model Class Initialized
 INFO - 2019-06-22 21:07:54 --> Final output sent to browser
 DEBUG - 2019-06-22 21:07:54 --> Total execution time: 0.4763
+INFO - 2019-06-22 17:54:50 --> Config Class Initialized
+INFO - 2019-06-22 17:54:50 --> Hooks Class Initialized
+DEBUG - 2019-06-22 17:54:50 --> UTF-8 Support Enabled
+INFO - 2019-06-22 17:54:50 --> Utf8 Class Initialized
+INFO - 2019-06-22 17:54:50 --> URI Class Initialized
+INFO - 2019-06-22 17:54:51 --> Router Class Initialized
+INFO - 2019-06-22 17:54:51 --> Output Class Initialized
+INFO - 2019-06-22 17:54:51 --> Security Class Initialized
+DEBUG - 2019-06-22 17:54:51 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 17:54:51 --> Input Class Initialized
+INFO - 2019-06-22 17:54:51 --> Language Class Initialized
+INFO - 2019-06-22 17:54:51 --> Language Class Initialized
+INFO - 2019-06-22 17:54:51 --> Config Class Initialized
+INFO - 2019-06-22 17:54:51 --> Loader Class Initialized
+DEBUG - 2019-06-22 17:54:51 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 17:54:51 --> Helper loaded: url_helper
+INFO - 2019-06-22 17:54:51 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 17:54:52 --> Helper loaded: string_helper
+INFO - 2019-06-22 17:54:52 --> Helper loaded: array_helper
+INFO - 2019-06-22 17:54:52 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 17:54:52 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 17:54:52 --> Database Driver Class Initialized
+INFO - 2019-06-22 17:54:52 --> Controller Class Initialized
+INFO - 2019-06-22 23:54:53 --> Helper loaded: language_helper
+INFO - 2019-06-22 23:54:53 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-06-22 23:54:53 --> Model Class Initialized
+INFO - 2019-06-22 23:54:53 --> Model Class Initialized
+INFO - 2019-06-22 23:54:53 --> Model Class Initialized
+INFO - 2019-06-22 23:54:53 --> Model Class Initialized
+INFO - 2019-06-22 23:54:54 --> Final output sent to browser
+DEBUG - 2019-06-22 23:54:54 --> Total execution time: 4.4058
+INFO - 2019-06-22 17:54:55 --> Config Class Initialized
+INFO - 2019-06-22 17:54:55 --> Hooks Class Initialized
+DEBUG - 2019-06-22 17:54:55 --> UTF-8 Support Enabled
+INFO - 2019-06-22 17:54:55 --> Utf8 Class Initialized
+INFO - 2019-06-22 17:54:55 --> URI Class Initialized
+INFO - 2019-06-22 17:54:55 --> Router Class Initialized
+INFO - 2019-06-22 17:54:55 --> Output Class Initialized
+INFO - 2019-06-22 17:54:55 --> Security Class Initialized
+DEBUG - 2019-06-22 17:54:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 17:54:55 --> Input Class Initialized
+INFO - 2019-06-22 17:54:55 --> Language Class Initialized
+INFO - 2019-06-22 17:54:55 --> Language Class Initialized
+INFO - 2019-06-22 17:54:55 --> Config Class Initialized
+INFO - 2019-06-22 17:54:55 --> Loader Class Initialized
+DEBUG - 2019-06-22 17:54:55 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 17:54:55 --> Helper loaded: url_helper
+INFO - 2019-06-22 17:54:56 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 17:54:56 --> Helper loaded: string_helper
+INFO - 2019-06-22 17:54:56 --> Helper loaded: array_helper
+INFO - 2019-06-22 17:54:56 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 17:54:56 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 17:54:56 --> Database Driver Class Initialized
+INFO - 2019-06-22 17:54:56 --> Controller Class Initialized
+INFO - 2019-06-22 23:54:56 --> Helper loaded: language_helper
+INFO - 2019-06-22 23:54:56 --> Language file loaded: language/english/general_lang.php
+INFO - 2019-06-22 23:54:56 --> Model Class Initialized
+INFO - 2019-06-22 23:54:56 --> Model Class Initialized
+INFO - 2019-06-22 23:54:56 --> Model Class Initialized
+INFO - 2019-06-22 23:54:56 --> Model Class Initialized
+INFO - 2019-06-22 23:54:56 --> Model Class Initialized
+INFO - 2019-06-22 23:54:56 --> Final output sent to browser
+DEBUG - 2019-06-22 23:54:56 --> Total execution time: 1.1699
+INFO - 2019-06-22 18:34:38 --> Config Class Initialized
+INFO - 2019-06-22 18:34:38 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:34:38 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:34:38 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:34:38 --> URI Class Initialized
+INFO - 2019-06-22 18:34:38 --> Router Class Initialized
+INFO - 2019-06-22 18:34:38 --> Output Class Initialized
+INFO - 2019-06-22 18:34:38 --> Security Class Initialized
+DEBUG - 2019-06-22 18:34:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:34:38 --> Input Class Initialized
+INFO - 2019-06-22 18:34:38 --> Language Class Initialized
+INFO - 2019-06-22 18:34:38 --> Language Class Initialized
+INFO - 2019-06-22 18:34:38 --> Config Class Initialized
+INFO - 2019-06-22 18:34:39 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:34:39 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 18:34:39 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:34:39 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:34:39 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:34:39 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:34:39 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:34:39 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 18:34:39 --> Database Driver Class Initialized
+INFO - 2019-06-22 18:34:39 --> Controller Class Initialized
+INFO - 2019-06-22 18:34:41 --> Config Class Initialized
+INFO - 2019-06-22 18:34:41 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:34:41 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:34:41 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:34:41 --> URI Class Initialized
+INFO - 2019-06-22 18:34:41 --> Router Class Initialized
+INFO - 2019-06-22 18:34:41 --> Output Class Initialized
+INFO - 2019-06-22 18:34:41 --> Security Class Initialized
+DEBUG - 2019-06-22 18:34:41 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:34:41 --> Input Class Initialized
+INFO - 2019-06-22 18:34:41 --> Language Class Initialized
+INFO - 2019-06-22 18:34:41 --> Language Class Initialized
+INFO - 2019-06-22 18:34:41 --> Config Class Initialized
+INFO - 2019-06-22 18:34:41 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:34:41 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 18:34:41 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:34:41 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:34:41 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:34:41 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:34:41 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:34:41 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 18:34:41 --> Database Driver Class Initialized
+INFO - 2019-06-22 18:34:42 --> Controller Class Initialized
+INFO - 2019-06-22 18:34:44 --> Config Class Initialized
+INFO - 2019-06-22 18:34:44 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:34:44 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:34:44 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:34:44 --> URI Class Initialized
+INFO - 2019-06-22 18:34:44 --> Router Class Initialized
+INFO - 2019-06-22 18:34:44 --> Output Class Initialized
+INFO - 2019-06-22 18:34:44 --> Security Class Initialized
+DEBUG - 2019-06-22 18:34:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:34:44 --> Input Class Initialized
+INFO - 2019-06-22 18:34:44 --> Language Class Initialized
+INFO - 2019-06-22 18:34:44 --> Language Class Initialized
+INFO - 2019-06-22 18:34:45 --> Config Class Initialized
+INFO - 2019-06-22 18:34:45 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:34:45 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 18:34:45 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:34:45 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:34:45 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:34:45 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:34:45 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:34:45 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 18:34:45 --> Database Driver Class Initialized
+INFO - 2019-06-22 18:34:45 --> Controller Class Initialized
+INFO - 2019-06-22 18:34:58 --> Config Class Initialized
+INFO - 2019-06-22 18:34:58 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:34:58 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:34:58 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:34:58 --> URI Class Initialized
+INFO - 2019-06-22 18:34:58 --> Router Class Initialized
+INFO - 2019-06-22 18:34:58 --> Output Class Initialized
+INFO - 2019-06-22 18:34:58 --> Security Class Initialized
+DEBUG - 2019-06-22 18:34:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:34:59 --> Input Class Initialized
+INFO - 2019-06-22 18:34:59 --> Language Class Initialized
+INFO - 2019-06-22 18:34:59 --> Language Class Initialized
+INFO - 2019-06-22 18:34:59 --> Config Class Initialized
+INFO - 2019-06-22 18:34:59 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:34:59 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 18:34:59 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:34:59 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:34:59 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:34:59 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:34:59 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:34:59 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 18:34:59 --> Database Driver Class Initialized
+INFO - 2019-06-22 18:34:59 --> Controller Class Initialized
+INFO - 2019-06-22 18:35:00 --> Config Class Initialized
+INFO - 2019-06-22 18:35:00 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:35:00 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:35:00 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:35:01 --> URI Class Initialized
+INFO - 2019-06-22 18:35:01 --> Router Class Initialized
+INFO - 2019-06-22 18:35:01 --> Output Class Initialized
+INFO - 2019-06-22 18:35:01 --> Security Class Initialized
+DEBUG - 2019-06-22 18:35:01 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:35:01 --> Input Class Initialized
+INFO - 2019-06-22 18:35:01 --> Language Class Initialized
+INFO - 2019-06-22 18:35:01 --> Language Class Initialized
+INFO - 2019-06-22 18:35:01 --> Config Class Initialized
+INFO - 2019-06-22 18:35:01 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:35:01 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 18:35:01 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:35:01 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:35:01 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:35:01 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:35:01 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:35:01 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 18:35:01 --> Database Driver Class Initialized
+INFO - 2019-06-22 18:35:01 --> Controller Class Initialized
+INFO - 2019-06-22 18:40:12 --> Config Class Initialized
+INFO - 2019-06-22 18:40:13 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:40:13 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:40:13 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:40:13 --> URI Class Initialized
+INFO - 2019-06-22 18:40:13 --> Router Class Initialized
+INFO - 2019-06-22 18:40:13 --> Output Class Initialized
+INFO - 2019-06-22 18:40:13 --> Security Class Initialized
+DEBUG - 2019-06-22 18:40:13 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:40:13 --> Input Class Initialized
+INFO - 2019-06-22 18:40:13 --> Language Class Initialized
+INFO - 2019-06-22 18:40:13 --> Language Class Initialized
+INFO - 2019-06-22 18:40:13 --> Config Class Initialized
+INFO - 2019-06-22 18:40:13 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:40:13 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 18:40:13 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:40:13 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:40:13 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:40:13 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:40:13 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:40:13 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 18:40:13 --> Database Driver Class Initialized
+INFO - 2019-06-22 18:40:13 --> Controller Class Initialized
+INFO - 2019-06-22 18:40:46 --> Config Class Initialized
+INFO - 2019-06-22 18:40:46 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:40:46 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:40:46 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:40:46 --> URI Class Initialized
+DEBUG - 2019-06-22 18:40:46 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:40:46 --> Router Class Initialized
+INFO - 2019-06-22 18:40:46 --> Output Class Initialized
+INFO - 2019-06-22 18:40:46 --> Security Class Initialized
+DEBUG - 2019-06-22 18:40:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:40:46 --> Input Class Initialized
+INFO - 2019-06-22 18:40:46 --> Language Class Initialized
+INFO - 2019-06-22 18:40:46 --> Language Class Initialized
+INFO - 2019-06-22 18:40:46 --> Config Class Initialized
+INFO - 2019-06-22 18:40:46 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:40:46 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:40:46 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:40:46 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:40:46 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:40:46 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:40:46 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:40:46 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:40:47 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:40:47 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:40:47 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:40:47 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 18:40:47 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:40:47 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:40:47 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:40:47 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 18:40:47 --> Pagination Class Initialized
+INFO - 2019-06-22 18:40:47 --> Controller Class Initialized
+INFO - 2019-06-22 18:40:47 --> Config Class Initialized
+INFO - 2019-06-22 18:40:47 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:40:47 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:40:47 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:40:47 --> URI Class Initialized
+DEBUG - 2019-06-22 18:40:47 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:40:47 --> Router Class Initialized
+INFO - 2019-06-22 18:40:47 --> Output Class Initialized
+INFO - 2019-06-22 18:40:47 --> Security Class Initialized
+DEBUG - 2019-06-22 18:40:47 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:40:47 --> Input Class Initialized
+INFO - 2019-06-22 18:40:47 --> Language Class Initialized
+INFO - 2019-06-22 18:40:48 --> Language Class Initialized
+INFO - 2019-06-22 18:40:48 --> Config Class Initialized
+INFO - 2019-06-22 18:40:48 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:40:48 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:40:48 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:40:48 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:40:48 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:40:48 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:40:48 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:40:48 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:40:48 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:40:48 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:40:48 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:40:48 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 18:40:48 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:40:48 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:40:48 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:40:48 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 18:40:48 --> Pagination Class Initialized
+INFO - 2019-06-22 18:40:48 --> Controller Class Initialized
+INFO - 2019-06-22 18:40:56 --> Config Class Initialized
+INFO - 2019-06-22 18:40:56 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:40:56 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:40:56 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:40:56 --> URI Class Initialized
+DEBUG - 2019-06-22 18:40:56 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:40:56 --> Router Class Initialized
+INFO - 2019-06-22 18:40:56 --> Output Class Initialized
+INFO - 2019-06-22 18:40:56 --> Security Class Initialized
+DEBUG - 2019-06-22 18:40:56 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:40:56 --> Input Class Initialized
+INFO - 2019-06-22 18:40:56 --> Language Class Initialized
+INFO - 2019-06-22 18:40:56 --> Language Class Initialized
+INFO - 2019-06-22 18:40:56 --> Config Class Initialized
+INFO - 2019-06-22 18:40:56 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:40:57 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:40:57 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:40:57 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:40:57 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:40:57 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:40:57 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:40:57 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:40:57 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:40:57 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:40:57 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:40:57 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 18:40:57 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:40:57 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:40:57 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:40:57 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 18:40:57 --> Pagination Class Initialized
+INFO - 2019-06-22 18:40:57 --> Controller Class Initialized
+INFO - 2019-06-22 18:40:58 --> Config Class Initialized
+INFO - 2019-06-22 18:40:58 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:40:58 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:40:58 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:40:58 --> URI Class Initialized
+DEBUG - 2019-06-22 18:40:58 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:40:58 --> Router Class Initialized
+INFO - 2019-06-22 18:40:58 --> Output Class Initialized
+INFO - 2019-06-22 18:40:58 --> Security Class Initialized
+DEBUG - 2019-06-22 18:40:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:40:58 --> Input Class Initialized
+INFO - 2019-06-22 18:40:58 --> Language Class Initialized
+INFO - 2019-06-22 18:40:58 --> Language Class Initialized
+INFO - 2019-06-22 18:40:58 --> Config Class Initialized
+INFO - 2019-06-22 18:40:58 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:40:58 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:40:58 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:40:58 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:40:58 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:40:58 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:40:58 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:40:58 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:40:58 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:40:58 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:40:58 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:40:58 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 18:40:58 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:40:58 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:40:58 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:40:59 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 18:40:59 --> Pagination Class Initialized
+INFO - 2019-06-22 18:40:59 --> Controller Class Initialized
+INFO - 2019-06-22 18:41:05 --> Config Class Initialized
+INFO - 2019-06-22 18:41:05 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:41:05 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:41:05 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:41:05 --> URI Class Initialized
+DEBUG - 2019-06-22 18:41:05 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:41:05 --> Router Class Initialized
+INFO - 2019-06-22 18:41:05 --> Output Class Initialized
+INFO - 2019-06-22 18:41:05 --> Security Class Initialized
+DEBUG - 2019-06-22 18:41:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:41:05 --> Input Class Initialized
+INFO - 2019-06-22 18:41:05 --> Language Class Initialized
+INFO - 2019-06-22 18:41:05 --> Language Class Initialized
+INFO - 2019-06-22 18:41:05 --> Config Class Initialized
+INFO - 2019-06-22 18:41:05 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:41:05 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:41:05 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:41:05 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:41:05 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:41:05 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:41:05 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:41:05 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:41:05 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:41:06 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:41:06 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:41:06 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 18:41:06 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:41:06 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:41:06 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:41:06 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 18:41:06 --> Pagination Class Initialized
+INFO - 2019-06-22 18:41:06 --> Controller Class Initialized
+INFO - 2019-06-22 18:41:19 --> Config Class Initialized
+INFO - 2019-06-22 18:41:19 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:41:19 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:41:19 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:41:19 --> URI Class Initialized
+DEBUG - 2019-06-22 18:41:19 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:41:19 --> Router Class Initialized
+INFO - 2019-06-22 18:41:19 --> Output Class Initialized
+INFO - 2019-06-22 18:41:19 --> Security Class Initialized
+DEBUG - 2019-06-22 18:41:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:41:19 --> Input Class Initialized
+INFO - 2019-06-22 18:41:19 --> Language Class Initialized
+INFO - 2019-06-22 18:41:19 --> Language Class Initialized
+INFO - 2019-06-22 18:41:19 --> Config Class Initialized
+INFO - 2019-06-22 18:41:19 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:41:20 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:41:20 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:41:20 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:41:20 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:41:20 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:41:20 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:41:20 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:41:20 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:41:20 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:41:20 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:41:20 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 18:41:20 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:41:20 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:41:20 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:41:20 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 18:41:20 --> Pagination Class Initialized
+INFO - 2019-06-22 18:41:20 --> Controller Class Initialized
+INFO - 2019-06-22 18:47:23 --> Config Class Initialized
+INFO - 2019-06-22 18:47:24 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:47:24 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:47:24 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:47:24 --> URI Class Initialized
+DEBUG - 2019-06-22 18:47:24 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:47:24 --> Router Class Initialized
+INFO - 2019-06-22 18:47:24 --> Output Class Initialized
+INFO - 2019-06-22 18:47:24 --> Security Class Initialized
+DEBUG - 2019-06-22 18:47:24 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:47:24 --> Input Class Initialized
+INFO - 2019-06-22 18:47:24 --> Language Class Initialized
+INFO - 2019-06-22 18:47:24 --> Language Class Initialized
+INFO - 2019-06-22 18:47:24 --> Config Class Initialized
+INFO - 2019-06-22 18:47:24 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:47:24 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:47:24 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:47:24 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:47:24 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:47:24 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:47:24 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:47:24 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:47:24 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:47:24 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:47:24 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:47:24 --> Helper loaded: form_helper
+INFO - 2019-06-22 18:47:24 --> Config Class Initialized
+DEBUG - 2019-06-22 18:47:24 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:47:24 --> Hooks Class Initialized
+INFO - 2019-06-22 18:47:24 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:47:25 --> UTF-8 Support Enabled
+DEBUG - 2019-06-22 18:47:25 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:47:25 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:47:25 --> URI Class Initialized
+INFO - 2019-06-22 18:47:25 --> Language file loaded: language/english/pagination_lang.php
+DEBUG - 2019-06-22 18:47:25 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:47:25 --> Pagination Class Initialized
+INFO - 2019-06-22 18:47:25 --> Controller Class Initialized
+INFO - 2019-06-22 18:47:25 --> Router Class Initialized
+INFO - 2019-06-22 18:47:25 --> Output Class Initialized
+INFO - 2019-06-22 18:47:25 --> Security Class Initialized
+DEBUG - 2019-06-22 18:47:25 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:47:25 --> Input Class Initialized
+INFO - 2019-06-22 18:47:25 --> Language Class Initialized
+INFO - 2019-06-22 18:47:25 --> Language Class Initialized
+INFO - 2019-06-22 18:47:25 --> Config Class Initialized
+INFO - 2019-06-22 18:47:25 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:47:25 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:47:25 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:47:25 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:47:25 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:47:25 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:47:25 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:47:25 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:47:25 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:47:25 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:47:25 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:47:25 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 18:47:25 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:47:25 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:47:25 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:47:25 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 18:47:25 --> Pagination Class Initialized
+INFO - 2019-06-22 18:47:25 --> Controller Class Initialized
+INFO - 2019-06-22 18:48:30 --> Config Class Initialized
+INFO - 2019-06-22 18:48:30 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:48:30 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:48:30 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:48:30 --> URI Class Initialized
+DEBUG - 2019-06-22 18:48:30 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:48:30 --> Router Class Initialized
+INFO - 2019-06-22 18:48:30 --> Output Class Initialized
+INFO - 2019-06-22 18:48:30 --> Security Class Initialized
+DEBUG - 2019-06-22 18:48:30 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:48:30 --> Input Class Initialized
+INFO - 2019-06-22 18:48:30 --> Language Class Initialized
+INFO - 2019-06-22 18:48:30 --> Language Class Initialized
+INFO - 2019-06-22 18:48:30 --> Config Class Initialized
+INFO - 2019-06-22 18:48:30 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:48:30 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:48:30 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:48:30 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:48:30 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:48:30 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:48:30 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:48:31 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:48:31 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:48:31 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:48:31 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:48:31 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 18:48:31 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:48:31 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:48:31 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:48:31 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 18:48:31 --> Pagination Class Initialized
+INFO - 2019-06-22 18:48:31 --> Controller Class Initialized
+INFO - 2019-06-22 18:48:31 --> Config Class Initialized
+INFO - 2019-06-22 18:48:32 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:48:32 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:48:32 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:48:32 --> URI Class Initialized
+DEBUG - 2019-06-22 18:48:32 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:48:32 --> Router Class Initialized
+INFO - 2019-06-22 18:48:32 --> Output Class Initialized
+INFO - 2019-06-22 18:48:32 --> Security Class Initialized
+DEBUG - 2019-06-22 18:48:32 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:48:32 --> Input Class Initialized
+INFO - 2019-06-22 18:48:32 --> Language Class Initialized
+INFO - 2019-06-22 18:48:32 --> Language Class Initialized
+INFO - 2019-06-22 18:48:32 --> Config Class Initialized
+INFO - 2019-06-22 18:48:32 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:48:32 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:48:32 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:48:32 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:48:32 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:48:32 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:48:32 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:48:32 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:48:32 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:48:33 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:48:33 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:48:33 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 18:48:33 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:48:33 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:48:33 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:48:33 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 18:48:33 --> Pagination Class Initialized
+INFO - 2019-06-22 18:48:33 --> Controller Class Initialized
+INFO - 2019-06-22 18:48:35 --> Config Class Initialized
+INFO - 2019-06-22 18:48:35 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:48:35 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:48:35 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:48:35 --> URI Class Initialized
+DEBUG - 2019-06-22 18:48:35 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:48:35 --> Router Class Initialized
+INFO - 2019-06-22 18:48:35 --> Output Class Initialized
+INFO - 2019-06-22 18:48:35 --> Security Class Initialized
+DEBUG - 2019-06-22 18:48:35 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:48:35 --> Input Class Initialized
+INFO - 2019-06-22 18:48:35 --> Language Class Initialized
+INFO - 2019-06-22 18:48:35 --> Language Class Initialized
+INFO - 2019-06-22 18:48:35 --> Config Class Initialized
+INFO - 2019-06-22 18:48:35 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:48:35 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:48:35 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:48:35 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:48:35 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:48:35 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:48:35 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:48:35 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:48:35 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:48:35 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:48:35 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:48:35 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 18:48:35 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:48:35 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:48:35 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:48:35 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 18:48:36 --> Pagination Class Initialized
+INFO - 2019-06-22 18:48:36 --> Controller Class Initialized
+INFO - 2019-06-22 18:48:37 --> Config Class Initialized
+INFO - 2019-06-22 18:48:37 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:48:37 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:48:37 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:48:38 --> URI Class Initialized
+DEBUG - 2019-06-22 18:48:38 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:48:38 --> Router Class Initialized
+INFO - 2019-06-22 18:48:38 --> Output Class Initialized
+INFO - 2019-06-22 18:48:38 --> Security Class Initialized
+DEBUG - 2019-06-22 18:48:38 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:48:38 --> Input Class Initialized
+INFO - 2019-06-22 18:48:38 --> Language Class Initialized
+INFO - 2019-06-22 18:48:38 --> Language Class Initialized
+INFO - 2019-06-22 18:48:38 --> Config Class Initialized
+INFO - 2019-06-22 18:48:38 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:48:38 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:48:38 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:48:38 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:48:38 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:48:38 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:48:38 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:48:38 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:48:38 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:48:38 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:48:38 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:48:38 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 18:48:38 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:48:38 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:48:38 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:48:38 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 18:48:38 --> Pagination Class Initialized
+INFO - 2019-06-22 18:48:38 --> Controller Class Initialized
+INFO - 2019-06-22 18:48:44 --> Config Class Initialized
+INFO - 2019-06-22 18:48:44 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:48:44 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:48:44 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:48:44 --> URI Class Initialized
+DEBUG - 2019-06-22 18:48:45 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:48:45 --> Router Class Initialized
+INFO - 2019-06-22 18:48:45 --> Output Class Initialized
+INFO - 2019-06-22 18:48:45 --> Security Class Initialized
+DEBUG - 2019-06-22 18:48:45 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:48:45 --> Input Class Initialized
+INFO - 2019-06-22 18:48:45 --> Language Class Initialized
+INFO - 2019-06-22 18:48:45 --> Language Class Initialized
+INFO - 2019-06-22 18:48:45 --> Config Class Initialized
+INFO - 2019-06-22 18:48:45 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:48:45 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:48:45 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:48:45 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:48:45 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:48:45 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:48:45 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:48:45 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:48:45 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:48:45 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:48:45 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:48:45 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 18:48:45 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:48:45 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:48:45 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:48:45 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 18:48:45 --> Pagination Class Initialized
+INFO - 2019-06-22 18:48:45 --> Controller Class Initialized
+INFO - 2019-06-22 18:48:51 --> Config Class Initialized
+INFO - 2019-06-22 18:48:51 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:48:51 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:48:52 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:48:52 --> URI Class Initialized
+DEBUG - 2019-06-22 18:48:52 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:48:52 --> Router Class Initialized
+INFO - 2019-06-22 18:48:52 --> Output Class Initialized
+INFO - 2019-06-22 18:48:52 --> Security Class Initialized
+DEBUG - 2019-06-22 18:48:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:48:52 --> Input Class Initialized
+INFO - 2019-06-22 18:48:52 --> Language Class Initialized
+INFO - 2019-06-22 18:48:52 --> Language Class Initialized
+INFO - 2019-06-22 18:48:52 --> Config Class Initialized
+INFO - 2019-06-22 18:48:52 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:48:52 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:48:52 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:48:52 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:48:52 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:48:52 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:48:52 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:48:52 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:48:52 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:48:52 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:48:52 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:48:52 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 18:48:52 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:48:52 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:48:52 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:48:52 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 18:48:52 --> Pagination Class Initialized
+INFO - 2019-06-22 18:48:52 --> Controller Class Initialized
+INFO - 2019-06-22 18:48:54 --> Config Class Initialized
+INFO - 2019-06-22 18:48:54 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:48:54 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:48:54 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:48:54 --> URI Class Initialized
+DEBUG - 2019-06-22 18:48:54 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:48:55 --> Router Class Initialized
+INFO - 2019-06-22 18:48:55 --> Output Class Initialized
+INFO - 2019-06-22 18:48:55 --> Security Class Initialized
+DEBUG - 2019-06-22 18:48:55 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:48:55 --> Input Class Initialized
+INFO - 2019-06-22 18:48:55 --> Language Class Initialized
+INFO - 2019-06-22 18:48:55 --> Language Class Initialized
+INFO - 2019-06-22 18:48:55 --> Config Class Initialized
+INFO - 2019-06-22 18:48:55 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:48:55 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:48:55 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:48:55 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:48:55 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:48:55 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:48:55 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:48:55 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:48:55 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:48:55 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:48:55 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:48:55 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 18:48:55 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:48:55 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:48:55 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:48:55 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 18:48:55 --> Pagination Class Initialized
+INFO - 2019-06-22 18:48:55 --> Controller Class Initialized
+INFO - 2019-06-22 18:48:59 --> Config Class Initialized
+INFO - 2019-06-22 18:48:59 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:48:59 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:48:59 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:48:59 --> URI Class Initialized
+DEBUG - 2019-06-22 18:48:59 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:48:59 --> Router Class Initialized
+INFO - 2019-06-22 18:48:59 --> Output Class Initialized
+INFO - 2019-06-22 18:48:59 --> Security Class Initialized
+DEBUG - 2019-06-22 18:48:59 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:48:59 --> Input Class Initialized
+INFO - 2019-06-22 18:48:59 --> Language Class Initialized
+INFO - 2019-06-22 18:48:59 --> Language Class Initialized
+INFO - 2019-06-22 18:48:59 --> Config Class Initialized
+INFO - 2019-06-22 18:49:00 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:49:00 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:49:00 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:49:00 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:49:00 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:49:00 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:49:00 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:49:00 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:49:00 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:49:00 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:49:00 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:49:00 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 18:49:00 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:49:00 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:49:00 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:49:00 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 18:49:00 --> Pagination Class Initialized
+INFO - 2019-06-22 18:49:00 --> Controller Class Initialized
+INFO - 2019-06-22 18:49:19 --> Config Class Initialized
+INFO - 2019-06-22 18:49:19 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:49:19 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:49:19 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:49:19 --> URI Class Initialized
+DEBUG - 2019-06-22 18:49:19 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:49:20 --> Router Class Initialized
+INFO - 2019-06-22 18:49:20 --> Output Class Initialized
+INFO - 2019-06-22 18:49:20 --> Security Class Initialized
+DEBUG - 2019-06-22 18:49:20 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:49:20 --> Input Class Initialized
+INFO - 2019-06-22 18:49:20 --> Language Class Initialized
+INFO - 2019-06-22 18:49:20 --> Language Class Initialized
+INFO - 2019-06-22 18:49:20 --> Config Class Initialized
+INFO - 2019-06-22 18:49:20 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:49:20 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:49:20 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:49:20 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:49:20 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:49:20 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:49:20 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:49:20 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:49:20 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:49:20 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:49:20 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:49:20 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 18:49:20 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:49:20 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:49:20 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:49:20 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 18:49:20 --> Pagination Class Initialized
+INFO - 2019-06-22 18:49:20 --> Controller Class Initialized
+INFO - 2019-06-22 18:49:22 --> Config Class Initialized
+INFO - 2019-06-22 18:49:22 --> Hooks Class Initialized
+DEBUG - 2019-06-22 18:49:22 --> UTF-8 Support Enabled
+INFO - 2019-06-22 18:49:22 --> Utf8 Class Initialized
+INFO - 2019-06-22 18:49:22 --> URI Class Initialized
+DEBUG - 2019-06-22 18:49:22 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 18:49:22 --> Router Class Initialized
+INFO - 2019-06-22 18:49:22 --> Output Class Initialized
+INFO - 2019-06-22 18:49:22 --> Security Class Initialized
+DEBUG - 2019-06-22 18:49:22 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 18:49:22 --> Input Class Initialized
+INFO - 2019-06-22 18:49:22 --> Language Class Initialized
+INFO - 2019-06-22 18:49:23 --> Language Class Initialized
+INFO - 2019-06-22 18:49:23 --> Config Class Initialized
+INFO - 2019-06-22 18:49:23 --> Loader Class Initialized
+DEBUG - 2019-06-22 18:49:23 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 18:49:23 --> Helper loaded: url_helper
+INFO - 2019-06-22 18:49:23 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 18:49:23 --> Helper loaded: string_helper
+INFO - 2019-06-22 18:49:23 --> Helper loaded: array_helper
+INFO - 2019-06-22 18:49:23 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 18:49:23 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 18:49:23 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 18:49:23 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 18:49:23 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 18:49:23 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 18:49:23 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:49:23 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 18:49:23 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 18:49:23 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 18:49:23 --> Pagination Class Initialized
+INFO - 2019-06-22 18:49:23 --> Controller Class Initialized
+INFO - 2019-06-22 19:06:17 --> Config Class Initialized
+INFO - 2019-06-22 19:06:17 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:06:18 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:06:18 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:06:18 --> URI Class Initialized
+DEBUG - 2019-06-22 19:06:18 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 19:06:18 --> Router Class Initialized
+INFO - 2019-06-22 19:06:18 --> Output Class Initialized
+INFO - 2019-06-22 19:06:18 --> Security Class Initialized
+DEBUG - 2019-06-22 19:06:18 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:06:18 --> Input Class Initialized
+INFO - 2019-06-22 19:06:18 --> Language Class Initialized
+INFO - 2019-06-22 19:06:18 --> Language Class Initialized
+INFO - 2019-06-22 19:06:18 --> Config Class Initialized
+INFO - 2019-06-22 19:06:18 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:06:18 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 19:06:18 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:06:18 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:06:18 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:06:18 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:06:18 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:06:18 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 19:06:18 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 19:06:18 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 19:06:18 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 19:06:18 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 19:06:18 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:06:18 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 19:06:18 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:06:18 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 19:06:18 --> Pagination Class Initialized
+INFO - 2019-06-22 19:06:18 --> Controller Class Initialized
+INFO - 2019-06-22 19:06:43 --> Config Class Initialized
+INFO - 2019-06-22 19:06:43 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:06:43 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:06:43 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:06:43 --> URI Class Initialized
+DEBUG - 2019-06-22 19:06:43 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 19:06:44 --> Router Class Initialized
+INFO - 2019-06-22 19:06:44 --> Output Class Initialized
+INFO - 2019-06-22 19:06:44 --> Security Class Initialized
+DEBUG - 2019-06-22 19:06:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:06:44 --> Input Class Initialized
+INFO - 2019-06-22 19:06:44 --> Language Class Initialized
+INFO - 2019-06-22 19:06:44 --> Language Class Initialized
+INFO - 2019-06-22 19:06:44 --> Config Class Initialized
+INFO - 2019-06-22 19:06:44 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:06:44 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 19:06:44 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:06:44 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:06:44 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:06:44 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:06:44 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:06:44 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 19:06:44 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 19:06:44 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 19:06:44 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 19:06:44 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 19:06:44 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:06:44 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 19:06:44 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:06:44 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 19:06:44 --> Pagination Class Initialized
+INFO - 2019-06-22 19:06:44 --> Controller Class Initialized
+INFO - 2019-06-22 19:06:46 --> Config Class Initialized
+INFO - 2019-06-22 19:06:46 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:06:46 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:06:46 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:06:46 --> URI Class Initialized
+DEBUG - 2019-06-22 19:06:46 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 19:06:46 --> Router Class Initialized
+INFO - 2019-06-22 19:06:46 --> Output Class Initialized
+INFO - 2019-06-22 19:06:46 --> Security Class Initialized
+DEBUG - 2019-06-22 19:06:46 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:06:46 --> Input Class Initialized
+INFO - 2019-06-22 19:06:46 --> Language Class Initialized
+INFO - 2019-06-22 19:06:46 --> Language Class Initialized
+INFO - 2019-06-22 19:06:46 --> Config Class Initialized
+INFO - 2019-06-22 19:06:46 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:06:46 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 19:06:46 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:06:46 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:06:46 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:06:46 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:06:46 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:06:46 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 19:06:46 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 19:06:46 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 19:06:46 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 19:06:46 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 19:06:46 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:06:46 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 19:06:46 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:06:46 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 19:06:46 --> Pagination Class Initialized
+INFO - 2019-06-22 19:06:46 --> Controller Class Initialized
+INFO - 2019-06-22 19:06:59 --> Config Class Initialized
+INFO - 2019-06-22 19:06:59 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:06:59 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:06:59 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:06:59 --> URI Class Initialized
+DEBUG - 2019-06-22 19:06:59 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 19:06:59 --> Router Class Initialized
+INFO - 2019-06-22 19:06:59 --> Output Class Initialized
+INFO - 2019-06-22 19:06:59 --> Security Class Initialized
+DEBUG - 2019-06-22 19:07:00 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:07:00 --> Input Class Initialized
+INFO - 2019-06-22 19:07:00 --> Language Class Initialized
+INFO - 2019-06-22 19:07:00 --> Language Class Initialized
+INFO - 2019-06-22 19:07:00 --> Config Class Initialized
+INFO - 2019-06-22 19:07:00 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:07:00 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 19:07:00 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:07:00 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:07:00 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:07:00 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:07:00 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:07:00 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 19:07:00 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 19:07:00 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 19:07:00 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 19:07:00 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 19:07:00 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:07:00 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 19:07:00 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:07:00 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 19:07:00 --> Pagination Class Initialized
+INFO - 2019-06-22 19:07:00 --> Controller Class Initialized
+INFO - 2019-06-22 19:07:25 --> Config Class Initialized
+INFO - 2019-06-22 19:07:25 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:07:25 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:07:25 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:07:25 --> URI Class Initialized
+DEBUG - 2019-06-22 19:07:26 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 19:07:26 --> Router Class Initialized
+INFO - 2019-06-22 19:07:26 --> Output Class Initialized
+INFO - 2019-06-22 19:07:26 --> Security Class Initialized
+DEBUG - 2019-06-22 19:07:26 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:07:26 --> Input Class Initialized
+INFO - 2019-06-22 19:07:26 --> Language Class Initialized
+INFO - 2019-06-22 19:07:26 --> Language Class Initialized
+INFO - 2019-06-22 19:07:26 --> Config Class Initialized
+INFO - 2019-06-22 19:07:26 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:07:26 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 19:07:26 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:07:26 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:07:26 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:07:26 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:07:26 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:07:26 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 19:07:26 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 19:07:26 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 19:07:26 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 19:07:26 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 19:07:26 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:07:26 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 19:07:26 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:07:26 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 19:07:26 --> Pagination Class Initialized
+INFO - 2019-06-22 19:07:26 --> Controller Class Initialized
+INFO - 2019-06-22 19:09:19 --> Config Class Initialized
+INFO - 2019-06-22 19:09:19 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:09:19 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:09:19 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:09:19 --> URI Class Initialized
+DEBUG - 2019-06-22 19:09:19 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 19:09:19 --> Router Class Initialized
+INFO - 2019-06-22 19:09:19 --> Output Class Initialized
+INFO - 2019-06-22 19:09:19 --> Security Class Initialized
+DEBUG - 2019-06-22 19:09:19 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:09:19 --> Input Class Initialized
+INFO - 2019-06-22 19:09:19 --> Language Class Initialized
+INFO - 2019-06-22 19:09:19 --> Language Class Initialized
+INFO - 2019-06-22 19:09:19 --> Config Class Initialized
+INFO - 2019-06-22 19:09:19 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:09:19 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 19:09:19 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:09:19 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:09:19 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:09:19 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:09:20 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:09:20 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 19:09:20 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 19:09:20 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 19:09:20 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 19:09:20 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 19:09:20 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:09:20 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 19:09:20 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:09:20 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 19:09:20 --> Pagination Class Initialized
+INFO - 2019-06-22 19:09:20 --> Controller Class Initialized
+INFO - 2019-06-22 19:09:21 --> Config Class Initialized
+INFO - 2019-06-22 19:09:21 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:09:21 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:09:21 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:09:21 --> URI Class Initialized
+DEBUG - 2019-06-22 19:09:21 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 19:09:21 --> Router Class Initialized
+INFO - 2019-06-22 19:09:21 --> Output Class Initialized
+INFO - 2019-06-22 19:09:21 --> Security Class Initialized
+DEBUG - 2019-06-22 19:09:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:09:21 --> Input Class Initialized
+INFO - 2019-06-22 19:09:21 --> Language Class Initialized
+INFO - 2019-06-22 19:09:21 --> Language Class Initialized
+INFO - 2019-06-22 19:09:21 --> Config Class Initialized
+INFO - 2019-06-22 19:09:21 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:09:21 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 19:09:21 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:09:21 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:09:21 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:09:21 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:09:21 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:09:21 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 19:09:21 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 19:09:21 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 19:09:21 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 19:09:22 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 19:09:22 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:09:22 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 19:09:22 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:09:22 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 19:09:22 --> Pagination Class Initialized
+INFO - 2019-06-22 19:09:22 --> Controller Class Initialized
+INFO - 2019-06-22 19:10:52 --> Config Class Initialized
+INFO - 2019-06-22 19:10:52 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:10:52 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:10:52 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:10:52 --> URI Class Initialized
+DEBUG - 2019-06-22 19:10:52 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 19:10:52 --> Router Class Initialized
+INFO - 2019-06-22 19:10:52 --> Output Class Initialized
+INFO - 2019-06-22 19:10:52 --> Security Class Initialized
+DEBUG - 2019-06-22 19:10:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:10:52 --> Input Class Initialized
+INFO - 2019-06-22 19:10:52 --> Language Class Initialized
+INFO - 2019-06-22 19:10:52 --> Language Class Initialized
+INFO - 2019-06-22 19:10:52 --> Config Class Initialized
+INFO - 2019-06-22 19:10:52 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:10:52 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 19:10:52 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:10:52 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:10:52 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:10:52 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:10:52 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:10:52 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 19:10:52 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 19:10:52 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 19:10:52 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 19:10:52 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 19:10:52 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:10:52 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 19:10:52 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:10:53 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 19:10:53 --> Pagination Class Initialized
+INFO - 2019-06-22 19:10:53 --> Controller Class Initialized
+INFO - 2019-06-22 19:11:58 --> Config Class Initialized
+INFO - 2019-06-22 19:11:58 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:11:58 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:11:58 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:11:58 --> URI Class Initialized
+INFO - 2019-06-22 19:11:58 --> Router Class Initialized
+INFO - 2019-06-22 19:11:58 --> Output Class Initialized
+INFO - 2019-06-22 19:11:58 --> Security Class Initialized
+DEBUG - 2019-06-22 19:11:58 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:11:58 --> Input Class Initialized
+INFO - 2019-06-22 19:11:58 --> Language Class Initialized
+INFO - 2019-06-22 19:11:58 --> Language Class Initialized
+INFO - 2019-06-22 19:11:58 --> Config Class Initialized
+INFO - 2019-06-22 19:11:58 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:11:58 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 19:11:58 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:11:58 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:11:58 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:11:58 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:11:58 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:11:58 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 19:11:58 --> Database Driver Class Initialized
+INFO - 2019-06-22 19:11:58 --> Controller Class Initialized
+INFO - 2019-06-22 19:20:38 --> Config Class Initialized
+INFO - 2019-06-22 19:20:38 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:20:38 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:20:39 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:20:39 --> URI Class Initialized
+INFO - 2019-06-22 19:20:39 --> Router Class Initialized
+INFO - 2019-06-22 19:20:39 --> Output Class Initialized
+INFO - 2019-06-22 19:20:39 --> Security Class Initialized
+DEBUG - 2019-06-22 19:20:39 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:20:39 --> Input Class Initialized
+INFO - 2019-06-22 19:20:39 --> Language Class Initialized
+INFO - 2019-06-22 19:20:39 --> Language Class Initialized
+INFO - 2019-06-22 19:20:39 --> Config Class Initialized
+INFO - 2019-06-22 19:20:39 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:20:39 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 19:20:39 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:20:39 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:20:39 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:20:39 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:20:39 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:20:39 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 19:20:39 --> Database Driver Class Initialized
+INFO - 2019-06-22 19:20:39 --> Controller Class Initialized
+INFO - 2019-06-22 19:21:22 --> Config Class Initialized
+INFO - 2019-06-22 19:21:22 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:21:22 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:21:22 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:21:22 --> URI Class Initialized
+INFO - 2019-06-22 19:21:22 --> Router Class Initialized
+INFO - 2019-06-22 19:21:23 --> Output Class Initialized
+INFO - 2019-06-22 19:21:23 --> Security Class Initialized
+DEBUG - 2019-06-22 19:21:23 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:21:23 --> Input Class Initialized
+INFO - 2019-06-22 19:21:23 --> Language Class Initialized
+INFO - 2019-06-22 19:21:23 --> Language Class Initialized
+INFO - 2019-06-22 19:21:23 --> Config Class Initialized
+INFO - 2019-06-22 19:21:23 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:21:23 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 19:21:23 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:21:23 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:21:23 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:21:23 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:21:23 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:21:23 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 19:21:23 --> Database Driver Class Initialized
+INFO - 2019-06-22 19:21:23 --> Controller Class Initialized
+INFO - 2019-06-22 19:22:28 --> Config Class Initialized
+INFO - 2019-06-22 19:22:28 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:22:28 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:22:28 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:22:28 --> URI Class Initialized
+INFO - 2019-06-22 19:22:28 --> Router Class Initialized
+INFO - 2019-06-22 19:22:28 --> Output Class Initialized
+INFO - 2019-06-22 19:22:28 --> Security Class Initialized
+DEBUG - 2019-06-22 19:22:28 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:22:28 --> Input Class Initialized
+INFO - 2019-06-22 19:22:28 --> Language Class Initialized
+INFO - 2019-06-22 19:22:28 --> Language Class Initialized
+INFO - 2019-06-22 19:22:28 --> Config Class Initialized
+INFO - 2019-06-22 19:22:28 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:22:28 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 19:22:28 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:22:28 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:22:28 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:22:28 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:22:28 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:22:28 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 19:22:28 --> Database Driver Class Initialized
+INFO - 2019-06-22 19:22:28 --> Controller Class Initialized
+INFO - 2019-06-22 19:25:05 --> Config Class Initialized
+INFO - 2019-06-22 19:25:05 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:25:05 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:25:05 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:25:05 --> URI Class Initialized
+INFO - 2019-06-22 19:25:05 --> Router Class Initialized
+INFO - 2019-06-22 19:25:05 --> Output Class Initialized
+INFO - 2019-06-22 19:25:05 --> Security Class Initialized
+DEBUG - 2019-06-22 19:25:05 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:25:05 --> Input Class Initialized
+INFO - 2019-06-22 19:25:05 --> Language Class Initialized
+INFO - 2019-06-22 19:25:05 --> Language Class Initialized
+INFO - 2019-06-22 19:25:05 --> Config Class Initialized
+INFO - 2019-06-22 19:25:05 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:25:06 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 19:25:06 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:25:06 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:25:06 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:25:06 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:25:06 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:25:06 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 19:25:06 --> Database Driver Class Initialized
+INFO - 2019-06-22 19:25:06 --> Controller Class Initialized
+INFO - 2019-06-22 19:25:08 --> Config Class Initialized
+INFO - 2019-06-22 19:25:08 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:25:08 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:25:08 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:25:08 --> URI Class Initialized
+INFO - 2019-06-22 19:25:08 --> Router Class Initialized
+INFO - 2019-06-22 19:25:08 --> Output Class Initialized
+INFO - 2019-06-22 19:25:08 --> Security Class Initialized
+DEBUG - 2019-06-22 19:25:08 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:25:08 --> Input Class Initialized
+INFO - 2019-06-22 19:25:08 --> Language Class Initialized
+INFO - 2019-06-22 19:25:08 --> Language Class Initialized
+INFO - 2019-06-22 19:25:08 --> Config Class Initialized
+INFO - 2019-06-22 19:25:08 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:25:08 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 19:25:08 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:25:08 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:25:08 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:25:08 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:25:08 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:25:08 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 19:25:08 --> Database Driver Class Initialized
+INFO - 2019-06-22 19:25:08 --> Controller Class Initialized
+INFO - 2019-06-22 19:25:52 --> Config Class Initialized
+INFO - 2019-06-22 19:25:52 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:25:52 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:25:52 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:25:52 --> URI Class Initialized
+INFO - 2019-06-22 19:25:52 --> Router Class Initialized
+INFO - 2019-06-22 19:25:52 --> Output Class Initialized
+INFO - 2019-06-22 19:25:52 --> Security Class Initialized
+DEBUG - 2019-06-22 19:25:52 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:25:52 --> Input Class Initialized
+INFO - 2019-06-22 19:25:52 --> Language Class Initialized
+INFO - 2019-06-22 19:25:52 --> Language Class Initialized
+INFO - 2019-06-22 19:25:52 --> Config Class Initialized
+INFO - 2019-06-22 19:25:52 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:25:52 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 19:25:52 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:25:52 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:25:52 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:25:52 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:25:52 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:25:53 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 19:25:53 --> Database Driver Class Initialized
+INFO - 2019-06-22 19:25:53 --> Controller Class Initialized
+INFO - 2019-06-22 19:25:54 --> Config Class Initialized
+INFO - 2019-06-22 19:25:54 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:25:54 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:25:54 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:25:54 --> URI Class Initialized
+INFO - 2019-06-22 19:25:54 --> Router Class Initialized
+INFO - 2019-06-22 19:25:54 --> Output Class Initialized
+INFO - 2019-06-22 19:25:54 --> Security Class Initialized
+DEBUG - 2019-06-22 19:25:54 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:25:54 --> Input Class Initialized
+INFO - 2019-06-22 19:25:54 --> Language Class Initialized
+INFO - 2019-06-22 19:25:54 --> Language Class Initialized
+INFO - 2019-06-22 19:25:54 --> Config Class Initialized
+INFO - 2019-06-22 19:25:54 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:25:54 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 19:25:54 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:25:54 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:25:54 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:25:55 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:25:55 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:25:55 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 19:25:55 --> Database Driver Class Initialized
+INFO - 2019-06-22 19:25:55 --> Controller Class Initialized
+INFO - 2019-06-22 19:26:14 --> Config Class Initialized
+INFO - 2019-06-22 19:26:14 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:26:14 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:26:14 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:26:14 --> URI Class Initialized
+INFO - 2019-06-22 19:26:14 --> Router Class Initialized
+INFO - 2019-06-22 19:26:14 --> Output Class Initialized
+INFO - 2019-06-22 19:26:14 --> Security Class Initialized
+DEBUG - 2019-06-22 19:26:14 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:26:14 --> Input Class Initialized
+INFO - 2019-06-22 19:26:14 --> Language Class Initialized
+INFO - 2019-06-22 19:26:14 --> Language Class Initialized
+INFO - 2019-06-22 19:26:14 --> Config Class Initialized
+INFO - 2019-06-22 19:26:14 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:26:14 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 19:26:14 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:26:14 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:26:14 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:26:14 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:26:14 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:26:15 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 19:26:15 --> Database Driver Class Initialized
+INFO - 2019-06-22 19:26:15 --> Controller Class Initialized
+INFO - 2019-06-22 19:33:43 --> Config Class Initialized
+INFO - 2019-06-22 19:33:44 --> Hooks Class Initialized
+DEBUG - 2019-06-22 19:33:44 --> UTF-8 Support Enabled
+INFO - 2019-06-22 19:33:44 --> Utf8 Class Initialized
+INFO - 2019-06-22 19:33:44 --> URI Class Initialized
+DEBUG - 2019-06-22 19:33:44 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/routes.php
+INFO - 2019-06-22 19:33:44 --> Router Class Initialized
+INFO - 2019-06-22 19:33:44 --> Output Class Initialized
+INFO - 2019-06-22 19:33:44 --> Security Class Initialized
+DEBUG - 2019-06-22 19:33:44 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 19:33:44 --> Input Class Initialized
+INFO - 2019-06-22 19:33:44 --> Language Class Initialized
+INFO - 2019-06-22 19:33:44 --> Language Class Initialized
+INFO - 2019-06-22 19:33:44 --> Config Class Initialized
+INFO - 2019-06-22 19:33:44 --> Loader Class Initialized
+DEBUG - 2019-06-22 19:33:44 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/site.php
+INFO - 2019-06-22 19:33:44 --> Helper loaded: url_helper
+INFO - 2019-06-22 19:33:44 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 19:33:44 --> Helper loaded: string_helper
+INFO - 2019-06-22 19:33:44 --> Helper loaded: array_helper
+INFO - 2019-06-22 19:33:44 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 19:33:44 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/autoload.php
+DEBUG - 2019-06-22 19:33:44 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/helpers/adminlte_helper.php
+INFO - 2019-06-22 19:33:44 --> Database Driver Class Initialized
+DEBUG - 2019-06-22 19:33:44 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/libraries/Crud.php
+INFO - 2019-06-22 19:33:44 --> Helper loaded: form_helper
+DEBUG - 2019-06-22 19:33:44 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:33:44 --> Form Validation Class Initialized
+DEBUG - 2019-06-22 19:33:44 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/admin/config/form_validation.php
+INFO - 2019-06-22 19:33:44 --> Language file loaded: language/english/pagination_lang.php
+INFO - 2019-06-22 19:33:44 --> Pagination Class Initialized
+INFO - 2019-06-22 19:33:44 --> Controller Class Initialized
+INFO - 2019-06-22 20:27:20 --> Config Class Initialized
+INFO - 2019-06-22 20:27:20 --> Hooks Class Initialized
+DEBUG - 2019-06-22 20:27:20 --> UTF-8 Support Enabled
+INFO - 2019-06-22 20:27:20 --> Utf8 Class Initialized
+INFO - 2019-06-22 20:27:21 --> URI Class Initialized
+INFO - 2019-06-22 20:27:21 --> Router Class Initialized
+INFO - 2019-06-22 20:27:21 --> Output Class Initialized
+INFO - 2019-06-22 20:27:21 --> Security Class Initialized
+DEBUG - 2019-06-22 20:27:21 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 20:27:21 --> Input Class Initialized
+INFO - 2019-06-22 20:27:21 --> Language Class Initialized
+INFO - 2019-06-22 20:27:21 --> Language Class Initialized
+INFO - 2019-06-22 20:27:21 --> Config Class Initialized
+INFO - 2019-06-22 20:27:21 --> Loader Class Initialized
+DEBUG - 2019-06-22 20:27:21 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 20:27:21 --> Helper loaded: url_helper
+INFO - 2019-06-22 20:27:21 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 20:27:21 --> Helper loaded: string_helper
+INFO - 2019-06-22 20:27:21 --> Helper loaded: array_helper
+INFO - 2019-06-22 20:27:21 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 20:27:21 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 20:27:21 --> Database Driver Class Initialized
+INFO - 2019-06-22 20:27:21 --> Controller Class Initialized
+INFO - 2019-06-22 20:39:48 --> Config Class Initialized
+INFO - 2019-06-22 20:39:48 --> Hooks Class Initialized
+DEBUG - 2019-06-22 20:39:48 --> UTF-8 Support Enabled
+INFO - 2019-06-22 20:39:48 --> Utf8 Class Initialized
+INFO - 2019-06-22 20:39:48 --> URI Class Initialized
+INFO - 2019-06-22 20:39:48 --> Router Class Initialized
+INFO - 2019-06-22 20:39:48 --> Output Class Initialized
+INFO - 2019-06-22 20:39:48 --> Security Class Initialized
+DEBUG - 2019-06-22 20:39:48 --> Global POST, GET and COOKIE data sanitized
+INFO - 2019-06-22 20:39:48 --> Input Class Initialized
+INFO - 2019-06-22 20:39:48 --> Language Class Initialized
+INFO - 2019-06-22 20:39:48 --> Language Class Initialized
+INFO - 2019-06-22 20:39:48 --> Config Class Initialized
+INFO - 2019-06-22 20:39:48 --> Loader Class Initialized
+DEBUG - 2019-06-22 20:39:48 --> Config file loaded: C:\xampp\htdocs\crapi_admin\application\config/site.php
+INFO - 2019-06-22 20:39:48 --> Helper loaded: url_helper
+INFO - 2019-06-22 20:39:48 --> Helper loaded: inflector_helper
+INFO - 2019-06-22 20:39:48 --> Helper loaded: string_helper
+INFO - 2019-06-22 20:39:48 --> Helper loaded: array_helper
+INFO - 2019-06-22 20:39:48 --> Session: Class initialized using 'files' driver.
+DEBUG - 2019-06-22 20:39:48 --> File loaded: C:\xampp\htdocs\crapi_admin\application\modules/api_v1/config/autoload.php
+INFO - 2019-06-22 20:39:48 --> Database Driver Class Initialized
+INFO - 2019-06-22 20:39:48 --> Controller Class Initialized
