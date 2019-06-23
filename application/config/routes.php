@@ -103,5 +103,8 @@ $route['products']					= "products/product_list";
 $route['menus_list']				= "products/menu_list";
 $route['products']					= "products/product_search";
 
-// products api
+// resto api
 $route['resto']						= "restaurants/resto_list";
+
+// employees api
+$route['employeesssssss']				= "employees/get_items";
