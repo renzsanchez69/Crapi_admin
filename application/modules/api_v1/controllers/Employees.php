@@ -71,8 +71,39 @@ class Employees extends API_Controller {
 	// [POST] /demo
 	protected function create_item()
 	{
-		$params = elements(array('filter', 'valid', 'fields', 'here'), $this->mParams);
-		$this->to_created();
+		$data = ['result' => REQUEST_RESULT_OK];
+		$postData = $this->input->post();
+
+		// - check incomplete params
+		$incomplete = self::check_required_fields($postData);
+
+		if (!empty($incomplete)) {
+			$data['result'] = REQUEST_RESULT_NG;
+			$data['error'] = "Please input required fields.";
+		}
+
+		$hashed = password_hash($postData['password'], PASSWORD_DEFAULT);
+
+		// - prepare data
+		$empData = array(
+			'owner_id' => $postData['owner_id'],
+			'firstname' => $postData['firstname'],
+			'lastname' => $postData['lastname'],
+			'address' => $postData['address'],
+			'contact_number' => $postData['contact_number'],
+			'gender' => $postData['gender'],
+			'email' => $postData['email'],
+			'password' => $hashed,
+		);
+
+		$employees = $this->Employee->add_employee($empData);
+
+		if (!$employees) {
+			$data['result'] = REQUEST_RESULT_NG;
+			$data['error'] = "Failed to save data.";
+		}
+
+		$this->to_response($data);
 	}
 
 	// [PUT] /demo/{id}
@@ -83,8 +114,47 @@ class Employees extends API_Controller {
 	}
 
 	// [DELETE] /demo/{id}
-	protected function remove_item($id)
-	{
-		$this->to_accepted();
+	protected function remove_item($id) {
+		$this->Employee->delete_employee($id);
+		$data = [
+			'result' => REQUEST_RESULT_OK
+		];
+		$this->to_response($data);
+	}
+
+	private function unserialize_form_data($data){
+		$return = [];
+		if (!empty($data)) {
+			foreach ($data as $item) {
+				if (isset($item['name']) && isset($item['value'])) {
+					$return[$item['name']] = $item['value'];
+				}
+			}
+		} else {
+			return $data;
+		}
+		return $return;
+	}
+
+	private function check_required_fields($params){
+		$incomplete = [];
+		$required_fields = array(
+			'owner_id',
+			'firstname',
+			'lastname',
+			'address',
+			'contact_number',
+			'gender',
+			'email',
+			'password'
+		);
+
+		foreach ($required_fields as $field) {
+			if (!isset($params[$field]) || empty($params[$field])) {
+				$incomplete[] = $field;
+			}
+		}
+
+		return $incomplete;
 	}
 }
