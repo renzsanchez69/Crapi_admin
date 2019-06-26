@@ -31,6 +31,7 @@ class ComposerStaticInit13a1d7aa76f0daf74e691f717d56f3a6
         ),
         'P' => 
         array (
+            'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
         ),
         'N' => 
@@ -65,6 +66,10 @@ class ComposerStaticInit13a1d7aa76f0daf74e691f717d56f3a6
         'ReCaptcha\\' => 
         array (
             0 => __DIR__ . '/..' . '/google/recaptcha/src/ReCaptcha',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
         'Psr\\Http\\Message\\' => 
         array (
@@ -112,6 +117,16 @@ class ComposerStaticInit13a1d7aa76f0daf74e691f717d56f3a6
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'P' => 
+        array (
+            'PayMaya' => 
+            array (
+                0 => __DIR__ . '/..' . '/paymaya/paymaya-sdk/lib',
+            ),
+        ),
+    );
+
     public static $classMap = array (
         'BeforeValidException' => __DIR__ . '/..' . '/firebase/php-jwt/Exceptions/BeforeValidException.php',
         'ExpiredException' => __DIR__ . '/..' . '/firebase/php-jwt/Exceptions/ExpiredException.php',
@@ -124,6 +139,7 @@ class ComposerStaticInit13a1d7aa76f0daf74e691f717d56f3a6
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit13a1d7aa76f0daf74e691f717d56f3a6::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit13a1d7aa76f0daf74e691f717d56f3a6::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit13a1d7aa76f0daf74e691f717d56f3a6::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit13a1d7aa76f0daf74e691f717d56f3a6::$classMap;
 
         }, null, ClassLoader::class);

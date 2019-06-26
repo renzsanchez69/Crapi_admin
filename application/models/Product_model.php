@@ -78,10 +78,7 @@ class Product_model extends MY_Model {
 		if (!empty($fields)) {
 			$select = implode(', ', $fields);
 		}
-		$select .= ',`products`.`id` AS product_id,`products`.`name`,`products`.`details`,`products`.`price`';
-		$queryStr = 'SELECT '.$select.' FROM menus';
-
-		$queryStr .= " INNER JOIN products ON products.menu_id = menus.id  ";
+		$queryStr = 'SELECT '.$select.' FROM products';
 
 		if (!empty($params)) {
 			$conditions = array();
@@ -116,11 +113,9 @@ class Product_model extends MY_Model {
 				$queryStr .= ' HAVING '.$having;
 			}
 		}
-
-		$queryStr .= " ORDER BY menus.id DESC ";
+		$queryStr .= ' ORDER BY products.id DESC';
 
 		$result = $this->db->query($queryStr);
-
 		return $result->result_array();
 	}
 

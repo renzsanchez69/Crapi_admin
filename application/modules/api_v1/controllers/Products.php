@@ -38,19 +38,16 @@ class Products extends API_Controller {
 		    ];
 		}
 
-		// - get fields
-		$fields = array(
-			'menus.*'
-		);
-		$params = array(
-
-		);
+		$params = array();
 
 		if (!empty($postData['resto_id'])) {
 			$params['resto_id'] = $postData['resto_id'];
 		}
+		if (!empty($postData['name'])) {
+			$params['LIKE']['name'] = $postData['name'];
+		}
 
-		$data = $this->product->fetch_product_raw($fields, $params);
+		$data = $this->product->fetch_product_raw([], $params);
 		
 		$myArr = [
             "data"=>$data,

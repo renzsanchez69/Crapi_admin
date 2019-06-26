@@ -5,6 +5,7 @@
         "league/csv": "^7.0",
         "league/plates": "3.*",
         "firebase/php-jwt": "^2.1",
-        "nexmo/client": "^1.5"
+        "nexmo/client": "^1.5",
+        "paymaya/paymaya-sdk": "*"
     }
 }
