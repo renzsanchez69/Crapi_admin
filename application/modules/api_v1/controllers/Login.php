@@ -54,19 +54,21 @@ class Login extends API_Controller {
 			$loginData->role = ROLE_EMPLOYEE;
 		}
 
-		// - generate login_token 
+		//TODO - generate login_token 
 
-		// - update user login
+		//TODO - update user login_token in DB
 
 		// - return result
 		if (isset($loginData)) {
 			$data = array(
 				'result' => REQUEST_RESULT_OK,
-				'user_id' => $loginData->id,
-				'login_token' => $loginData->login_token,
-				'role' => $loginData->role,
-				'longitude' => ($loginData->role == ROLE_CUSTOMER) ? $loginData->longitude : '',
-				'latitude' => ($loginData->role == ROLE_CUSTOMER) ? $loginData->latitude : ''
+				'data' => [
+					'user_id' => $loginData->id,
+					'login_token' => $loginData->login_token,
+					'role' => $loginData->role,
+					'longitude' => ($loginData->role == ROLE_CUSTOMER) ? $loginData->longitude : '',
+					'latitude' => ($loginData->role == ROLE_CUSTOMER) ? $loginData->latitude : ''
+				]
 			);
 		}
 		$this->to_response($data);

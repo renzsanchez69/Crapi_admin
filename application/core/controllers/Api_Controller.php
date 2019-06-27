@@ -86,7 +86,7 @@ class API_Controller extends MY_Controller {
 		if ( in_array($this->mMethod, array('POST', 'PUT')) )
 		{
 			$content_type = $this->input->server('CONTENT_TYPE');
-			$is_form_request = ($content_type=='application/x-www-form-urlencoded');
+			$is_form_request = ($content_type=='application/x-www-form-urlencoded' ||  $content_type=='application/x-www-form-urlencoded; charset=UTF-8');
 			$is_json_request = ($content_type=='application/json' || $content_type=='application/json; charset=UTF-8');
 
 			if ($is_form_request)

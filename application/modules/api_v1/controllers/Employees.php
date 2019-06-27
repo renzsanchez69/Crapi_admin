@@ -64,7 +64,13 @@ class Employees extends API_Controller {
 	// [GET] /users/{id}
 	protected function get_item($id)
 	{
-		$data = $this->Employee->get($id);
+		$employee = $this->Employee->get($id);
+
+		$data = [
+			'result' => REQUEST_RESULT_OK,
+			'data' => $employee
+		];
+		
 		$this->to_response($data);
 	}
 
@@ -80,7 +86,10 @@ class Employees extends API_Controller {
 		if (!empty($incomplete)) {
 			$data['result'] = REQUEST_RESULT_NG;
 			$data['error'] = "Please input required fields.";
+			$this->to_response($data);
 		}
+
+		//TODO - add checker if owner email already in use
 
 		$hashed = password_hash($postData['password'], PASSWORD_DEFAULT);
 
@@ -109,8 +118,47 @@ class Employees extends API_Controller {
 	// [PUT] /demo/{id}
 	protected function update_item($id)
 	{
-		$params = elements(array('filter', 'valid', 'fields', 'here'), $this->mParams);
-		$this->to_accepted();
+		$data = ['result' => REQUEST_RESULT_OK];
+		if (empty($this->mParams)) {
+			$data['result'] = REQUEST_RESULT_NG;
+			$data['error'] = "Incomplete parameters.";
+			$this->to_response($data);
+		}
+
+		$required_fields = array(
+			'id',
+			'firstname',
+			'lastname',
+			'address',
+			'contact_number',
+			'gender',
+			'email'
+		);
+		$incomplete = self::check_required_fields($this->mParams, $required_fields);
+		if (!empty($incomplete)) {
+			$data['result'] = REQUEST_RESULT_NG;
+			$data['error'] = "Please input required fields.";
+			$this->to_response($data);
+		}
+
+		$update_data = array(
+			'firstname' => $this->mParams['firstname'],
+			'lastname' => $this->mParams['lastname'],
+			'address' => $this->mParams['address'],
+			'contact_number' => $this->mParams['contact_number'],
+			'gender' => $this->mParams['gender'],
+			'email' => $this->mParams['email']
+		);
+
+		$update_res = $this->Employee->update_info($this->mParams['id'], $update_data);
+
+		if (!$update_res) {
+			$data['result'] = REQUEST_RESULT_NG;
+			$data['error'] = "Failed to update data.";
+			$this->to_response($data);
+		}
+
+		$this->to_response($data);
 	}
 
 	// [DELETE] /demo/{id}
@@ -136,7 +184,7 @@ class Employees extends API_Controller {
 		return $return;
 	}
 
-	private function check_required_fields($params){
+	private function check_required_fields($params, $fields_required = []){
 		$incomplete = [];
 		$required_fields = array(
 			'owner_id',
@@ -148,6 +196,10 @@ class Employees extends API_Controller {
 			'email',
 			'password'
 		);
+
+		if (!empty($fields_required)) {
+			$required_fields = $fields_required;
+		}
 
 		foreach ($required_fields as $field) {
 			if (!isset($params[$field]) || empty($params[$field])) {
