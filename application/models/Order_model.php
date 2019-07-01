@@ -59,14 +59,15 @@ class Order_model extends MY_Model {
 			$this->db->select('orders.*');
 		}
 
-		$this->db->select('order_details.qty,order_details.price,order_details.sub_total,order_details.status,order_details.product_id,order_details.created_at AS order_date');
+		$this->db->select('order_details.id AS order_details_id,order_details.qty,order_details.price,order_details.sub_total,order_details.order_status,order_details.product_id,order_details.created_at AS order_date');
 		$this->db->select('products.name');
 		$this->db->select('CONCAT(`customers`.`firstname`, " ", `customers`.`lastname`) AS customer_fullname,customers.address,customers.contact_number,customers.email');
 
 		$this->db->from('orders');
 
 		if (!empty($params)) {
-			$this->db->where($params);
+			$this->db->where('orders.resto_id',$params['resto_id']);
+			//$this->db->where($params);
 		}
 
 		if (!empty($conditions['having'])) {
@@ -180,6 +181,11 @@ class Order_model extends MY_Model {
 		$this->db->delete('orders');
 		
 		$this->db->where('order_id', $id);
+		$this->db->delete('order_details');
+	}
+
+	public function delete_order_by_item($id){
+		$this->db->where('id', $id);
 		$this->db->delete('order_details');
 	}
 }

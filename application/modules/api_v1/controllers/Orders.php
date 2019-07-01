@@ -32,7 +32,6 @@ class Orders extends API_Controller {
 		    ];
 		    return $this->to_response($myArr);
 		}
-
 		$res_order = $this->Order->fetch_orders([],['customer_id'=>$this->mUser[0]['id'],'order_status'=>'success'],[]);
 		if(!empty($res_order)){
 
@@ -97,6 +96,25 @@ class Orders extends API_Controller {
 		 $this->Order->delete_order_by($postData["order_id"]);
 		$this->to_response($myArr);
 	}
+
+	public function order_delete_by_item()
+	{
+		$postData = $this->input->post();
+		if(empty( $this->mUser) && !isset( $this->mUser)){
+		    $myArr = [
+		        "data"=>[],
+		        "result"=> 'NG'
+		    ];
+		    return $this->to_response($myArr);
+		}
+
+		$myArr = [
+	        "data"=>[],
+	        "result"=> 'OK'
+	    ];
+		 $this->Order->delete_order_by_item($postData["order_id"]);
+		$this->to_response($myArr);
+	}
 	
 	public function add_orders()
 	{
@@ -126,7 +144,7 @@ class Orders extends API_Controller {
 					$res = $this->OrderDetails->update_info($checkIfExist[0]["id"],$order_details);
 					if($res){
 						$myArr = [
-					        "data"=>[],
+					        "data"=>$res,
 					        "result"=> 'OK'
 					    ];
 
@@ -149,7 +167,7 @@ class Orders extends API_Controller {
 
 					if($res){
 						$myArr = [
-					        "data"=>[],
+					        "data"=>$res,
 					        "result"=> 'OK'
 					    ];
 
@@ -169,6 +187,7 @@ class Orders extends API_Controller {
 			if(!empty($res_order)){
 
 				$order_details['order_id'] = $res_order;
+				$order_details['resto_id'] = $postData["resto_id"];
 				$order_details['product_id'] = $postData["product_id"];
 				$order_details['qty'] = $postData["qty"];
 				$order_details['price'] = $postData["price"];
