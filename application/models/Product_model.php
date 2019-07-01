@@ -128,4 +128,9 @@ class Product_model extends MY_Model {
 		$hashed = password_hash($password, PASSWORD_DEFAULT);
 		return $this->update_field($user_id, 'password', $hashed);
 	}
+	public function delete_product($id){
+		$this->db->where('id', $id);
+
+		$this->db->delete('products');
+	}
 }

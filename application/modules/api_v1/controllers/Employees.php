@@ -150,6 +150,11 @@ class Employees extends API_Controller {
 			'email' => $this->mParams['email']
 		);
 
+		if (isset($this->mParams['password']) && !empty($this->mParams['password'])) {
+			$hashed = password_hash($this->mParams['password'], PASSWORD_DEFAULT);
+			$this->mParams['password'] = $hashed;
+		}
+
 		$update_res = $this->Employee->update_info($this->mParams['id'], $update_data);
 
 		if (!$update_res) {

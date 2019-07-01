@@ -42,6 +42,9 @@ class API_Controller extends MY_Controller {
 				case ROLE_EMPLOYEE:
 					$userData = $this->Employee->fetch_employees([], ['login_token' => $params['login_token']]);
 					break;
+				default:
+					$this->to_error_role_not_found();
+					break;
 			}
 
 			if (isset($userData) && !empty($userData)) {
@@ -304,6 +307,11 @@ class API_Controller extends MY_Controller {
 		$this->to_error('Method Not Allowed', 405);
 	}
 
+	protected function to_error_role_not_found()
+	{
+		$this->to_error('Check User Role', 400);
+	}
+
 	protected function to_not_implemented($additional_data = array())
 	{
 		// show "not implemented" info only during development mode
@@ -323,5 +331,21 @@ class API_Controller extends MY_Controller {
 		{
 			$this->to_error_not_found();
 		}
+	}
+
+	public function checkDuplicateEmail($email){
+		$params = [
+			'email' => $email
+		];
+
+		$ownerData = $this->Owner->fetch_owners($params);
+		$customerData = $this->Customer->fetch_customers($params);
+		$employeeData = $this->Employee->fetch_employees($params);
+
+		if (!empty($ownerData) || !empty($customerData) || !empty($employeeData)) {
+			return true;
+		}
+
+		return false;
 	}
 }
