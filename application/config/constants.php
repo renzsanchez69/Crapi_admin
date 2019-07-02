@@ -121,7 +121,19 @@ define('USER_STATUS_SELECTION', serialize(array('' => '---', 1 => 'Active', 2 =>
 define('REQUEST_RESULT_OK', 'OK');
 define('REQUEST_RESULT_NG', 'NG');
 
-// - properties status 
+// - product type 
+define('PRODUCT_TYPE_APPETIZER', 'appetizer');
+define('PRODUCT_TYPE_MAIN', 'main');
+define('PRODUCT_TYPE_DESSERT', 'dessert');
+define('PRODUCT_TYPE_BEVERAGE', 'beverage');
+define('PRODUCT_TYPE_SELECTION', serialize(
+	array(
+		'appetizer' => 'Appetizer', 
+		'main' => 'Main', 
+		'dessert' => 'Dessert', 
+		'beverage' => 'Beverage'
+	))
+);
 define('POST_STATUS_PENDING', 'pending');
 define('POST_STATUS_APPROVED', 'approved');
 define('POST_STATUS_REJECTED', 'rejected');
@@ -134,47 +146,3 @@ define('POST_STATUS_SELECTION', serialize(
 	))
 );
 
-// - properties is sold 
-define('IS_SOLD_FALSE', 0);
-define('IS_SOLD_TRUE', 1);
-define('IS_SOLD_SELECTION', serialize(
-	array(
-		'' => '---',
-		1 => 'Sold',
-		0 => 'Not Sold'
-	))
-);
-
-// - property type
-define('PROPERTY_TYPE_SELECTION', serialize(
-	array(
-		'' => '---', 
-		'house' => 'House',
-		'townhouse' => 'Townhouse',
-		'condo' => 'Condo',
-		'apartment' => 'Apartment',
-		'lot' => 'Lot',
-		'others' => 'Others'
-	))
-);
-// - transaction type
-define('TRANSACTION_TYPE_SALE', 'sale');
-define('TRANSACTION_TYPE_RENT', 'rent');
-define('TRANSACTION_TYPE_SELECTION', serialize(
-	array(
-		'' => '---', 
-		'sale' => 'Sale',
-		'rent' => 'Rent'
-	))
-);
-
-// - property condition
-define('PROPERTY_CONDITION_SELECTION', serialize(
-	array(
-		'' => '---', 
-		'fully_furnished' => 'Fully Furnished', 
-		'semi_furnished' => 'Semi Furnished', 
-		'others' => 'Others', 
-		'n/a' => 'n/a'
-	))
-);

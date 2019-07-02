@@ -35,7 +35,7 @@ class Uploads extends API_Controller {
 
 		$this->to_response([
             "data" => $uploadImageRes,
-            "result"=> REQUEST_RESULT_NG
+            "result"=> REQUEST_RESULT_OK
 		]);
 	}
 

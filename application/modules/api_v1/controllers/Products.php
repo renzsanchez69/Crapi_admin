@@ -139,9 +139,8 @@ class Products extends API_Controller {
 			'price' => $this->mParams['price']
 		);
 
-		if (isset($this->mParams['image']) && !empty($this->mParams['image'])) {
-			// $hashed = password_hash($this->mParams['password'], PASSWORD_DEFAULT);
-			// $this->mParams['password'] = $hashed;
+		if (isset($this->mParams['image_url']) && !empty($this->mParams['image_url'])) {
+			$update_data['image_url'] = $this->mParams['image_url'];
 		}
 
 		$update_res = $this->product->update_info($this->mParams['id'], $update_data);
@@ -155,13 +154,47 @@ class Products extends API_Controller {
 		$this->to_response($data);
 	}
 
+	// [POST] /products
+	protected function create_item()
+	{
+		$data = ['result' => REQUEST_RESULT_OK];
+		$postData = $this->input->post();
+
+		// - check incomplete params
+		$incomplete = self::check_required_fields($postData);
+
+		if (!empty($incomplete)) {
+			$data['result'] = REQUEST_RESULT_NG;
+			$data['error'] = "Please input required fields.";
+			$this->to_response($data);
+		}
+
+		// - prepare data
+		$prodData = array(
+			'resto_id' => $postData['resto_id'],
+			'name' => $postData['name'],
+			'details' => $postData['details'],
+			'type' => PRODUCT_TYPE_MAIN,
+			'price' => $postData['price'],
+			'image_url' => $postData['image_url']
+		);
+
+		$product = $this->product->add_product($prodData);
+
+		if (!$product) {
+			$data['result'] = REQUEST_RESULT_NG;
+			$data['error'] = "Failed to save data.";
+		}
+
+		$this->to_response($data);
+	}
+
 	private function check_required_fields($params, $fields_required = []){
 		$incomplete = [];
 		$required_fields = array(
 			'resto_id',
 			'name',
 			'details',
-			'type',
 			'price',
 			'image_url'
 		);

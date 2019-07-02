@@ -243,7 +243,7 @@ class Orders extends API_Controller {
 		    return $this->to_response($myArr);
 		}
 
-		$res_order = $this->Order->fetch_orders_by([],['customer_id'=>$this->mUser[0]['id'],'resto_id'=>$postData['resto_id'],'order_status'=>'pending'],[]);
+		$res_order = $this->Order->fetch_orders_by([],['orders.customer_id'=>$this->mUser[0]['id'],'orders.resto_id'=>$postData['resto_id'],'orders.order_status'=>'pending'],[]);
 		if(!empty($res_order)){
 
 				$myArr = [
