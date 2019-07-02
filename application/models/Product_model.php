@@ -74,7 +74,7 @@ class Product_model extends MY_Model {
 
 	public function fetch_product_raw($fields = array(), $params = array()) {
 		$queryStr = '';
-		$select = '*';
+		$select = '*, products.id AS product_id';
 		if (!empty($fields)) {
 			$select = implode(', ', $fields);
 		}

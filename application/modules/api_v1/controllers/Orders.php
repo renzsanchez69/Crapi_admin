@@ -127,11 +127,16 @@ class Orders extends API_Controller {
 		    return $this->to_response($myArr);
 		}
 
-		$data['customer_id'] = $this->mUser[0]['id'];
-		$data['resto_id'] = $postData["resto_id"];
-		$data['order_number'] = $this->mUser[0]['id'].time();
+		$data['orders.customer_id'] = $this->mUser[0]['id'];
+		$data['orders.resto_id'] = $postData["resto_id"];
+		$data['orders.order_number'] = $this->mUser[0]['id'].time();
 
-		$checkIfHaveOrder = $this->Order->fetch_orders_by([],['resto_id' => $postData["resto_id"],'customer_id' => $this->mUser[0]['id'],'order_status' => 'pending']);
+		$checkIfHaveOrder = $this->Order->fetch_orders_by([],
+			[
+				'orders.resto_id' => $postData["resto_id"],
+				'orders.customer_id' => $this->mUser[0]['id'],
+				'orders.order_status' => 'pending']
+			);
 		if (!empty($checkIfHaveOrder[0])) {
 
 				$checkIfExist = $this->OrderDetails->get_order_details_by(['order_id'=> $checkIfHaveOrder[0]["id"],'product_id'=>$postData["product_id"]]);
@@ -262,7 +267,12 @@ class Orders extends API_Controller {
 		    return $this->to_response($myArr);
 		}
 
-		$res_order = $this->Order->fetch_orders_by([],['orders.customer_id'=>$this->mUser[0]['id'],'orders.resto_id'=>$postData['resto_id'],'orders.order_status'=>'pending'],[]);
+		$res_order = $this->Order->fetch_orders_by(null,
+		[
+			'orders.customer_id'=>$this->mUser[0]['id'],
+			'orders.resto_id'=>$postData['resto_id'],
+			'orders.order_status'=>'pending']
+		);
 		if(!empty($res_order)){
 
 				$myArr = [

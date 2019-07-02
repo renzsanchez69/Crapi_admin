@@ -43,6 +43,9 @@ class Restaurants extends API_Controller {
 		if (!empty($urlQuery['owner_id'])) {
 			$params['owner_id'] = $urlQuery['owner_id'];
 		}
+		if (!empty($urlQuery['id'])) {
+			$params['restaurants.id'] = $urlQuery['id'];
+		}
 		$data = $this->resto->fetch_restaurants_raw($fields,$params);
 		$myArr = [
             "data"=>$data,
