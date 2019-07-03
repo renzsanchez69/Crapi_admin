@@ -61,7 +61,7 @@ class Orders extends API_Controller {
 		    return $this->to_response($myArr);
 		}
 
-		$res_order = $this->OrderDetails->fetch_order_details([],['order_id'=>$postData['order_id'],'status'=>'success']);
+		$res_order = $this->OrderDetails->fetch_order_details([],['order_id'=>$postData['order_id'],'order_status'=>'success']);
 		if(!empty($res_order)){
 
 				$myArr = [
