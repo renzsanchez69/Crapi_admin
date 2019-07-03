@@ -71,8 +71,8 @@ class Orders extends API_Controller {
 		}
 
 		$params = [];
-		if (isset($postData['status'])) {
-			$params['status'] = $postData['status'];
+		if (isset($postData['order_status'])) {
+			$params['order_status'] = $postData['order_status'];
 		}
 		if (isset($postData['order_id'])) {
 			$params['order_id'] = $postData['order_id'];
