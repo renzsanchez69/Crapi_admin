@@ -23,18 +23,28 @@ class Orders extends API_Controller {
 
 	public function order_list()
 	{
-
 		$postData = $this->input->post();
 		if(empty($this->mUser) && !isset( $this->mUser)){
 		    $myArr = [
-		        "data"=>[],
+		        "error" => "User not found",
 		        "result"=> 'NG'
 		    ];
 		    return $this->to_response($myArr);
 		}
-		$res_order = $this->Order->fetch_orders([],['customer_id'=>$this->mUser[0]['id'],'order_status'=>'success'],[]);
-		if(!empty($res_order)){
 
+		$params = [];
+		if (isset($postData['search']) && $postData['search'] != '') {
+			$params['name'] = $postData['search'];
+		}
+		if (isset($postData['customer_id'])) {
+			$params['customer_id'] = $postData['customer_id'];
+		}
+		if (isset($postData['order_status'])) {
+			$params['order_status'] = $postData['order_status'];
+		}
+
+		$res_order = $this->Order->fetch_orders(null, $params);
+		if(!empty($res_order)){
 				$myArr = [
 			        "data"=> $res_order,
 			        "result"=> 'OK'
@@ -49,10 +59,9 @@ class Orders extends API_Controller {
 		$this->to_response($myArr);
 	}
 
-	public function order_details_list()
-	{
-
+	public function order_details_list() {
 		$postData = $this->input->post();
+
 		if(empty($this->mUser) && !isset( $this->mUser)){
 		    $myArr = [
 		        "data"=>[],
@@ -61,7 +70,14 @@ class Orders extends API_Controller {
 		    return $this->to_response($myArr);
 		}
 
-		$res_order = $this->OrderDetails->fetch_order_details([],['order_id'=>$postData['order_id'],'status'=>'success']);
+		$params = [];
+		if (isset($postData['status'])) {
+			$params['status'] = $postData['status'];
+		}
+		if (isset($postData['order_id'])) {
+			$params['order_id'] = $postData['order_id'];
+		}
+		$res_order = $this->OrderDetails->fetch_order_details([], $params);
 		if(!empty($res_order)){
 
 				$myArr = [
@@ -289,8 +305,7 @@ class Orders extends API_Controller {
 		$this->to_response($myArr);
 	}
 
-	public function order_search()
-	{
+	public function order_search() {
 		$postData = $this->input->post();
 		if(empty($this->mUser) && !isset( $this->mUser)){
 		    $myArr = [
@@ -300,9 +315,21 @@ class Orders extends API_Controller {
 		    return $this->to_response($myArr);
 		}
 
-		$res_order = $this->Order->fetch_orders_search([],['customer_id'=>$this->mUser[0]['id'],'resto_id'=>$postData['resto_id'],'name'=>$postData['search'],'order_status'=>'pending'],[]);
-		if(!empty($res_order)){
+		$params = [];
 
+		if (isset($postData['search']) && $postData['search'] != '') {
+			$params['name'] = $postData['search'];
+		}
+		if (isset($postData['resto_id'])) {
+			$params['resto_id'] = $postData['resto_id'];
+		}
+		if (isset($postData['order_status'])) {
+			$params['order_status'] = $postData['order_status'];
+		}
+
+		$res_order = $this->Order->fetch_orders_search(null, $params);
+
+		if(!empty($res_order)){
 				$myArr = [
 			        "data"=> $res_order,
 			        "result"=> 'OK'
@@ -314,6 +341,7 @@ class Orders extends API_Controller {
 		        "result"=> 'NG'
 		    ];
 		}
+
 		$this->to_response($myArr);
 	}
 }
