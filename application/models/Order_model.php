@@ -38,6 +38,14 @@ class Order_model extends MY_Model {
 		$this->db->from('orders');
 
 		if (!empty($params)) {
+			if (!empty($params['order_status']) && is_array($params['order_status'])) {
+				$this->db->where_in('order_status', $params['order_status']);
+				unset($params['order_status']);
+			}
+			if (!empty($params['search'])) {
+				$this->db->like('restaurants.resto_name', $params['search'], 'both');
+			}
+			unset($params['search']);
 			$this->db->where($params);
 		}
 
@@ -59,6 +67,7 @@ class Order_model extends MY_Model {
 			$this->db->select('orders.*');
 		}
 
+		$this->db->select('orders.id AS order_id');
 		$this->db->select('order_details.id AS order_details_id');
 		$this->db->select('order_details.qty');
 		$this->db->select('order_details.price');
@@ -67,11 +76,20 @@ class Order_model extends MY_Model {
 		$this->db->select('order_details.product_id');
 		$this->db->select('order_details.created_at AS order_date');
 		$this->db->select('products.name');
+		$this->db->select('products.details');
 		$this->db->select('CONCAT(`customers`.`firstname`, " ", `customers`.`lastname`) AS customer_fullname,customers.address,customers.contact_number,customers.email');
 
 		$this->db->from('orders');
 
 		if (!empty($params)) {
+			if (!empty($params['orders.order_status']) && is_array($params['orders.order_status'])) {
+				$this->db->where_in('orders.order_status', $params['orders.order_status']);
+				unset($params['orders.order_status']);
+			}
+			if (!empty($params['search'])) {
+				$this->db->like('products.name', $params['search'], 'both');
+			}
+			unset($params['search']);
 			// $this->db->where('orders.resto_id', $params['resto_id']);
 			$this->db->where($params);
 		}
@@ -85,6 +103,7 @@ class Order_model extends MY_Model {
 		$this->db->join('customers as customers', 'customers.id = orders.customer_id', 'INNER');
 		
 		$result = $this->db->get();
+		
 		return $result->result_array();
 	}
 
@@ -104,7 +123,9 @@ class Order_model extends MY_Model {
 		if (!empty($params)) {
 			$this->db->where('orders.customer_id',$params['customer_id']);
 			$this->db->where('orders.resto_id',$params['resto_id']);
-			$this->db->like('products.name',$params['name']);
+			if (!empty($params['name'])) {
+				$this->db->like('products.name',$params['name']);
+			}
 		}
 
 		if (!empty($conditions['having'])) {

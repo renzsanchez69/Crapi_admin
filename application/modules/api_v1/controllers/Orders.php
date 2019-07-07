@@ -25,16 +25,16 @@ class Orders extends API_Controller {
 	{
 		$postData = $this->input->post();
 		if(empty($this->mUser) && !isset( $this->mUser)){
-		    $myArr = [
-		        "error" => "User not found",
-		        "result"=> 'NG'
-		    ];
-		    return $this->to_response($myArr);
+			$myArr = [
+				"error" => "User not found",
+				"result"=> 'NG'
+			];
+			return $this->to_response($myArr);
 		}
 
 		$params = [];
 		if (isset($postData['search']) && $postData['search'] != '') {
-			$params['name'] = $postData['search'];
+			$params['search'] = $postData['search'];
 		}
 		if (isset($postData['customer_id'])) {
 			$params['customer_id'] = $postData['customer_id'];
@@ -46,15 +46,15 @@ class Orders extends API_Controller {
 		$res_order = $this->Order->fetch_orders(null, $params);
 		if(!empty($res_order)){
 				$myArr = [
-			        "data"=> $res_order,
-			        "result"=> 'OK'
-			    ];
+					"data"=> $res_order,
+					"result"=> 'OK'
+				];
 
 		} else {
-		    $myArr = [
-		        "data"=>[],
-		        "result"=> 'NG'
-		    ];
+			$myArr = [
+				"data"=>[],
+				"result"=> 'NG'
+			];
 		}
 		$this->to_response($myArr);
 	}
@@ -63,11 +63,11 @@ class Orders extends API_Controller {
 		$postData = $this->input->post();
 
 		if(empty($this->mUser) && !isset( $this->mUser)){
-		    $myArr = [
-		        "data"=>[],
-		        "result"=> 'NG'
-		    ];
-		    return $this->to_response($myArr);
+			$myArr = [
+				"data"=>[],
+				"result"=> 'NG'
+			];
+			return $this->to_response($myArr);
 		}
 
 		$params = [];
@@ -81,15 +81,15 @@ class Orders extends API_Controller {
 		if(!empty($res_order)){
 
 				$myArr = [
-			        "data"=> $res_order,
-			        "result"=> 'OK'
-			    ];
+					"data"=> $res_order,
+					"result"=> 'OK'
+				];
 
 		} else {
-		    $myArr = [
-		        "data"=>[],
-		        "result"=> 'NG'
-		    ];
+			$myArr = [
+				"data"=>[],
+				"result"=> 'NG'
+			];
 		}
 		$this->to_response($myArr);
 	}
@@ -98,17 +98,17 @@ class Orders extends API_Controller {
 	{
 		$postData = $this->input->post();
 		if(empty( $this->mUser) && !isset( $this->mUser)){
-		    $myArr = [
-		        "data"=>[],
-		        "result"=> 'NG'
-		    ];
-		    return $this->to_response($myArr);
+			$myArr = [
+				"data"=>[],
+				"result"=> 'NG'
+			];
+			return $this->to_response($myArr);
 		}
 
 		$myArr = [
-	        "data"=>[],
-	        "result"=> 'OK'
-	    ];
+			"data"=>[],
+			"result"=> 'OK'
+		];
 		 $this->Order->delete_order_by($postData["order_id"]);
 		$this->to_response($myArr);
 	}
@@ -117,17 +117,17 @@ class Orders extends API_Controller {
 	{
 		$postData = $this->input->post();
 		if(empty( $this->mUser) && !isset( $this->mUser)){
-		    $myArr = [
-		        "data"=>[],
-		        "result"=> 'NG'
-		    ];
-		    return $this->to_response($myArr);
+			$myArr = [
+				"data"=>[],
+				"result"=> 'NG'
+			];
+			return $this->to_response($myArr);
 		}
 
 		$myArr = [
-	        "data"=>[],
-	        "result"=> 'OK'
-	    ];
+			"data"=>[],
+			"result"=> 'OK'
+		];
 		 $this->Order->delete_order_by_item($postData["order_id"]);
 		$this->to_response($myArr);
 	}
@@ -135,22 +135,24 @@ class Orders extends API_Controller {
 	public function add_orders()
 	{
 		$postData = $this->input->post();
+
 		if(empty( $this->mUser) && !isset( $this->mUser)){
-		    $myArr = [
-		        "data"=>[],
-		        "result"=> 'NG'
-		    ];
-		    return $this->to_response($myArr);
+			$myArr = [
+				"data"=>[],
+				"result"=> 'NG'
+			];
+			return $this->to_response($myArr);
 		}
 
-		$data['orders.customer_id'] = $this->mUser[0]['id'];
+		$data['orders.customer_id'] = $this->mUser['id'];
 		$data['orders.resto_id'] = $postData["resto_id"];
-		$data['orders.order_number'] = $this->mUser[0]['id'].time();
+		$data['orders.order_number'] = $this->mUser['id'].time();
+		$data['orders.order_hash'] = 'CRP_'.$this->mUser['id'].time();
 
 		$checkIfHaveOrder = $this->Order->fetch_orders_by([],
 			[
 				'orders.resto_id' => $postData["resto_id"],
-				'orders.customer_id' => $this->mUser[0]['id'],
+				'orders.customer_id' => $this->mUser['id'],
 				'orders.order_status' => 'pending']
 			);
 		if (!empty($checkIfHaveOrder[0])) {
@@ -165,15 +167,15 @@ class Orders extends API_Controller {
 					$res = $this->OrderDetails->update_info($checkIfExist[0]["id"],$order_details);
 					if($res){
 						$myArr = [
-					        "data"=>$res,
-					        "result"=> 'OK'
-					    ];
+							"data"=>$res,
+							"result"=> 'OK'
+						];
 
 					} else {
 						$myArr = [
-					        "data"=>[],
-					        "result"=> 'NG'
-					    ];
+							"data"=>[],
+							"result"=> 'NG'
+						];
 					}
 
 				} else {
@@ -188,15 +190,15 @@ class Orders extends API_Controller {
 
 					if($res){
 						$myArr = [
-					        "data"=>$res,
-					        "result"=> 'OK'
-					    ];
+							"data"=>$res,
+							"result"=> 'OK'
+						];
 
 					} else {
 						$myArr = [
-					        "data"=>[],
-					        "result"=> 'NG'
-					    ];
+							"data"=>[],
+							"result"=> 'NG'
+						];
 
 					}
 					
@@ -218,21 +220,21 @@ class Orders extends API_Controller {
 
 				if($res){
 					$myArr = [
-				        "data"=>[],
-				        "result"=> 'OK'
-				    ];
+						"data"=>[],
+						"result"=> 'OK'
+					];
 				} else {
 					$myArr = [
-				        "data"=>[],
-				        "result"=> 'NG'
-				    ];
+						"data"=>[],
+						"result"=> 'NG'
+					];
 				}
 
 			} else {
-			    $myArr = [
-			        "data"=>[],
-			        "result"=> 'NG'
-			    ];
+				$myArr = [
+					"data"=>[],
+					"result"=> 'NG'
+				];
 			}
 
 		} 
@@ -245,29 +247,29 @@ class Orders extends API_Controller {
 	{
 		$postData = $this->input->post();
 		if(empty( $this->mUser) && !isset( $this->mUser)){
-		    $myArr = [
-		        "data"=>[],
-		        "result"=> 'NG'
-		    ];
-		    return $this->to_response($myArr);
+			$myArr = [
+				"data"=>[],
+				"result"=> 'NG'
+			];
+			return $this->to_response($myArr);
 		}
 
 		$data["qty"]= $postData["qty"];
-  		$data["price"] =$postData["price"];
-  		$data["sub_total"]=($postData["price"] * $postData["qty"]);
-  		$data["description_request"]=$postData["description"];
+		$data["price"] =$postData["price"];
+		$data["sub_total"]=($postData["price"] * $postData["qty"]);
+		$data["description_request"]=$postData["description"];
 		$res = $this->OrderDetails->update_info($postData["order_details_id"],$data);
 		if($res){
 			$myArr = [
-		        "data"=>[],
-		        "result"=> 'OK'
-		    ];
+				"data"=>[],
+				"result"=> 'OK'
+			];
 
 		} else {
 			$myArr = [
-		        "data"=>[],
-		        "result"=> 'NG'
-		    ];
+				"data"=>[],
+				"result"=> 'NG'
+			];
 		}
 		$this->to_response($myArr);
 	}
@@ -275,45 +277,38 @@ class Orders extends API_Controller {
 	public function order_by_customer()
 	{
 		$postData = $this->input->post();
-		if(empty($this->mUser) && !isset( $this->mUser)){
-		    $myArr = [
-		        "data"=>[],
-		        "result"=> 'NG'
-		    ];
-		    return $this->to_response($myArr);
+
+		$params = [];
+		if (!empty($postData['customer_id'])) {
+			$params['orders.customer_id'] = $postData['customer_id'];
+		}
+		if (!empty($postData['resto_id'])) {
+			$params['orders.resto_id'] = $postData['resto_id'];
+		}
+		if (!empty($postData['order_status'])) {
+			$params['orders.order_status'] = $postData['order_status'];
+		}
+		if (!empty($postData['search'])) {
+			$params['search'] = $postData['search'];
 		}
 
-		$res_order = $this->Order->fetch_orders_by(null,
-		[
-			'orders.customer_id'=>$this->mUser[0]['id'],
-			'orders.resto_id'=>$postData['resto_id'],
-			'orders.order_status'=>'pending']
-		);
+		$res_order = $this->Order->fetch_orders_by(null, $params);
 		if(!empty($res_order)){
-
 				$myArr = [
-			        "data"=> $res_order,
-			        "result"=> 'OK'
-			    ];
-
+					"data"=> $res_order,
+					"result"=> 'OK'
+				];
 		} else {
-		    $myArr = [
-		        "data"=>[],
-		        "result"=> 'NG'
-		    ];
+			$myArr = [
+				"data"=>[],
+				"result"=> 'NG'
+			];
 		}
 		$this->to_response($myArr);
 	}
 
 	public function order_search() {
 		$postData = $this->input->post();
-		if(empty($this->mUser) && !isset( $this->mUser)){
-		    $myArr = [
-		        "data"=>[],
-		        "result"=> 'NG'
-		    ];
-		    return $this->to_response($myArr);
-		}
 
 		$params = [];
 
@@ -326,22 +321,64 @@ class Orders extends API_Controller {
 		if (isset($postData['order_status'])) {
 			$params['order_status'] = $postData['order_status'];
 		}
+		if (isset($postData['customer_id'])) {
+			$params['customer_id'] = $postData['customer_id'];
+		}
 
 		$res_order = $this->Order->fetch_orders_search(null, $params);
 
 		if(!empty($res_order)){
 				$myArr = [
-			        "data"=> $res_order,
-			        "result"=> 'OK'
-			    ];
+					"data"=> $res_order,
+					"result"=> 'OK'
+				];
 
 		} else {
-		    $myArr = [
-		        "data"=>[],
-		        "result"=> 'NG'
-		    ];
+			$myArr = [
+				"data"=>[],
+				"result"=> 'NG'
+			];
 		}
 
 		$this->to_response($myArr);
+	}
+
+	public function update_order()
+	{
+		$postData = $this->input->post();		
+
+		if(empty($postData['order_id'])){
+			return $this->to_response([
+				'error' => 'order_id is required.',
+				'result' => REQUEST_RESULT_NG
+			]);
+		}
+		$data = [];
+		if (isset($postData['is_paid'])) {
+			$data['is_paid'] = $postData['is_paid'];
+		}
+		if (isset($postData['order_status'])) {
+			$data['order_status'] = $postData['order_status'];
+		}
+		if (isset($postData['is_delivered'])) {
+			$data['is_delivered'] = $postData['is_delivered'];
+		}
+		if (isset($postData['is_received'])) {
+			$data['is_received'] = $postData['is_received'];
+		}
+
+		$res = $this->Order->update_info($postData["order_id"], $data);
+
+		if(!$res){
+			return $this->to_response([
+				'error' => 'Failed to update order.',
+				"result" => REQUEST_RESULT_NG
+			]);
+
+		} 
+
+		return $this->to_response([
+			"result" => REQUEST_RESULT_OK
+		]);
 	}
 }

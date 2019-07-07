@@ -48,7 +48,8 @@ class API_Controller extends MY_Controller {
 			}
 
 			if (isset($userData) && !empty($userData)) {
-				$this->mUser = $userData;
+				$this->mUser = $userData[0];
+				$this->mUser['role'] = $params['role'];
 			} else {
 				$this->to_error_unauthorized();
 			}

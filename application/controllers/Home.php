@@ -74,16 +74,17 @@ class Home extends MY_Controller {
 		$itemCheckout->buyer = $this->buyerInfo();
 		$itemCheckout->items = array($item);
 		$itemCheckout->totalAmount = $itemAmount;
-		$itemCheckout->requestReferenceNumber = "123456789";
+		$itemCheckout->requestReferenceNumber = "TESTABC123zzz";
 		$itemCheckout->redirectUrl = array(
-			"success" => "https://crapicebu.site/payment/success",
+			"success" => "http://crapicebu.site/",
 			"failure" => "https://shop.com/failure",
 			"cancel" => "https://shop.com/cancel"
 			);
 
 		$itemCheckout->execute();
 		$itemCheckout->retrieve();
-
+		echo "<pre>";
+		var_dump($itemCheckout);
 		echo "Checkout ID: " . $itemCheckout->id . "\n";
 		echo "Checkout URL: " . $itemCheckout->url . "\n";
 

@@ -134,10 +134,10 @@ define('PRODUCT_TYPE_SELECTION', serialize(
 		'beverage' => 'Beverage'
 	))
 );
-define('POST_STATUS_PENDING', 'pending');
-define('POST_STATUS_APPROVED', 'approved');
-define('POST_STATUS_REJECTED', 'rejected');
-define('POST_STATUS_SELECTION', serialize(
+define('ORDER_STATUS_PENDING', 'pending');
+define('ORDER_STATUS_APPROVED', 'approved');
+define('ORDER_STATUS_REJECTED', 'rejected');
+define('ORDER_STATUS_SELECTION', serialize(
 	array(
 		'' => '---', 
 		'pending' => 'Pending',
