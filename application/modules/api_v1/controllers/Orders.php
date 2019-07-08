@@ -42,6 +42,21 @@ class Orders extends API_Controller {
 		if (isset($postData['order_status'])) {
 			$params['order_status'] = $postData['order_status'];
 		}
+		if (!empty($postData['resto_id'])) {
+			$params['orders.resto_id'] = $postData['resto_id'];
+		}
+		if (isset($postData['is_paid'])) {
+			$params['is_paid'] = $postData['is_paid'];
+		}
+		if (isset($postData['is_delivered'])) {
+			$params['is_delivered'] = $postData['is_delivered'];
+		}
+		if (isset($postData['is_received'])) {
+			$params['is_received'] = $postData['is_received'];
+		}
+		if (!empty($postData['search'])) {
+			$params['search'] = $postData['search'];
+		}
 
 		$res_order = $this->Order->fetch_orders(null, $params);
 		if(!empty($res_order)){
@@ -146,6 +161,8 @@ class Orders extends API_Controller {
 
 		$data['orders.customer_id'] = $this->mUser['id'];
 		$data['orders.resto_id'] = $postData["resto_id"];
+		$data['orders.longitude'] = $postData["longitude"];
+		$data['orders.latitude'] = $postData["latitude"];
 		$data['orders.order_number'] = $this->mUser['id'].time();
 		$data['orders.order_hash'] = 'CRP_'.$this->mUser['id'].time();
 
@@ -153,7 +170,9 @@ class Orders extends API_Controller {
 			[
 				'orders.resto_id' => $postData["resto_id"],
 				'orders.customer_id' => $this->mUser['id'],
-				'orders.order_status' => 'pending']
+				'orders.order_status' => 'pending',
+				'orders.is_paid' => 0,
+			]
 			);
 		if (!empty($checkIfHaveOrder[0])) {
 
@@ -287,6 +306,15 @@ class Orders extends API_Controller {
 		}
 		if (!empty($postData['order_status'])) {
 			$params['orders.order_status'] = $postData['order_status'];
+		}
+		if (isset($postData['is_paid'])) {
+			$params['is_paid'] = $postData['is_paid'];
+		}
+		if (isset($postData['is_delivered'])) {
+			$params['is_delivered'] = $postData['is_delivered'];
+		}
+		if (isset($postData['is_received'])) {
+			$params['is_received'] = $postData['is_received'];
 		}
 		if (!empty($postData['search'])) {
 			$params['search'] = $postData['search'];

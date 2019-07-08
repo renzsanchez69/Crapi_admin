@@ -93,9 +93,9 @@ class Payments extends API_Controller {
 		$urlparams .= "&refno=".$reference_number;
 		$urlparams .= "&ordid=".$postData['order_id'];
 		$itemCheckout->redirectUrl = array(
-			"success" => $postData['callback_url']."/payment_success.html?status=success".$urlparams,
-			"failure" => base_url()."api/payments/callback?status=fail".$urlparams,
-			"cancel" => base_url()."api/payments/callback?status=cancel".$urlparams
+			"success" => $postData['callback_url']."/payment_callback.html?status=success".$urlparams,
+			"failure" => $postData['callback_url']."/payment_callback.html?status=fail".$urlparams,
+			"cancel" => $postData['callback_url']."/payment_callback.html?status=cancel".$urlparams
 		);
 
 		$itemCheckout->execute();
