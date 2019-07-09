@@ -60,6 +60,50 @@ class Order_model extends MY_Model {
 		return $result->result_array();
 	}
 
+	public function fetch_emp_orders($fields = array(), $params = array(), $conditions = array()) {
+		if (!empty($fields)) {
+			$this->db->select($fields);
+		} else {
+			$this->db->select('orders.*');
+		}
+
+		$this->db->select('CONCAT(`customers`.`firstname`, " ", `customers`.`lastname`) AS customer_fullname,customers.email,customers.address AS customer_address,customers.contact_number');
+		$this->db->select('restaurants.resto_name AS restaurants_name');
+
+		$this->db->from('orders');
+		if (!empty($params)) {
+
+			if (!empty($params['order_status']) && is_array($params['order_status'])) {
+				$this->db->where_in('order_status', $params['order_status']);
+				unset($params['order_status']);
+			}
+
+			if (!empty($params['is_paid'])) {
+				$this->db->where('is_paid',$params['is_paid']);
+			}
+
+			if (!empty($params['is_delivered'])) {
+				$this->db->where('is_delivered',$params['is_delivered']);
+			}
+
+			if (!empty($params['search'])) {
+				$this->db->like('restaurants.resto_name', $params['search'], 'both');
+			}
+			unset($params['search']);
+			$this->db->where($params);
+		}
+
+		if (!empty($conditions['having'])) {
+			$this->db->having($conditions['having']);
+		}
+
+		$this->db->join('customers as customers', 'customers.id = orders.customer_id', 'INNER');
+		$this->db->join('restaurants as restaurants', 'restaurants.id = orders.resto_id', 'INNER');
+		
+		$result = $this->db->get();
+		return $result->result_array();
+	}
+
 	public function fetch_orders_by($fields = array(), $params = array(), $conditions = array()) {
 		if (!empty($fields)) {
 			$this->db->select($fields);

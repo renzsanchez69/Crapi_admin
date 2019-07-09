@@ -74,6 +74,76 @@ class Orders extends API_Controller {
 		$this->to_response($myArr);
 	}
 
+	public function order_emp_list()
+	{
+		$postData = $this->input->post();
+		if(empty($this->mUser) && !isset( $this->mUser)){
+			$myArr = [
+				"error" => "User not found",
+				"result"=> 'NG'
+			];
+			return $this->to_response($myArr);
+		}
+
+		$params = [];
+		if (isset($postData['search']) && $postData['search'] != '') {
+			$params['search'] = $postData['search'];
+		}
+		if (isset($postData['is_delivered']) && $postData['is_delivered'] != '') {
+			$params['is_delivered'] = $postData['is_delivered'];
+		}
+		if (isset($postData['order_status']) && $postData['order_status'] != '') {
+			$params['order_status'] = $postData['order_status'];
+		}
+
+		$res_order = $this->Order->fetch_emp_orders(null, $params);
+		if(!empty($res_order)){
+				$myArr = [
+					"data"=> $res_order,
+					"result"=> 'OK'
+				];
+
+		} else {
+			$myArr = [
+				"data"=>[],
+				"result"=> 'NG'
+			];
+		}
+		$this->to_response($myArr);
+	}
+
+	public function order_approve_by_id()
+	{
+		$postData = $this->input->post();
+		/*if(empty($this->mUser) && !isset( $this->mUser)){
+			$myArr = [
+				"error" => "User not found",
+				"result"=> 'NG'
+			];
+			return $this->to_response($myArr);
+		}*/
+
+		$params = [];
+		if (isset($postData['search']) && $postData['search'] != '') {
+			$params['search'] = $postData['search'];
+		}
+
+		$res_order = $this->Order->fetch_emp_orders(null, $params);
+		if(!empty($res_order)){
+				$myArr = [
+					"data"=> $res_order,
+					"result"=> 'OK'
+				];
+
+		} else {
+			$myArr = [
+				"data"=>[],
+				"result"=> 'NG'
+			];
+		}
+		$this->to_response($myArr);
+	}
+
 	public function order_details_list() {
 		$postData = $this->input->post();
 
