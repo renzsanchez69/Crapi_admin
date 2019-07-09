@@ -162,10 +162,15 @@ class Orders extends API_Controller {
 		if (isset($postData['order_id'])) {
 			$params['order_id'] = $postData['order_id'];
 		}
+
 		$res_order = $this->OrderDetails->fetch_order_details([], $params);
+
+		$theOrder = $this->Order->get_order($postData['order_id']);
+
 		if(!empty($res_order)){
 
 				$myArr = [
+					"order" => $theOrder,
 					"data"=> $res_order,
 					"result"=> 'OK'
 				];
@@ -463,6 +468,12 @@ class Orders extends API_Controller {
 		}
 		if (isset($postData['is_received'])) {
 			$data['is_received'] = $postData['is_received'];
+		}
+		if (isset($postData['payment_type'])) {
+			$data['payment_type'] = $postData['payment_type'];
+		}
+		if (isset($postData['cod_cash'])) {
+			$data['cod_cash'] = $postData['cod_cash'];
 		}
 
 		$res = $this->Order->update_info($postData["order_id"], $data);

@@ -95,6 +95,7 @@ $route['orders']					= "orders/edit_orders";
 
 // customers api
 $route['customers']					= "customers/users";
+$route['customers/regist']			= "customers/regist";
 $route['customers_order_list']		= "customers/order_list";
 $route['customers_search']			= "customers/search";
 

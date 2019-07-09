@@ -18,6 +18,70 @@ class Customers extends API_Controller {
 			redirect();
 	}
 
+	public function regist()
+	{
+		$data = ['result' => REQUEST_RESULT_OK];
+		$postData = $this->input->post();
+
+		// - check incomplete params
+		$incomplete = self::check_required_fields($postData);
+
+		if (!empty($incomplete)) {
+			$data['result'] = REQUEST_RESULT_NG;
+			$data['error'] = "Please input required fields.";
+			$this->to_response($data);
+		}
+
+		//TODO - add checker if owner email already in use
+
+		$hashed = password_hash($postData['password'], PASSWORD_DEFAULT);
+
+		// - prepare data
+		$custData = array(
+			'firstname' => $postData['firstname'],
+			'lastname' => $postData['lastname'],
+			'address' => $postData['address'],
+			'contact_number' => $postData['contact_number'],
+			'gender' => $postData['gender'],
+			'email' => $postData['email'],
+			'password' => $hashed,
+		);
+
+		$customer = $this->customer->add_customer($custData);
+
+		if (!$customer) {
+			$data['result'] = REQUEST_RESULT_NG;
+			$data['error'] = "Failed to save data.";
+		}
+
+		$this->to_response($data);
+	}
+
+	private function check_required_fields($params, $fields_required = []){
+		$incomplete = [];
+		$required_fields = array(
+			'firstname',
+			'lastname',
+			'address',
+			'contact_number',
+			'gender',
+			'email',
+			'password'
+		);
+
+		if (!empty($fields_required)) {
+			$required_fields = $fields_required;
+		}
+
+		foreach ($required_fields as $field) {
+			if (!isset($params[$field]) || empty($params[$field])) {
+				$incomplete[] = $field;
+			}
+		}
+
+		return $incomplete;
+	}
+
 	public function users()
 	{
 		$usr   = trim($_POST["email"]);

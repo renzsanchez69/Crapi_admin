@@ -148,19 +148,6 @@ class MY_Controller extends CI_Controller {
 			$this->mViewData['language'] = $this->mLanguage;
 		}
 
-		// - common selection options
-		$selection_array = array(
-			'commonPropertyCondition' => PROPERTY_CONDITION_SELECTION,
-			'commonTransactionType' => TRANSACTION_TYPE_SELECTION,
-			'commonIsSold' => IS_SOLD_SELECTION,
-			'commonPostStatus' => POST_STATUS_SELECTION,
-			'commonGender' => GENDER_SELECTION,
-			'commonUserStatus' => USER_STATUS_SELECTION,
-		);
-		foreach ($selection_array as $selkey => $selvalue) {
-			$this->mViewData[$selkey] = unserialize($selvalue);
-		}
-
 		// set global view data
 		//$this->mViewData['ci'] = $this;	// uncomment this line if need to use CI instance, e.g. $ci->benchmark->elapsed_time()
 		$this->mTemplates->addData($this->mViewData);
