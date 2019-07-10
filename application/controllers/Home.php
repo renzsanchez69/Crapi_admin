@@ -45,48 +45,48 @@ class Home extends MY_Controller {
 	}
 
 	public function index() {
+		echo "YOU ARE AT HOME.";
+		// PayMayaSDK::getInstance()->initCheckout(
+		// 	"pk-eo4sL393CWU5KmveJUaW8V730TTei2zY8zE4dHJDxkF", 
+		// 	"sk-KfmfLJXFdV5t1inYN8lIOwSrueC1G27SCAklBqYCdrU", 
+		// 	"SANDBOX"
+		// );
 
-		PayMayaSDK::getInstance()->initCheckout(
-			"pk-eo4sL393CWU5KmveJUaW8V730TTei2zY8zE4dHJDxkF", 
-			"sk-KfmfLJXFdV5t1inYN8lIOwSrueC1G27SCAklBqYCdrU", 
-			"SANDBOX"
-		);
+		// // Item
+		// $itemAmountDetails = new ItemAmountDetails();
+		// $itemAmountDetails->shippingFee = "14.00";
+		// $itemAmountDetails->tax = "5.00";
+		// $itemAmountDetails->subtotal = "50.00";
+		// $itemAmount = new ItemAmount();
+		// $itemAmount->currency = "PHP";
+		// $itemAmount->value = "69.00";
+		// $itemAmount->details = $itemAmountDetails;
+		// $item = new Item();
+		// $item->name = "Leather Belt";
+		// $item->code = "pm_belt";
+		// $item->description = "Medium-sized belt made from authentic leather";
+		// $item->quantity = "1";
+		// $item->amount = $itemAmount;
+		// $item->totalAmount = $itemAmount;
 
-		// Item
-		$itemAmountDetails = new ItemAmountDetails();
-		$itemAmountDetails->shippingFee = "14.00";
-		$itemAmountDetails->tax = "5.00";
-		$itemAmountDetails->subtotal = "50.00";
-		$itemAmount = new ItemAmount();
-		$itemAmount->currency = "PHP";
-		$itemAmount->value = "69.00";
-		$itemAmount->details = $itemAmountDetails;
-		$item = new Item();
-		$item->name = "Leather Belt";
-		$item->code = "pm_belt";
-		$item->description = "Medium-sized belt made from authentic leather";
-		$item->quantity = "1";
-		$item->amount = $itemAmount;
-		$item->totalAmount = $itemAmount;
+		// // Checkout
+		// $itemCheckout = new Checkout();
+		// $itemCheckout->buyer = $this->buyerInfo();
+		// $itemCheckout->items = array($item);
+		// $itemCheckout->totalAmount = $itemAmount;
+		// $itemCheckout->requestReferenceNumber = "TESTABC123zzz";
+		// $itemCheckout->redirectUrl = array(
+		// 	"success" => "http://crapicebu.site/",
+		// 	"failure" => "https://shop.com/failure",
+		// 	"cancel" => "https://shop.com/cancel"
+		// 	);
 
-		// Checkout
-		$itemCheckout = new Checkout();
-		$itemCheckout->buyer = $this->buyerInfo();
-		$itemCheckout->items = array($item);
-		$itemCheckout->totalAmount = $itemAmount;
-		$itemCheckout->requestReferenceNumber = "TESTABC123zzz";
-		$itemCheckout->redirectUrl = array(
-			"success" => "http://crapicebu.site/",
-			"failure" => "https://shop.com/failure",
-			"cancel" => "https://shop.com/cancel"
-			);
-
-		$itemCheckout->execute();
-		$itemCheckout->retrieve();
-		echo "<pre>";
-		var_dump($itemCheckout);
-		echo "Checkout ID: " . $itemCheckout->id . "\n";
-		echo "Checkout URL: " . $itemCheckout->url . "\n";
+		// $itemCheckout->execute();
+		// $itemCheckout->retrieve();
+		// echo "<pre>";
+		// var_dump($itemCheckout);
+		// echo "Checkout ID: " . $itemCheckout->id . "\n";
+		// echo "Checkout URL: " . $itemCheckout->url . "\n";
 
 	}
 
