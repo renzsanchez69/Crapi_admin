@@ -53,6 +53,20 @@
 								<input class="form-control" name="contact_number" type="text" value="<?php echo isset($customerInfo->contact_number) ? $customerInfo->contact_number : ''; ?>" id="contact_number">
 							</div>
 						</div>
+						<div class="col-4">
+							<div class="form-group">
+								<label for="status" class="control-label">Status</label>
+								<select class="custom-select" id="status" name="status">
+									<?php foreach ($userStatusSelect as $key => $value): ?>
+										<?php if (isset($customerInfo->status) && $customerInfo->status == $key): ?>
+											<option value="<?php echo $key; ?>" selected="selected"><?php echo $value; ?></option>
+										<?php else: ?>
+											<option value="<?php echo $key; ?>"><?php echo $value; ?></option>
+										<?php endif ?>
+									<?php endforeach ?>
+								</select>
+							</div>
+						</div>
 					</div>
 
 					<div class="form-group">

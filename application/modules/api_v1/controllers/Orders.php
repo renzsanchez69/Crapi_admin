@@ -24,13 +24,13 @@ class Orders extends API_Controller {
 	public function order_list()
 	{
 		$postData = $this->input->post();
-		if(empty($this->mUser) && !isset( $this->mUser)){
-			$myArr = [
-				"error" => "User not found",
-				"result"=> 'NG'
-			];
-			return $this->to_response($myArr);
-		}
+		// if(empty($this->mUser) && !isset( $this->mUser)){
+		// 	$myArr = [
+		// 		"error" => "User not found",
+		// 		"result"=> 'NG'
+		// 	];
+		// 	return $this->to_response($myArr);
+		// }
 
 		$params = [];
 		if (isset($postData['search']) && $postData['search'] != '') {
@@ -53,6 +53,9 @@ class Orders extends API_Controller {
 		}
 		if (isset($postData['is_received'])) {
 			$params['is_received'] = $postData['is_received'];
+		}
+		if (isset($postData['is_preparing'])) {
+			$params['is_preparing'] = $postData['is_preparing'];
 		}
 		if (!empty($postData['search'])) {
 			$params['search'] = $postData['search'];
@@ -77,13 +80,13 @@ class Orders extends API_Controller {
 	public function order_emp_list()
 	{
 		$postData = $this->input->post();
-		if(empty($this->mUser) && !isset( $this->mUser)){
-			$myArr = [
-				"error" => "User not found",
-				"result"=> 'NG'
-			];
-			return $this->to_response($myArr);
-		}
+		// if(empty($this->mUser) && !isset( $this->mUser)){
+		// 	$myArr = [
+		// 		"error" => "User not found",
+		// 		"result"=> 'NG'
+		// 	];
+		// 	return $this->to_response($myArr);
+		// }
 
 		$params = [];
 		if (isset($postData['search']) && $postData['search'] != '') {
@@ -147,13 +150,13 @@ class Orders extends API_Controller {
 	public function order_details_list() {
 		$postData = $this->input->post();
 
-		if(empty($this->mUser) && !isset( $this->mUser)){
-			$myArr = [
-				"data"=>[],
-				"result"=> 'NG'
-			];
-			return $this->to_response($myArr);
-		}
+		// if(empty($this->mUser) && !isset( $this->mUser)){
+		// 	$myArr = [
+		// 		"data"=>[],
+		// 		"result"=> 'NG'
+		// 	];
+		// 	return $this->to_response($myArr);
+		// }
 
 		$params = [];
 		if (isset($postData['order_status'])) {
@@ -469,6 +472,9 @@ class Orders extends API_Controller {
 		if (isset($postData['is_received'])) {
 			$data['is_received'] = $postData['is_received'];
 		}
+		if (isset($postData['is_preparing'])) {
+			$data['is_preparing'] = $postData['is_preparing'];
+		}
 		if (isset($postData['payment_type'])) {
 			$data['payment_type'] = $postData['payment_type'];
 		}
@@ -489,5 +495,30 @@ class Orders extends API_Controller {
 		return $this->to_response([
 			"result" => REQUEST_RESULT_OK
 		]);
+	}
+
+
+	public function get_order_by_id() {
+		$postData = $this->input->post();
+		$res_order = [];
+
+		if (isset($postData['order_id'])) {
+			$res_order = $this->Order->get_order($postData['order_id']);
+		}
+
+		if(!empty($res_order)){
+				$myArr = [
+					"data"=> $res_order,
+					"result"=> 'OK'
+				];
+
+		} else {
+			$myArr = [
+				"data"=>[],
+				"result"=> 'NG'
+			];
+		}
+
+		$this->to_response($myArr);
 	}
 }

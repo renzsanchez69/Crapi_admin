@@ -74,9 +74,11 @@ class Customers extends Admin_Controller {
 
 		$customer = $this->Customer->get_customer($id);
 		$genderSelection = unserialize(GENDER_SELECTION);
+		$userStatusSelection = unserialize(USER_STATUS_SELECTION);
 		$setData = array(
 			'customerInfo' => $customer,
 			'genderSelect' => $genderSelection,
+			'userStatusSelect' => $userStatusSelection,
 			'formInfo' => $formInfo,
 			'formPass' => $formPass
 		);
@@ -89,7 +91,8 @@ class Customers extends Admin_Controller {
 				'firstname',
 				'lastname',
 				'gender',
-				'contact_number'
+				'contact_number',
+				'status'
 			);
 
 			$validation = $this->checkRequiredFields($postData, $requiredFields);

@@ -148,7 +148,8 @@ class Payments extends API_Controller {
 		}
 
 		// - compute tax
-		$tax = $totalAmount * .12;
+		// $tax = $totalAmount * .12;
+		$tax = 0;
 		$totalAmountPayable = $tax + $totalAmount;
 
 		$itemAmountDetails = new ItemAmountDetails();
@@ -166,56 +167,63 @@ class Payments extends API_Controller {
 		);
 	}
 
-	public function index() {
+	public function subcribeByPaymaya() {
 
 
-		// Item
-		$item3 = new Item();
-		$item3->name = "Leather Belt";
-		$item3->code = "pm_belt";
-		$item3->description = "Medium-sized belt made from authentic leather";
-		$item3->quantity = 1;
-
-
-		$itemAmountDetails = new ItemAmountDetails();
-		$itemAmountDetails->subtotal = "50.00";
-
-		$itemAmount = new ItemAmount();
-		$itemAmount->currency = "PHP";
-		$itemAmount->value = 20;
-		$itemAmount->details = $itemAmountDetails;
-
-		$item3->amount = $itemAmount;
+		$postData = $this->input->post();
+		$subItem = [
+			[
+				'name' => 'Subscription',
+				'details' => 'Monthly Subscription',
+				'qty' => 1,
+				'sub_total' => 500,
+				'price' => 500
+			]
+		];
 
 		$itemAmountDetails = new ItemAmountDetails();
-		$itemAmountDetails->shippingFee = "14.00";
-		$itemAmountDetails->tax = "5.00";
-		$itemAmountDetails->subtotal = "50.00";
+		$itemAmountDetails->shippingFee = 0;
+		$itemAmountDetails->tax = 0;
+		$itemAmountDetails->subtotal = 0;
 		$itemAmount = new ItemAmount();
 		$itemAmount->currency = "PHP";
-		$itemAmount->value = "69.00";
+		$itemAmount->value = 0;
 		$itemAmount->details = $itemAmountDetails;
+
+		$items = self::prepare_items($subItem);
 
 		// Checkout
 		$itemCheckout = new Checkout();
 		$itemCheckout->buyer = $this->buyerInfo();
-		$itemCheckout->items = array($item3);
 
+		$itemCheckout->items = $items['items'];
+		$itemCheckout->totalAmount = $items['totalAmount'];
 
-		$itemCheckout->totalAmount = $itemAmount;
-		$itemCheckout->requestReferenceNumber = "TESTABC123zzz";
+		// - generate reference number
+		$reference_number = 'SUBPAY_'.$postData['owner_id'].time();
+		$itemCheckout->requestReferenceNumber = $reference_number;
+		$urlparams = "";
+		$urlparams .= "&refno=".$reference_number;
 		$itemCheckout->redirectUrl = array(
-			"success" => base_url()."api/payments/callback?status=success&",
-			"failure" => "https://shop.com/failure",
-			"cancel" => "https://shop.com/cancel"
-			);
+			"success" => $postData['callback_url']."/o-sub.html?status=success".$urlparams,
+			"failure" => $postData['callback_url']."/o-sub.html?status=fail".$urlparams,
+			"cancel" => $postData['callback_url']."/o-sub.html?status=cancel".$urlparams
+		);
 
 		$itemCheckout->execute();
 		$itemCheckout->retrieve();
-		echo "<pre>";
-		var_dump($itemCheckout);
-		echo "Checkout ID: " . $itemCheckout->id . "\n";
-		echo "Checkout URL: " . $itemCheckout->url . "\n";
+
+		$result = [
+			"result"=> REQUEST_RESULT_OK,
+			"data" => [
+				'checkout_id' => $itemCheckout->id,
+				'checkout_url' => $itemCheckout->url,
+			],
+		];
+		// echo('<pre>');
+		// var_dump($result);
+		// die();
+		$this->to_response($result);
 
 	}
 

@@ -71,6 +71,10 @@ class Restaurants extends Admin_Controller {
 				$this->system_message->set_error('Please select owner.');
 				refresh();
 			}
+			if (empty($postData['latitude']) || empty($postData['longitude'])) {
+				$this->system_message->set_error('Please pin you address in the map.');
+				refresh();
+			}
 			
 			$requiredFields = array(
 				'owner_id',
