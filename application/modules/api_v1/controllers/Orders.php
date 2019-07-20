@@ -11,6 +11,7 @@ class Orders extends API_Controller {
 		$this->load->model('Order_model', 'Order');
 		$this->load->model('Order_Details_model', 'OrderDetails');
 		$this->load->model('Restaurant_model', 'Restaurant');
+		$this->load->model('Employee_model', 'Employee');
 	}
 
 	public function index()
@@ -173,9 +174,11 @@ class Orders extends API_Controller {
 		$res_order = $this->OrderDetails->fetch_order_details([], $params);
 
 		$theOrder = $this->Order->get_order($postData['order_id']);
-
+		$theResto = [];
+		$theEmployee = [];
 		if (!empty($theOrder)) {
 			$theResto = $this->Restaurant->get_restaurant($theOrder->resto_id);
+			$theEmployee = $this->Employee->get_employee($theOrder->employee_id);
 		}
 
 		if(!empty($res_order)){
@@ -183,6 +186,7 @@ class Orders extends API_Controller {
 				$myArr = [
 					"order" => $theOrder,
 					"resto" => $theResto,
+					"employee" => $theEmployee,
 					"data"=> $res_order,
 					"result"=> 'OK'
 				];
@@ -495,6 +499,15 @@ class Orders extends API_Controller {
 		}
 		if (isset($postData['employee_id'])) {
 			$data['employee_id'] = $postData['employee_id'];
+		}
+		if (isset($postData['latitude'])) {
+			$data['latitude'] = $postData['latitude'];
+		}
+		if (isset($postData['longitude'])) {
+			$data['longitude'] = $postData['longitude'];
+		}
+		if (isset($postData['delivery_address'])) {
+			$data['delivery_address'] = $postData['delivery_address'];
 		}
 
 		$res = $this->Order->update_info($postData["order_id"], $data);

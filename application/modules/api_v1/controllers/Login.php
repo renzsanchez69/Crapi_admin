@@ -13,6 +13,7 @@ class Login extends API_Controller {
 		$this->load->model('Owner_model', 'Owner');
 		$this->load->model('Customer_model', 'Customer');
 		$this->load->model('Employee_model', 'Employee');
+		$this->load->model('Restaurant_model', 'Restaurant');
 		// var_dump($this->mAction);
 	}
 
@@ -70,8 +71,32 @@ class Login extends API_Controller {
 					'latitude' => ($loginData->role == ROLE_CUSTOMER) ? $loginData->latitude : ''
 				]
 			);
+
+			if ($loginData->role = ROLE_EMPLOYEE) {
+				$restoInfo = self::getOwnerResto($loginData->owner_id);
+				$data['data']['owner_id'] = $loginData->owner_id;
+				$data['data']['resto_info'] = $restoInfo;
+			} elseif ($loginData->role = ROLE_OWNER) {
+				$restoInfo = self::getOwnerResto($loginData->id);
+				$data['data']['resto_info'] = $restoInfo;
+			}
 		}
 		$this->to_response($data);
+	}
+
+	public function getOwnerResto($owner_id){
+		$fields = array('restaurants.*');
+		$params = array(
+			'owner_id' => $owner_id
+		);
+
+		$data = $this->Restaurant->fetch_restaurants_raw($fields,$params);
+		
+		if (!empty($data[0])) {
+			return $data[0];
+		}
+
+		return $data;
 	}
 
 }
