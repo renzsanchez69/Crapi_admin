@@ -72,11 +72,11 @@ class Login extends API_Controller {
 				]
 			);
 
-			if ($loginData->role = ROLE_EMPLOYEE) {
+			if ($loginData->role == ROLE_EMPLOYEE) {
 				$restoInfo = self::getOwnerResto($loginData->owner_id);
 				$data['data']['owner_id'] = $loginData->owner_id;
 				$data['data']['resto_info'] = $restoInfo;
-			} elseif ($loginData->role = ROLE_OWNER) {
+			} elseif ($loginData->role == ROLE_OWNER) {
 				$restoInfo = self::getOwnerResto($loginData->id);
 				$data['data']['resto_info'] = $restoInfo;
 			}
