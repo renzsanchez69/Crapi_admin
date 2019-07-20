@@ -6,8 +6,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">	
-	<meta name='author' content='2CEBU'>
-	<meta name='description' content='2CEBU'>
+	<meta name='author' content='CRAPI'>
+	<meta name='description' content='CRAPI'>
 
 	<!-- source ****
 	-- https://getbootstrap.com/docs/4.1/examples/dashboard/# -->

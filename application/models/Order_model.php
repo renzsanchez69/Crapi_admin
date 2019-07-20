@@ -42,6 +42,10 @@ class Order_model extends MY_Model {
 				$this->db->where_in('order_status', $params['order_status']);
 				unset($params['order_status']);
 			}
+			if (isset($params['is_approved']) && is_array($params['is_approved'])) {
+				$this->db->where_in('is_approved', $params['is_approved']);
+				unset($params['is_approved']);
+			}
 			if (!empty($params['search'])) {
 				$this->db->like('restaurants.resto_name', $params['search'], 'both');
 			}

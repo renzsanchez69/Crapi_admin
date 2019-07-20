@@ -98,9 +98,9 @@ define('LOGO_DIR', 'assets/images/logo.png');
 define('ICON_DIR', 'assets/images/logo.ico');
 
 // - NEXMO Settings
-define('NEXMO_API_KEY', 'b158e99b');
-define('NEXMO_API_SECRET', 'Z1HiKfXZ6LTQpg6w');
-define('NEXMO_FROM', 'CEBU2CEBU');
+// define('NEXMO_API_KEY', 'b158e99b');
+// define('NEXMO_API_SECRET', 'Z1HiKfXZ6LTQpg6w');
+// define('NEXMO_FROM', 'CEBU2CEBU');
 
 // - gender 
 define('GENDER_MALE', 'male');

@@ -9,13 +9,13 @@
 	<title><?=$this->e($title)?></title>
 	<link rel="icon" type="image/ico" href="<?php echo base_url(ICON_DIR); ?>" />
 	
-	<meta name='author' content='GoEstate | Development Team'>
-	<meta name='description' content="Finding your next home starts with GoEstate.com. We offer a next-level home search experience.Philippines's No.1 property site for real estate.">
+	<meta name='author' content='CRAPI | Development Team'>
+	<meta name='description' content="Food delivery from a curated choice of local restaurants ✔ Large variety of cuisines, diverse dishes ✔ Safe & easy payment options">
 	<meta property="og:type"            content="article" /> 
-	<meta property="og:url"             content="http://goestate.com/" /> 
-	<meta property="og:title"           content="GoEstate | Philippines's No.1 property site for real estate." /> 
-	<meta property="og:image"           content="https://wall-street.com/wp-content/uploads/2018/01/jan-20-real-estate-top-pic.jpg" /> 
-	<meta property="og:description"     content="Finding your next home starts with GoEstate.com. We offer a next-level home search experience.Philippines's No.1 property site for real estate." />
+	<meta property="og:url"             content="http://crapicebu.site/" /> 
+	<meta property="og:title"           content="Order online ~ Express Food Ordering in Philippines | Crapi" /> 
+	<meta property="og:image"           content="https://www.restauranteelpalacete.com/wp-content/uploads/2018/01/Online-Food-Ordering.jpg" /> 
+	<meta property="og:description"     content="Food delivery from a curated choice of local restaurants ✔ Large variety of cuisines, diverse dishes ✔ Safe & easy payment options" />
 
 	<!-- css files -->
 	<link href='<?php echo base_url('assets/css/bootstrap.min.css'); ?>' rel='stylesheet'>

@@ -36,7 +36,7 @@ class Cronjob extends API_Controller {
 	public function send_sms($number, $params){
 		//create client with api key and secret
 		$client = new Nexmo\Client(new Nexmo\Client\Credentials\Basic(NEXMO_API_KEY, NEXMO_API_SECRET));
-		$text = 'Hi '. $params['firstname'].', This is a reminder from 2CEBU.';
+		$text = 'Hi '. $params['firstname'].', ---------------------.';
 		//send message using simple api params
 		// $message = $client->message()->send([
 		// 	'to' =>   '+63'.$number,

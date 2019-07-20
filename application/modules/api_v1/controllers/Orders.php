@@ -10,6 +10,7 @@ class Orders extends API_Controller {
 		$this->load->library('form_builder');
 		$this->load->model('Order_model', 'Order');
 		$this->load->model('Order_Details_model', 'OrderDetails');
+		$this->load->model('Restaurant_model', 'Restaurant');
 	}
 
 	public function index()
@@ -56,6 +57,9 @@ class Orders extends API_Controller {
 		}
 		if (isset($postData['is_preparing'])) {
 			$params['is_preparing'] = $postData['is_preparing'];
+		}
+		if (isset($postData['is_approved'])) {
+			$params['is_approved'] = $postData['is_approved'];
 		}
 		if (!empty($postData['search'])) {
 			$params['search'] = $postData['search'];
@@ -170,10 +174,15 @@ class Orders extends API_Controller {
 
 		$theOrder = $this->Order->get_order($postData['order_id']);
 
+		if (!empty($theOrder)) {
+			$theResto = $this->Restaurant->get_restaurant($theOrder->resto_id);
+		}
+
 		if(!empty($res_order)){
 
 				$myArr = [
 					"order" => $theOrder,
+					"resto" => $theResto,
 					"data"=> $res_order,
 					"result"=> 'OK'
 				];
@@ -480,6 +489,12 @@ class Orders extends API_Controller {
 		}
 		if (isset($postData['cod_cash'])) {
 			$data['cod_cash'] = $postData['cod_cash'];
+		}
+		if (isset($postData['is_approved'])) {
+			$data['is_approved'] = $postData['is_approved'];
+		}
+		if (isset($postData['employee_id'])) {
+			$data['employee_id'] = $postData['employee_id'];
 		}
 
 		$res = $this->Order->update_info($postData["order_id"], $data);

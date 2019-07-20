@@ -15,11 +15,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $config['site'] = array(
 
 	// Site name
-	'name' => 'GoEstate',
+	'name' => 'Crapi',
 
 	// Default page title
 	// (set empty then MY_Controller will automatically generate one according to controller / action)
-	'title' => 'GoEstate',
+	'title' => 'Crapi',
 
 	// Multilingual settings (set empty array to disable this)
 	'multilingual' => array(),
