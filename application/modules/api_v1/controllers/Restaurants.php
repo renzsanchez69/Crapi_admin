@@ -53,4 +53,30 @@ class Restaurants extends API_Controller {
 		];
 		$this->to_response($myArr);
 	}
+
+		// [PUT] /demo/{id}
+	public function logout_employee_to_resto()
+	{
+		$data = ['result' => REQUEST_RESULT_OK];
+
+		if (empty($this->mParams)) {
+			$data['result'] = REQUEST_RESULT_NG;
+			$data['error'] = "Incomplete parameters.";
+			$this->to_response($data);
+		}
+
+		$update_data = array(
+			'employee_id' => null
+		);
+
+		$update_res = $this->resto->update_info($this->mParams['id'], $update_data);
+
+		if (!$update_res) {
+			$data['result'] = REQUEST_RESULT_NG;
+			$data['error'] = "Failed to update data.";
+			$this->to_response($data);
+		}
+
+		$this->to_response($data);
+	}
 }

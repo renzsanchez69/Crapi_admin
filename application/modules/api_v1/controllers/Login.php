@@ -74,6 +74,26 @@ class Login extends API_Controller {
 
 			if ($loginData->role == ROLE_EMPLOYEE) {
 				$restoInfo = self::getOwnerResto($loginData->owner_id);
+
+				// - check if has resto assigned
+				if (empty($restoInfo)) {
+					return $this->to_response([
+						'result' => REQUEST_RESULT_NG,
+						'error' => 'No restaurant assigned.'
+					]);
+				}
+
+				// - check if resto has active employee logged in
+				if ($restoInfo['employee_id'] != null) {
+					return $this->to_response([
+						'result' => REQUEST_RESULT_NG,
+						'error' => 'Another employee is logged in.'
+					]);
+				}
+
+				// - update resto current employee_id
+				$this->Restaurant->update_info($restoInfo['id'], ['employee_id' => $loginData->id]);
+
 				$data['data']['owner_id'] = $loginData->owner_id;
 				$data['data']['resto_info'] = $restoInfo;
 			} elseif ($loginData->role == ROLE_OWNER) {
