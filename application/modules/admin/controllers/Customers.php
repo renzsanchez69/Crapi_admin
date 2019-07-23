@@ -44,6 +44,9 @@ class Customers extends Admin_Controller {
 		if (!empty($urlQuery['gender'])) {
 			$params['gender'] = $urlQuery['gender'];
 		}
+		if (!empty($urlQuery['gov_id'])) {
+			$params['gov_id'] = $urlQuery['gov_id'];
+		}
 
 		$customers = $this->Customer->fetch_customers_raw($fields, $params);
 
