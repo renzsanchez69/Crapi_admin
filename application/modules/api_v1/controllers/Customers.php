@@ -44,6 +44,7 @@ class Customers extends API_Controller {
 			'contact_number' => $postData['contact_number'],
 			'gender' => $postData['gender'],
 			'email' => $postData['email'],
+			'gov_id' => $postData['gov_id'],
 			'password' => $hashed,
 		);
 
