@@ -68,10 +68,20 @@ class Orders extends API_Controller {
 
 		$res_order = $this->Order->fetch_orders(null, $params);
 		if(!empty($res_order)){
-				$myArr = [
-					"data"=> $res_order,
-					"result"=> 'OK'
-				];
+			foreach ($res_order as &$orderDet) {
+				$sub_total = 0;
+				$ordDetails = $this->OrderDetails->fetch_order_details(null, ['order_id' => $orderDet['id']]);
+				foreach ($ordDetails as $det) {
+					$sub_total = $sub_total + $det['sub_total'];
+				}
+				if ($ordDetails) {
+					$orderDet['amount_due'] = $sub_total;
+				}
+			}
+			$myArr = [
+				"data"=> $res_order,
+				"result"=> 'OK'
+			];
 
 		} else {
 			$myArr = [
