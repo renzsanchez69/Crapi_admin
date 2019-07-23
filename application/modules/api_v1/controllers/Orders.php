@@ -519,6 +519,9 @@ class Orders extends API_Controller {
 		if (isset($postData['delivery_address'])) {
 			$data['delivery_address'] = $postData['delivery_address'];
 		}
+		if (isset($postData['order_guid'])) {
+			$data['order_guid'] = $postData['order_guid'];
+		}
 
 		$res = $this->Order->update_info($postData["order_id"], $data);
 
