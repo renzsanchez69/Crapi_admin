@@ -22,6 +22,15 @@ class Admin_model extends MY_Model {
 		return NULL;
 	}
 
+	public function get_info($id)
+	{
+		if (empty($id)) {
+			return false;
+		}
+
+		return $this->get($id);
+	}
+
 	/**
 	 * Update account info
 	 */
