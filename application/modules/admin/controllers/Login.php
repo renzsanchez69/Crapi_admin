@@ -11,7 +11,7 @@ class Login extends MY_Controller {
 	public function index()
 	{
 		if ($this->session->has_userdata('admin_user')) {
-			redirect('admin');
+			redirect('admin/profile');
 		}
 		$this->load->library('form_builder');
 		$form = $this->form_builder->create_form();
@@ -37,7 +37,7 @@ class Login extends MY_Controller {
 			{
 				// login success
 				$this->session->set_userdata('admin_user', $user);
-				redirect('admin', 'refresh');
+				redirect('admin/profile', 'refresh');
 			}
 		}
 		
