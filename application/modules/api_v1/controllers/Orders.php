@@ -273,6 +273,7 @@ class Orders extends API_Controller {
 				'orders.customer_id' => $this->mUser['id'],
 				'orders.order_status' => 'pending',
 				'orders.is_paid' => 0,
+				'orders.is_approved' => 0,
 			]
 			);
 		if (!empty($checkIfHaveOrder[0])) {
@@ -419,6 +420,9 @@ class Orders extends API_Controller {
 		}
 		if (!empty($postData['search'])) {
 			$params['search'] = $postData['search'];
+		}
+		if (isset($postData['is_approved'])) {
+			$params['is_approved'] = $postData['is_approved'];
 		}
 
 		$res_order = $this->Order->fetch_orders_by(null, $params);
