@@ -37,7 +37,7 @@ class Login extends MY_Controller {
 			{
 				// login success
 				$this->session->set_userdata('admin_user', $user);
-				redirect('admin/profile', 'refresh');
+				redirect('admin/home', 'refresh');
 			}
 		}
 		

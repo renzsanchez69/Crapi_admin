@@ -12,7 +12,7 @@
 
 			<dt class="col-sm-4">Customer Address</dt>
 			<dd class="col-sm-8">
-				<p><?php echo isset($orderInfo['address']) ? $orderInfo['address'] : ''; ?></p>
+				<?php echo isset($orderInfo['address']) ? $orderInfo['address'] : ''; ?>
 			</dd>
 
 			<dt class="col-sm-4">Order Number</dt>
@@ -23,7 +23,16 @@
 
 			<dt class="col-sm-4">Resto Address</dt>
 			<dd class="col-sm-8">
-				<p><?php echo isset($orderInfo['resto_address']) ? $orderInfo['resto_address'] : ''; ?></p>
+				<?php echo isset($orderInfo['resto_address']) ? $orderInfo['resto_address'] : ''; ?>
+			</dd>
+			<dt class="col-sm-4">Status</dt>
+			<dd class="col-sm-8">
+				<select name="status" id="orderStatus">
+					<option>Claimed</option>
+					<option>Not Claimed</option>
+					<option>Rejected</option>
+				</select>
+				<button class="btn btn-sm btn-success" id="btnSaveOrderStatus">Save</button>
 			</dd>
 		</dl>
 		<input name="latitude" type="hidden" value="<?php echo isset($orderInfo['resto_latitude']) ? $orderInfo['resto_latitude'] : ''; ?>">

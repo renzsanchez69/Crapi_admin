@@ -99,6 +99,38 @@
 			<hr>
 			<button type="submit" class="btn btn-success btn-block">Update Password</button>
 		<?php echo $formPass->close(); ?>
+
+		<hr>
+		<table class="table table-sm mt-5 table-hovered table-bordered">
+			<thead>
+				<tr>
+					<th>Order Date</th>
+					<th>Employee Name</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				<?php if (!empty($customerOrders)): ?>
+					<?php foreach ($customerOrders as $order): ?>
+						<tr>
+							<td><?php echo $order['order_created'] ? $order['order_created'] : '--'; ?></td>
+							<td><?php echo $order['employee_fullname'] ? $order['employee_fullname'] : '--'; ?></td>
+							<td>
+								<?php if ($order['order_status'] == 'failed'): ?>
+									<span class="badge badge-danger">Rejected</span>
+								<?php elseif ($order['is_received'] == 1): ?>
+									<span class="badge badge-success">Claimed</span>
+								<?php elseif ($order['is_received'] == 2): ?>
+									<span class="badge badge-warning">Not Claimed</span>
+								<?php endif ?>
+							</td>
+						</tr>
+					<?php endforeach ?>
+				<?php else: ?>
+					<tr><td colspan="3"><center><i><small>Nothing to display.</small></i></center></td></tr>
+				<?php endif ?>
+			</tbody>
+		</table>
 	</div>
 </div>
 

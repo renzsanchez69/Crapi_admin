@@ -34,6 +34,8 @@ class Order_model extends MY_Model {
 
 		$this->db->select('CONCAT(`customers`.`firstname`, " ", `customers`.`lastname`) AS customer_fullname,customers.email,customers.address AS customer_address,customers.contact_number');
 		$this->db->select('restaurants.resto_name AS restaurants_name');
+		$this->db->select('orders.created_at AS order_created');
+		$this->db->select('CONCAT(`employees`.`firstname`, " ", `employees`.`lastname`) AS employee_fullname');
 
 		$this->db->from('orders');
 
@@ -59,6 +61,7 @@ class Order_model extends MY_Model {
 
 		$this->db->join('customers as customers', 'customers.id = orders.customer_id', 'INNER');
 		$this->db->join('restaurants as restaurants', 'restaurants.id = orders.resto_id', 'INNER');
+		$this->db->join('employees as employees', 'employees.id = orders.employee_id', 'LEFT');
 		
 		$this->db->order_by('orders.id DESC');
 

@@ -10,6 +10,7 @@ class Customers extends Admin_Controller {
 		$this->load->database();
 		$this->load->library('form_builder');
 		$this->load->model('Customer_model', 'Customer');
+		$this->load->model('Order_model', 'Order');
 	}
 
 	public function index()
@@ -78,8 +79,17 @@ class Customers extends Admin_Controller {
 		$customer = $this->Customer->get_customer($id);
 		$genderSelection = unserialize(GENDER_SELECTION);
 		$userStatusSelection = unserialize(USER_STATUS_SELECTION);
+
+		// - get customer orders
+		$cust_order_params = [
+			'order_status' => ['success', 'failed'],
+			'customer_id' => $id
+		];
+		$customer_orders = $this->Order->fetch_orders(null, $cust_order_params);
+
 		$setData = array(
 			'customerInfo' => $customer,
+			'customerOrders' => $customer_orders,
 			'genderSelect' => $genderSelection,
 			'userStatusSelect' => $userStatusSelection,
 			'formInfo' => $formInfo,

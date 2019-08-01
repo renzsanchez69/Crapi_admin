@@ -13,6 +13,7 @@
 	-- https://getbootstrap.com/docs/4.1/examples/dashboard/# -->
 
 	<link href='<?php echo base_url('assets/css/bootstrap.min.css'); ?>' rel='stylesheet'>
+	<link href='<?php echo base_url('assets/css/bootstrap-datepicker.min.css'); ?>' rel='stylesheet'>
 	<link href='<?php echo base_url('assets/css/fontawesome-all.min.css'); ?>' rel='stylesheet'>
 	<link href='<?php echo base_url('assets/css/admin/dashboard.css'); ?>' rel='stylesheet'>
 	<link href='<?php echo base_url('assets/css/admin/custom.css'); ?>' rel='stylesheet'>
@@ -21,9 +22,9 @@
 	<!--<![endif]-->
 	<script src='<?php echo base_url('assets/js/jquery.min.js'); ?>'></script>
 	<script src='<?php echo base_url('assets/js/bootstrap.bundle.min.js'); ?>'></script>
-	<!-- <script src='<?php echo base_url('assets/js/jquery.growl.js'); ?>'></script>
 	<script src='<?php echo asset_url('js/moment.js'); ?>'></script>
 	<script src='<?php echo asset_url('js/bootstrap-datetimepicker.min.js'); ?>'></script>
+	<!-- <script src='<?php echo base_url('assets/js/jquery.growl.js'); ?>'></script>
 	<script src='<?php echo base_url('assets/js/select2.full.min.js'); ?>') }}"></script>
  -->
 </head>
@@ -40,9 +41,9 @@
 		var	growlMessage = "<?php echo !empty($flashdata['growl']['message']) ? $flashdata['growl']['message'] : ''; ?>";
 
 		$(function () {
-			// $('.datetimepicker').datetimepicker({
-			// 	format: 'YYYY-MM-DD'
-			// });
+			$('.datetimepicker').datetimepicker({
+				format: 'YYYY-MM-DD'
+			});
 			$('input[type="number"]').keydown(function (e) {
 				// Allow: backspace, delete, tab, escape, enter and .
 				if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 ||

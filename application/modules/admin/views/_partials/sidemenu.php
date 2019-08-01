@@ -36,6 +36,12 @@
 					Order History
 				</a>
 			</li>
+
+			<li class="nav-item">
+				<a class="nav-link text-light <?php echo $ctrler == 'reports' ? 'active' : ''; ?>" href="<?php echo base_url('admin/reports') ?>">
+					Reports
+				</a>
+			</li>
 		</ul>
 	</div>
 </nav>

@@ -12,6 +12,7 @@ class Orders extends API_Controller {
 		$this->load->model('Order_Details_model', 'OrderDetails');
 		$this->load->model('Restaurant_model', 'Restaurant');
 		$this->load->model('Employee_model', 'Employee');
+		$this->load->model('Customer_model', 'Customer');
 	}
 
 	public function index()
@@ -189,6 +190,7 @@ class Orders extends API_Controller {
 		if (!empty($theOrder)) {
 			$theResto = $this->Restaurant->get_restaurant($theOrder->resto_id);
 			$theEmployee = $this->Employee->get_employee($theOrder->employee_id);
+			$theCustomer = $this->Customer->get_customer($theOrder->customer_id);
 		}
 
 		if(!empty($res_order)){
@@ -197,6 +199,7 @@ class Orders extends API_Controller {
 					"order" => $theOrder,
 					"resto" => $theResto,
 					"employee" => $theEmployee,
+					"customer" => $theCustomer,
 					"data"=> $res_order,
 					"result"=> 'OK'
 				];
@@ -525,6 +528,9 @@ class Orders extends API_Controller {
 		}
 		if (isset($postData['order_guid'])) {
 			$data['order_guid'] = $postData['order_guid'];
+		}
+		if (isset($postData['sub_total'])) {
+			$data['sub_total'] = $postData['sub_total'];
 		}
 
 		$res = $this->Order->update_info($postData["order_id"], $data);
