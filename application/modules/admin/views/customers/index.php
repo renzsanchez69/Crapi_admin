@@ -6,10 +6,10 @@
 	<div class="card-body">
 		<form method="GET" action="<?php echo base_url(); ?>admin/customers" accept-charset="UTF-8" class=" mb-2 mt-2">
 			<div class="form-group row">
-				<label class="col-sm-2 col-form-label-sm">Government ID</label>
+				<!-- <label class="col-sm-2 col-form-label-sm">Government ID</label>
 				<div class="col-sm-4">
 					<input type="text" class="form-control form-control-sm" name="gov_id" value="<?php echo isset($urlQuery['gov_id']) ? $urlQuery['gov_id'] : '';?>">
-				</div>
+				</div> -->
 				<label class="col-sm-2 col-form-label-sm">Name</label>
 				<div class="col-sm-4">
 					<input type="text" class="form-control form-control-sm" name="name" value="<?php echo isset($urlQuery['name']) ? $urlQuery['name'] : '';?>">
@@ -67,7 +67,7 @@
     <thead>
         <tr>
             <th>ID</th>
-            <th>Government ID</th>
+            <!-- <th>Government ID</th> -->
             <th>Name</th>
             <th>Gender</th>
             <th>Email</th>
@@ -82,7 +82,7 @@
 
     		<tr id="idx_customer_<?php echo $customer['id']; ?>">
 				<td><a href="<?php echo base_url(); ?>admin/customers/edit/<?php echo $customer['id']; ?>" class=""><i class="fa fa-pencil-alt"></i> <?php echo !empty($customer['id']) ? $customer['id'] : '--'; ?></a></td>
-				<td><?php echo !empty($customer['gov_id']) ? $customer['gov_id'] : '--'; ?></td>
+				<!-- <td><?php echo !empty($customer['gov_id']) ? $customer['gov_id'] : '--'; ?></td> -->
 				<td><?php echo !empty($customer['fullname']) ? $customer['fullname'] : '--'; ?></td>
 				<td>
 					<?php if (!empty($customer['gender']) && $customer['gender'] == GENDER_FEMALE): ?>

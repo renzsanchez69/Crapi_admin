@@ -22,6 +22,10 @@ class Reports extends API_Controller {
 
 		$conditions = [];
 
+		if (!empty($postData['name'])) {
+			$conditions['emp_name'] = $postData['name'];
+		}
+
 		if (!empty($postData['resto_id'])) {
 			$conditions['resto_id'] = $postData['resto_id'];
 		}

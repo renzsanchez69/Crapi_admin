@@ -27,12 +27,16 @@
 			</dd>
 			<dt class="col-sm-4">Status</dt>
 			<dd class="col-sm-8">
-				<select name="status" id="orderStatus">
-					<option>Claimed</option>
-					<option>Not Claimed</option>
-					<option>Rejected</option>
-				</select>
-				<button class="btn btn-sm btn-success" id="btnSaveOrderStatus">Save</button>
+				<form method="post">	
+					<select name="order_status" id="orderStatus">
+						<option>----</option>
+						<option value="preparing" <?php echo $ordStatus == 'preparing' ? 'selected' : ''; ?>>Preparing</option>
+						<option value="claimed" <?php echo $ordStatus == 'claimed' ? 'selected' : ''; ?>>Claimed</option>
+						<option value="not_claimed" <?php echo $ordStatus == 'not_claimed' ? 'selected' : ''; ?>>Not Claimed</option>
+						<option value="rejected" <?php echo $ordStatus == 'rejected' ? 'selected' : ''; ?>>Rejected</option>
+					</select>
+					<button class="btn btn-sm btn-success" id="btnSaveOrderStatus">Save</button>
+				</form>
 			</dd>
 		</dl>
 		<input name="latitude" type="hidden" value="<?php echo isset($orderInfo['resto_latitude']) ? $orderInfo['resto_latitude'] : ''; ?>">

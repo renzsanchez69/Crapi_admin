@@ -73,12 +73,88 @@ class Orders extends Admin_Controller {
 			'order_details.*',
 			'products.name',
 		);
-		$orderDetails = $this->OrderDetails->fetch_order_details($returnData, ['order_details.order_id' => $id]);
 
+		$orderDetails = $this->OrderDetails->fetch_order_details($returnData, ['order_details.order_id' => $id]);
 		$setData = array(
 			'orderInfo' => !empty($order) ? $order[0] : [],
 			'orderDetails' => !empty($orderDetails) ? $orderDetails : []
 		);
+		$order_status = null;
+		if (!empty($order[0])){
+			$order = $order[0];
+			if (
+				$order['order_status'] == 'pending' &&
+				$order['is_approved'] == 2 &&
+				$order['is_preparing'] == 1 &&
+				$order['is_delivered'] == 0 &&
+				$order['is_received'] == 0
+			) {
+				$order_status = 'preparing';
+			} elseif ($order['order_status'] == 'failed') {
+				$order_status = 'rejected';
+			} elseif ($order['is_received'] == 1) {
+				$order_status = 'claimed';
+			} elseif ($order['is_received'] == 2) {
+				$order_status = 'not_claimed';
+			}
+		}
+		$setData['ordStatus'] = $order_status;
+
+		if ($this->input->method() == 'post') {
+			$postData = $this->input->post();
+			$update_params = [];
+
+			if (!empty($postData['order_status'])) {
+				switch ($postData['order_status']) {
+					case 'preparing':
+						$update_params['order_status'] = 'pending';
+						$update_params['is_approved'] = 2;
+						$update_params['is_preparing'] = 1;
+						$update_params['is_delivered'] = 0;
+						$update_params['is_received'] = 0;
+						break;
+					case 'claimed':
+						$update_params['order_status'] = 'success';
+						$update_params['is_approved'] = 2;
+						$update_params['is_preparing'] = 1;
+						$update_params['is_delivered'] = 1;
+						$update_params['is_received'] = 1;
+						break;
+					case 'not_claimed':
+						$update_params['order_status'] = 'success';
+						$update_params['is_approved'] = 2;
+						$update_params['is_preparing'] = 1;
+						$update_params['is_delivered'] = 1;
+						$update_params['is_received'] = 2;
+						break;
+					case 'rejected':
+						$update_params['order_status'] = 'failed';
+						$update_params['is_approved'] = 0;
+						$update_params['is_preparing'] = 0;
+						$update_params['is_delivered'] = 0;
+						$update_params['is_received'] = 0;
+						break;
+					
+					default:
+						break;
+				}
+			}
+
+			if (empty($update_params)) {
+				$this->system_message->set_error(implode('<br>', 'Nothing to update.'));
+				refresh();
+			}
+
+			$res = $this->Order->update_info($id, $update_params);
+
+			if ($res) {
+				$this->system_message->set_success('Successfully updated!');
+				refresh();
+			} else {
+				$this->system_message->set_error('Failed to updated!');
+				refresh();
+			}
+		}
 
 		$this->mViewData = $setData;
 		$this->render('orders/view');
