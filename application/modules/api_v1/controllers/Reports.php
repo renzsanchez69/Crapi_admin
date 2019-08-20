@@ -25,6 +25,12 @@ class Reports extends API_Controller {
 		if (!empty($postData['name'])) {
 			$conditions['emp_name'] = $postData['name'];
 		}
+		if (!empty($postData['date_from'])) {
+			$conditions['date_from'] = $postData['date_from'];
+		}
+		if (!empty($postData['date_to'])) {
+			$conditions['date_to'] = $postData['date_to'];
+		}
 
 		if (!empty($postData['resto_id'])) {
 			$conditions['resto_id'] = $postData['resto_id'];
